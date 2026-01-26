@@ -1,0 +1,22 @@
+{
+  "name": "projectmisfits.github.io",
+  "version": "1.0.0",
+  "description": "The Project Misfits website!",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "build-gh-pages": "npx @11ty/eleventy --pathprefix=/projectmisfits.github.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.j:ProjectMisfits/projectmisfits.github.io"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}
