@@ -1,5 +1,5 @@
 export default function(eleventyConfig) {
-    // Configure Eleventy
+    eleventyConfig.addPassthroughCopy({ assets: "assets/" });
 }
 
 export const config = {
