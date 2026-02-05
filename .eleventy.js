@@ -1,5 +1,5 @@
 const { DateTime } = require("luxon");
-const tagColors = require("./content/_data/tagColors.json");
+const tagColors = require("./src/_data/tagColors.json");
 
 module.exports = function(eleventyConfig) {
   // Filters
@@ -203,8 +203,7 @@ module.exports = function(eleventyConfig) {
 
   return {
     dir: {
-      input: "content",
-      output: "public",
+      input: "src",
       includes: "_includes",
       layouts: "_includes",
       data: "_data"
