@@ -1,8 +1,7 @@
 {
-  "name": "jamstack-blog-template",
-  "version": "0.1.0",
+  "name": "projectmisfits.github.io",
   "private": true,
-  "description": "JAMstack Blog Template: Eleventy + Tailwind with IndieWeb features",
+  "description": "Project Misfits Website",
   "scripts": {
     "dev": "run-p dev:*",
     "dev:css": "tailwindcss -i src/assets/css/tailwind.css -o src/assets/css/build.css --watch",
