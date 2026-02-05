@@ -1,0 +1,15 @@
+{
+  "prototyping": "#10b981",
+  "design": "#6366f1",
+  "unanimated": "#3b82f6", 
+  "playable": "#06b6d4",
+  "draft": "#84cc16",
+  "javascript": "#f59e0b",
+  "html": "#ef4444",
+  "tutorial": "#f97316",
+  "tips": "#eab308",
+  "review": "#14b8a6",
+  "opinion": "#ec4899",
+  "css": "#8b5cf6",
+  "tech": "#6b7280"
+}
