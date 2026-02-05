@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>Updates — Project Misfits</title>
+  
+  <meta name="description" content="Follow Project Misfits as we create a game in just 8 weeks." />
+  <meta name="generator" content="Eleventy" />
+  
+  
+  <link rel="canonical" href="https://indieweb-template.netlify.app/updates/" />
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Project Misfits" />
+  <meta property="og:url" content="https://indieweb-template.netlify.app/updates/" />
+  <meta property="og:title" content="Updates" />
+  <meta property="og:description" content="Follow Project Misfits as we create a game in just 8 weeks." />
+  <meta property="og:image" content="https://indieweb-template.netlify.app//screenshot.png" />
+  <meta property="og:image:alt" content="Project Misfits preview" />
+
+  
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <meta name="twitter:title" content="Updates" />
+  <meta name="twitter:description" content="Follow Project Misfits as we create a game in just 8 weeks." />
+  <meta name="twitter:image" content="https://indieweb-template.netlify.app//screenshot.png" />
+  <meta name="twitter:image:alt" content="Project Misfits preview" />
+  <link rel="webmention" href="https://webmention.io/indieweb-template.netlify.app/webmention" />
+  <link rel="pingback" href="https://webmention.io/indieweb-template.netlify.app/xmlrpc" />
+  <link rel="stylesheet" href="/assets/css/build.css" />
+  <link rel="alternate" type="application/atom+xml" title="Project Misfits Feed" href="/feed.xml" />
+  
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="shortcut icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="mask-icon" href="/assets/favicon.svg" color="#a78bfa">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#a78bfa" />
+  <link rel="manifest" href="/manifest.webmanifest">
+  
+  <link id="hljs-light" rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/tokyo-night-light.min.css">
+  <link id="hljs-dark" rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/styles/tokyo-night-dark.min.css" disabled>
+  <script src="https://unpkg.com/@highlightjs/cdn-assets@11.9.0/highlight.min.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      const html = document.documentElement;
+      const light = document.getElementById('hljs-light');
+      const dark = document.getElementById('hljs-dark');
+      function applyTheme() {
+        const isDark = html.classList.contains('dark');
+        if (light && dark) {
+          light.disabled = !!isDark;
+          dark.disabled = !isDark;
+        }
+      }
+      // Initial apply
+      applyTheme();
+      // Observe class changes on <html> to react to dark-mode toggle
+      const observer = new MutationObserver(applyTheme);
+      observer.observe(html, { attributes: true, attributeFilter: ['class'] });
+      // Highlight code blocks
+      document.querySelectorAll('pre code').forEach((el) => {
+        if (window.hljs && typeof window.hljs.highlightElement === 'function') {
+          window.hljs.highlightElement(el);
+        }
+      });
+    });
+  </script>
+  <style>
+    .contrast { filter: contrast(1.2) saturate(1.1); }
+    .reduce-motion * { transition: none !important; animation: none !important; }
+  </style>
+  
+
+
+
+
+  
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "url": "https://indieweb-template.netlify.app",
+        "name": "Project Misfits",
+        "description": "Follow Project Misfits as we create a game in just 8 weeks."
+      },
+      {
+        "@type": "Organization",
+        "name": "Project Misfits",
+        "url": "https://indieweb-template.netlify.app",
+        "sameAs": [
+          
+          
+            
+          
+          
+          
+            
+          
+          
+            "https://github.com/ProjectMisfits",
+          
+            "https://instagram.com/undefined"
+          
+        ]
+      }
+    ]
+  }
+  </script>
+
+  
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://indieweb-template.netlify.app"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Updates",
+        "item": "https://indieweb-template.netlify.app/updates/"
+      }
+      
+    ]
+  }
+  </script>
+
+  
+  
+  
+  
+  
+</head>
+<body class="bg-[var(--bg)] text-[var(--text)] min-h-screen flex flex-col">
+  <div id="progress-bar" aria-hidden="true"></div>
+  <header class="bg-[var(--surface)] border-b border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4 py-3 flex items-center gap-3">
+      <button id="hamburger" class="md:hidden p-2 rounded border border-gray-300 dark:border-gray-600" aria-label="Toggle menu" aria-controls="primary-nav" aria-expanded="false">
+        <span class="bar-1 block w-5 h-0.5 bg-gray-700 dark:bg-gray-200 mb-1 transition-transform"></span>
+        <span class="bar-2 block w-5 h-0.5 bg-gray-700 dark:bg-gray-200 mb-1 transition-opacity"></span>
+        <span class="bar-3 block w-5 h-0.5 bg-gray-700 dark:bg-gray-200 transition-transform"></span>
+      </button>
+      <a class="text-lg font-semibold" href="/">Project Misfits</a>
+      <form class="ml-auto hidden sm:block" role="search" aria-label="Site" action="/search/" method="get">
+        <label class="sr-only" for="q">Search</label>
+        <input id="q" name="q" type="search" placeholder="Search…" class="px-3 py-2 border rounded w-64" />
+      </form>
+      <div class="flex items-center gap-2 ml-2">
+        <button id="dark-toggle" class="px-2 py-1 text-sm border rounded" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
+        <div class="relative">
+          <button id="a11y-toggle" class="px-2 py-1 text-sm border rounded" aria-expanded="false" aria-controls="a11y-menu">A11y</button>
+          <div id="a11y-menu" class="absolute right-0 mt-1 bg-[var(--surface)] border rounded p-2 text-sm space-x-2 whitespace-nowrap hidden">
+            <button id="font-dec" class="px-2 py-1 border rounded">A-</button>
+            <button id="font-inc" class="px-2 py-1 border rounded">A+</button>
+            <button id="contrast-toggle" class="px-2 py-1 border rounded">Contrast</button>
+            <button id="motion-toggle" class="px-2 py-1 border rounded">Reduce motion</button>
+            <button id="font-toggle" type="button" aria-pressed="false" class="px-2 py-1 border rounded hidden md:inline-block">System Fonts</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="bg-[var(--surface)] border-b border-gray-200 dark:border-gray-700">
+    <div id="primary-nav" class="container mx-auto px-4 py-2 hidden md:block">
+      
+      
+      
+      
+      
+      
+      
+      <ul class="flex flex-col md:flex-row text-base md:text-sm space-y-3 md:space-y-0 md:space-x-6">
+        <li>
+          <a href="/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 "
+             >🏠 Home</a>
+        </li>
+        <li>
+          <a href="/design/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 "
+             >💡 Design</a>
+        </li>
+        <li>
+          <a href="/about/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 "
+             >👋 About the Team</a>
+        </li>
+        <li>
+          <a href="/updates/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 "
+             >🛠️ Dev Updates</a>
+        </li>
+        <li>
+          <a href="/timeline/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 "
+             >🗓️ Dev Timeline</a>
+        </li>
+        <li>
+          <a href="/releases/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 "
+             >🎮 Releases</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container mx-auto px-4 py-6 max-w-4xl flex-1">
+    <main>
+      <div class="h-feed">
+  <h1 class="p-name text-2xl font-bold mb-6">Dev Updates</h1>
+  <a class="u-url hidden" href="https://indieweb-template.netlify.app/updates/"></a>
+
+  <div class="space-y-8">
+    
+      <article class="h-entry border-b pb-6">
+        <h2 class="p-name text-xl font-semibold"><a class="u-url" href="/updates/sprint3/">Sprint 3 (Jan 26 - Jan 30, 2026)</a></h2>
+        <time class="dt-published text-sm text-gray-500 dark:text-gray-400" datetime="2026-01-30">January 30, 2026</time>
+        <div class="p-summary mt-2 text-gray-700 dark:text-gray-300">Our first playable build (Week 2).</div>
+        <div class="mt-2 text-sm space-x-2">
+          
+            <a class="p-category px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800" href="/tags/prototyping/">#prototyping</a>
+          
+            <a class="p-category px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800" href="/tags/design/">#design</a>
+          
+            <a class="p-category px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800" href="/tags/unanimated/">#unanimated</a>
+          
+            <a class="p-category px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800" href="/tags/playable/">#playable</a>
+          
+        </div>
+      </article>
+    
+      <article class="h-entry border-b pb-6">
+        <h2 class="p-name text-xl font-semibold"><a class="u-url" href="/updates/sprint2/">Sprint 2 (Jan 20 - Jan 23, 2026)</a></h2>
+        <time class="dt-published text-sm text-gray-500 dark:text-gray-400" datetime="2026-01-23">January 23, 2026</time>
+        <div class="p-summary mt-2 text-gray-700 dark:text-gray-300">The team&#39;s progress on an early prototype (Week 2).</div>
+        <div class="mt-2 text-sm space-x-2">
+          
+            <a class="p-category px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800" href="/tags/prototyping/">#prototyping</a>
+          
+            <a class="p-category px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800" href="/tags/design/">#design</a>
+          
+            <a class="p-category px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800" href="/tags/unanimated/">#unanimated</a>
+          
+            <a class="p-category px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800" href="/tags/draft/">#draft</a>
+          
+        </div>
+      </article>
+    
+      <article class="h-entry border-b pb-6">
+        <h2 class="p-name text-xl font-semibold"><a class="u-url" href="/updates/sprint1/">Sprint 1 (Jan 14 - Jan 16, 2026)</a></h2>
+        <time class="dt-published text-sm text-gray-500 dark:text-gray-400" datetime="2026-01-16">January 16, 2026</time>
+        <div class="p-summary mt-2 text-gray-700 dark:text-gray-300">What the team did during Set Up Week (Week 1).</div>
+        <div class="mt-2 text-sm space-x-2">
+          
+            <a class="p-category px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800" href="/tags/prototyping/">#prototyping</a>
+          
+            <a class="p-category px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800" href="/tags/design/">#design</a>
+          
+            <a class="p-category px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800" href="/tags/unanimated/">#unanimated</a>
+          
+            <a class="p-category px-2 py-0.5 rounded bg-gray-100 dark:bg-gray-800" href="/tags/draft/">#draft</a>
+          
+        </div>
+      </article>
+    
+  </div>
+
+  <nav class="mt-8 flex items-center justify-between" aria-label="Pagination">
+    
+      <span></span>
+    
+    
+  </nav>
+</div>
+
+    </main>
+  </div>
+
+  <footer class="bg-[var(--surface)] border-t border-gray-200 dark:border-gray-700 mt-12">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+        <div>
+          <h3 class="font-semibold mb-2">Technical</h3>
+          <ul class="space-y-1 text-gray-600 dark:text-gray-400">
+            <li><a href="https://11ty.dev" target="_blank" rel="noopener">Built with Eleventy</a></li>
+            <li><a href="/style/" class="hover:text-blue-600">Style Guide</a></li>
+            
+            
+              
+              
+            
+            <li><a href="https://github.com/brennanbrown/11ty-Indie-Web-Blog-Starter/edit/main/src/updates.njk" class="hover:text-blue-600" target="_blank" rel="noopener">Edit This Page</a></li>
+            <li><a href="https://github.com/brennanbrown/11ty-Indie-Web-Blog-Starter/blob/main/GUIDE.md" class="hover:text-blue-600" target="_blank" rel="noopener">Project Guide</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Navigation</h3>
+          <ul class="space-y-1 text-gray-600 dark:text-gray-400">
+            <li><a href="/sitemap/" class="hover:text-blue-600">Sitemap</a></li>
+            <li><a href="/resources/" class="hover:text-blue-600">Dev Resources</a></li>
+            <li><a href="/archive/" class="hover:text-blue-600">Archive</a></li>
+            <li><a href="/categories/" class="hover:text-blue-600">Categories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-semibold mb-2">Connect</h3>
+          <ul class="space-y-1 text-gray-600 dark:text-gray-400">
+            
+            
+            <li>
+              <a href="mailto:gr-teammisfits@wpi.edu" rel="me" class="inline-flex items-center gap-2 hover:text-blue-600">
+                
+  
+  
+    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" role="img"><path d="M4 4h16v16H4z"/><path d="m22 6-10 7L2 6"/></svg>
+  
+ <span>Email</span>
+              </a>
+            </li>
+            
+            <li>
+              <a href="https://github.com/ProjectMisfits" target="_blank" rel="me noopener" class="inline-flex items-center gap-2 hover:text-blue-600">
+                
+  
+  
+    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" role="img"><path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.83 1.25 1.83 1.25 1.07 1.83 2.81 1.3 3.5.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.32.47-2.39 1.24-3.23-.13-.3-.54-1.52.12-3.17 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.17.77.84 1.24 1.91 1.24 3.23 0 4.62-2.8 5.65-5.48 5.95.43.37.81 1.1.81 2.22v3.29c0 .32.21.69.82.58A12 12 0 0 0 12 .5z"/></svg>
+  
+ <span>GitHub</span>
+              </a>
+            </li>
+            
+            
+            
+            
+            <li>
+              <a href="https://instagram.com/project.misfits" target="_blank" rel="me noopener" class="inline-flex items-center gap-2 hover:text-blue-600">
+                
+  
+  
+    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+    </svg>
+  
+ <span>Instagram</span>
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-200 dark:border-gray-700 mt-6 pt-6 text-center text-gray-500">
+        <p>
+          2025 Project Misfits •
+          <a href="/feed.xml" class="hover:text-blue-600">RSS</a> •
+          Code: <a href="https://opensource.org/license/mit" target="_blank" rel="noopener" class="hover:text-blue-600">MIT</a> •
+          Content: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener" class="hover:text-blue-600">CC BY-NC-SA 4.0</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/flexsearch.min.js"></script>
+  <script src="/assets/js/search.js"></script>
+  <script src="/assets/js/easter-eggs.js"></script>
+</body>
+</html>
