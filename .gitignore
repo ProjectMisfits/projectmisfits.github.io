@@ -61,7 +61,6 @@ _site/
 
 # Common dist directories if you export elsewhere
 dist/
-build/
 public/
 
 # Eleventy/11ty caches (plugins, transforms, image/cache)
