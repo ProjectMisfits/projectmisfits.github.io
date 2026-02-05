@@ -1,7 +1,12 @@
 ---
 layout: layouts/base.njk
-permalink: "/about/"
 title: About
+pagination:
+  data: collections.contractors
+  size: 10
+  alias: items
+  reverse: true
+permalink: "/about/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
 ---
 <div class="h-card">
   <img class="u-photo w-24 h-24 rounded-full" src="/assets/profile.jpg" alt="{{ site.author }}" />
@@ -38,30 +43,30 @@ title: About
 <!-- Quick Links -->
 <h2 class="p-name text-xl font-bold mt-12">Meet the Team</h2>
 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-  <a href="/ben/" class="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
+  <a href="/about/ben/" class="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
     <div class="text-2xl mb-2">🐟</div>
     <h3 class="font-semibold text-blue-800 dark:text-blue-200">Benjamin Levy</h3>
     <p class="text-sm text-blue-600 dark:text-blue-300">Tech, Design, Playtesting</p>
   </a>
   
-  <a href="/casey/" class="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors">
+  <a href="/about/casey/" class="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors">
     <div class="text-2xl mb-2">🪴</div>
     <h3 class="font-semibold text-green-800 dark:text-green-200">Casey Costa</h3>
     <p class="text-sm text-green-600 dark:text-green-300">Production, Writing, Design, UI, Audio</p>
   </a>
   
-  <a href="/jacob/" class="block p-4 bg-violet-50 dark:bg-violet-900/20 rounded-lg hover:bg-violet-100 dark:hover:bg-violet-900/30 transition-colors">
+  <a href="/about/jacob/" class="block p-4 bg-violet-50 dark:bg-violet-900/20 rounded-lg hover:bg-violet-100 dark:hover:bg-violet-900/30 transition-colors">
     <div class="text-2xl mb-2">🔥</div>
     <h3 class="font-semibold text-violet-800 dark:text-violet-200">Jacob Antepli</h3>
     <p class="text-sm text-violet-600 dark:text-violet-300">Tech, Writing, Design, Art, Playtesting, Finance</p>
   </a>
-  <a href="/jeremy/" class="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors">
+  <a href="/about/jeremy/" class="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors">
     <div class="text-2xl mb-2">🐢</div>
     <h3 class="font-semibold text-purple-800 dark:text-purple-200">Jeremy King</h3>
     <p class="text-sm text-purple-600 dark:text-purple-300">Tech, Design, Marketing, UI, Audio</p>
   </a>
   
-  <a href="/kat/" class="block p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg hover:bg-yellow-100 dark:hover:bg-yellow-900/30 transition-colors">
+  <a href="/about/kat/" class="block p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg hover:bg-yellow-100 dark:hover:bg-yellow-900/30 transition-colors">
     <div class="text-2xl mb-2">🪷</div>
     <h3 class="font-semibold text-yellow-800 dark:text-yellow-200">Katherine Tse</h3>
     <p class="text-sm text-yellow-600 dark:text-yellow-300">Tech, Marketing, UI, Documentation</p>
@@ -69,7 +74,42 @@ title: About
   
   <a href="/contractors/" class="block p-4 bg-pink-50 dark:bg-pink-900/20 rounded-lg hover:bg-pink-100 dark:hover:bg-pink-900/30 transition-colors">
     <div class="text-2xl mb-2">✨</div>
-    <h3 class="font-semibold text-pink-800 dark:text-pink-200">Meet Our Contractors</h3>
+    <h3 class="font-semibold text-pink-800 dark:text-pink-200">✨Meet Our Contractors✨</h3>
     <p class="text-sm text-pink-600 dark:text-pink-300">Artists, Sound Engineers, and more!</p>
   </a>
 </div>
+
+<h3 class="text-xl font-semibold mt-6">✨Meet Our Contractors✨</h3>
+<p class="text-sm mb-6">Artists, Sound Engineers, and more!</p>
+
+{% set items = items | default([]) %}
+{% if items | length == 0 %}
+  <p class="text-gray-500 dark:text-gray-400 italic">No contractor entries yet. Add files under <code>src/contractors/</code>.</p>
+{% else %}
+<section class="space-y-6">
+  {% for item in items %}
+  <article class="border-b pb-4 h-entry">
+    <h2 class="text-lg font-semibold"><a class="u-url" href="{{ item.url }}">{{ item.data.title or 'Untitled' }}</a></h2>
+    {% if item.data.description %}
+      <p class="mt-1 p-summary">{{ item.data.description }}</p>
+    {% endif %}
+  </article>
+  {% endfor %}
+</section>
+
+<nav class="mt-8 flex items-center justify-between" aria-label="Pagination">
+  {% if pagination.href.previous %}
+    <a class="px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:bg-gray-200" href="{{ pagination.href.previous }}">← Newer</a>
+  {% else %}
+    <span class="px-4 py-2 text-gray-400">← Newer</span>
+  {% endif %}
+
+  <span class="text-sm text-gray-600 dark:text-gray-400">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages | length }}</span>
+
+  {% if pagination.href.next %}
+    <a class="px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:bg-gray-200" href="{{ pagination.href.next }}">Older →</a>
+  {% else %}
+    <span class="px-4 py-2 text-gray-400">Older →</span>
+  {% endif %}
+</nav>
+{% endif %}
