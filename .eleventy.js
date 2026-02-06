@@ -137,9 +137,9 @@ module.exports = function(eleventyConfig) {
       .sort((a,b) => (a.date > b.date ? -1 : 1));
   })
 
-  eleventyConfig.addCollection("contractors", (collectionApi) => {
+  eleventyConfig.addCollection("about", (collectionApi) => {
     return collectionApi
-      .getFilteredByGlob("src/contractors/**/*.md")
+      .getFilteredByGlob("src/about/**/*.md")
       .sort((a,b) => (a.date > b.date ? -1 : 1));
   })
 
