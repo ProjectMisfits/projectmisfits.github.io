@@ -9,9 +9,17 @@ pagination:
 permalink: "/team/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}"
 ---
 <div class="h-card">
-  <img class="u-photo w-24 h-24 rounded-full" src="/assets/profile.jpg" alt="{{ site.author }}" />
+  <img class="u-photo w-24 h-24 rounded-full" src="/assets/newProfile.PNG" alt="{{ site.author }}" />
   <h1 class="p-name text-2xl font-bold mt-2">{{ site.author }}</h1>
-  <p class="p-note mt-2">Your bio goes here. Describe yourself, your interests, and what you write about.</p>
+  <p class="p-note mt-2 mb-4">Project Misfits is a team of students from Worcester Polytechnic Institute (WPI) who are working to make a 2D puzzle platformer in just 8 weeks. 
+                         Our core team consists of four Computer Science (CS) BS and Interactive Media & Game Development (IMGD) BS double majors and one IMGD BA with a narrative focus. 
+                         We also have nine contractors who helped us out tremedously with a variety of tasks. 
+                         Additionally, there are two IMGD/CS WPI advisors who provided us with valuable feedback throughout the process.
+                         We are so excited for you to check out our game and read all about our development process!</p>
+  
+  <p class="p-locality mt-2">Worcester, MA</p>
+  <p class="p-country-name">United States of America</p>
+  
   <div class="contact-info mt-2 flex flex-wrap gap-3 items-center">
     {% from "partials/icons.njk" import icon %}
     <a class="u-url inline-flex items-center gap-1" href="{{ site.url }}" rel="me">
@@ -36,8 +44,6 @@ permalink: "/team/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumbe
     </a>
     {% endif %}
   </div>
-  <p class="p-locality mt-2">Worcester, MA</p>
-  <p class="p-country-name">United States of America</p>
 </div>
 
 <!-- Quick Links -->
