@@ -20,4 +20,4 @@ Most of our art and audio progress comes from the contractors that we onboarded 
 For marketing, we worked out a sitemap for our website that presents high-level information upfront and hosts in-depth information in subdirectories for other developers. To promote playtesting, we put up posters advertising playtesting with information on how to join our playtesting email alias. We posted this information on our instagram too.
 
 **Check out the release from this week!**
-[Release 2](https://projectmisfits.github.io/releases/release2/)
+[Release 1](https://projectmisfits.github.io/releases/release1/)

@@ -25,6 +25,3 @@ For audio, we were also able to complete the respective bible and decide on what
 - Obstacles and threats 
 
 We set up the Narrative Bible and started matching narrative beats to the level designs. We also drafted the Playtesting Bible and a playtesting notes template. Lastly, we started an Instagram account and posted a very simple introduction to the project. 
-
-**Check out the release from this week!**
-[Release 1](https://projectmisfits.github.io/releases/release1/)

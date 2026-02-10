@@ -20,4 +20,4 @@ In terms of art, we onboarded another contractor and made significant advancemen
 Our audio contractor created a music manager and an ambiance manager and started working on implementing various sound effects into the game. For narrative, we made our dialogue easier to load into the engine and loaded the completed first draft of dialogue. We also began the second draft of dialogue and started storyboarding cutscenes. We switched our website to use 11ty instead of Jekyll and began compiling the resources that will be displayed on it. Lastly, we did a marketing push for playtesting and sent out the external playtesting sign-up to those who have indicated interest in playtesting.
 
 **Check out the release from this week!**
-[Release 3](https://projectmisfits.github.io/releases/release3/)
+[Release 2](https://projectmisfits.github.io/releases/release2/)
