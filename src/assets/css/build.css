@@ -1515,6 +1515,11 @@ a:hover:not(.nav-item) {
   color: var(--text);
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity, 1));
+}
+
 .text-blue-500 {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity, 1));
@@ -2629,6 +2634,11 @@ body {
 .dark\:text-violet-300:is(.dark *) {
   --tw-text-opacity: 1;
   color: rgb(196 181 253 / var(--tw-text-opacity, 1));
+}
+
+.dark\:text-white:is(.dark *) {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 .dark\:text-yellow-200:is(.dark *) {
