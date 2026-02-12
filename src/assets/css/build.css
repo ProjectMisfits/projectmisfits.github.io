@@ -814,12 +814,12 @@ a:hover:not(.nav-item) {
   height: 4rem;
 }
 
-.h-4 {
-  height: 1rem;
-}
-
 .h-24 {
   height: 6rem;
+}
+
+.h-4 {
+  height: 1rem;
 }
 
 .min-h-screen {
@@ -832,6 +832,10 @@ a:hover:not(.nav-item) {
 
 .w-16 {
   width: 4rem;
+}
+
+.w-24 {
+  width: 6rem;
 }
 
 .w-4 {
@@ -848,10 +852,6 @@ a:hover:not(.nav-item) {
 
 .w-full {
   width: 100%;
-}
-
-.w-24 {
-  width: 6rem;
 }
 
 .min-w-0 {
