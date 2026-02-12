@@ -1,7 +1,7 @@
 {
   "name": "Project Misfits",
   "description": "Follow Project Misfits as we create a game in just 8 weeks.",
-  "url": "https://indieweb-template.netlify.app",
+  "url": "https://projectmisfits.github.io",
   "author": "Project Misfits",
   "email": "gr-teammisfits@wpi.edu",
   "social": {
@@ -9,7 +9,7 @@
     "instagram": "@project.misfits"
   },
   "repo": {
-    "url": "https://github.com/brennanbrown/11ty-Indie-Web-Blog-Starter",
+    "url": "https://github.com/ProjectMisfits/projectmisfits.github.io",
     "branch": "main"
   },
   "bio": {

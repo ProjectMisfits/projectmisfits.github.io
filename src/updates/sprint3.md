@@ -4,7 +4,7 @@ title: Sprint 3 (Jan 26 - Jan 30, 2026)
 subtitle: First Playable Prototype Week!
 author: Blog Author
 date: 2026-01-30
-description: Our first playable build (Week 2).
+description: Our first playable build (Week 3).
 tags: [prototyping, design, unanimated, playable]
 featuredImage: https://picsum.photos/800/400?random=3
 ---
@@ -18,3 +18,6 @@ Additionally in tech, we started grayboxing rooms and levels. We set up a room s
 In terms of art, we onboarded another contractor and made significant advancements on a variety of fronts. Our contractors produced a large assortment of background and scene decorations such as wall and floor tiles, pillars, lanterns, tables, pots, and more. They also finished the main character walk animation and the companion idle animation and started working on shaders. We restructured how floor and wall tiles are implemented to better fit the art assets and began implementing the contractor assets. Through playtesting, we realized that there were significant scaling issues with the art, and we took the time to create a reference sheet and measurements for all of the game assets.
 
 Our audio contractor created a music manager and an ambiance manager and started working on implementing various sound effects into the game. For narrative, we made our dialogue easier to load into the engine and loaded the completed first draft of dialogue. We also began the second draft of dialogue and started storyboarding cutscenes. We switched our website to use 11ty instead of Jekyll and began compiling the resources that will be displayed on it. Lastly, we did a marketing push for playtesting and sent out the external playtesting sign-up to those who have indicated interest in playtesting.
+
+**Check out the release from this week!**
+[Release 2](https://projectmisfits.github.io/releases/release2/)

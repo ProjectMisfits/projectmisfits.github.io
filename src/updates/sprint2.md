@@ -18,3 +18,6 @@ We made good steps in terms of level design as well. We designed many of the obs
 Most of our art and audio progress comes from the contractors that we onboarded last week. They created keyframe animations for Az’s idle movement and Fenn’s walking and jumping animations. They also established a palette and design guidelines for our environment tilesets. Moreover, they finalized a slanted wood tile texture and made progress on a stone wall tile texture. For audio, our contractors found and imported necessary placeholder sound effects, created audio stream randomizers for footsteps which were implemented for the player, and began working on a background audio manager.  We also onboarded another art contractor to help us work through our tilesets faster.
 
 For marketing, we worked out a sitemap for our website that presents high-level information upfront and hosts in-depth information in subdirectories for other developers. To promote playtesting, we put up posters advertising playtesting with information on how to join our playtesting email alias. We posted this information on our instagram too.
+
+**Check out the release from this week!**
+[Release 1](https://projectmisfits.github.io/releases/release1/)
