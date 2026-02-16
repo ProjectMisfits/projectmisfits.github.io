@@ -831,6 +831,26 @@ a:hover:not(.nav-item) {
   height: 1rem;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
+.h-3\/4 {
+  height: 75%;
+}
+
+.h-5\/6 {
+  height: 83.333333%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
