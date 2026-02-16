@@ -18,4 +18,42 @@ title: Our Advisors
   </ol>
 </nav>
 
-This is the Advisors' page. 
+<div class="h-card mb-6">
+  <img class="u-photo w-24 h-24 rounded-full" src="/assets/bschneider.jpg" alt="Ben Schneider" />
+  <h1 class="p-name text-2xl font-bold mt-2">Ben Schneider</h1>
+  <div class="flex">
+    <p class="font-semibold">Interactive Media & Game Development</p>
+    <p class="ml-2">Professor of Practice</p>
+  </div>
+  <div class="contact-info mt-2 flex flex-wrap gap-3 items-center">
+    {% from "partials/icons.njk" import icon %}
+    <a class="u-email inline-flex items-center gap-1" href="mailto:bschneider@wpi.edu">
+      {{ icon('mail','w-4 h-4') }} <span>bschneider@wpi.edu</span>
+    </a>
+  </div>
+  <p class="mt-2"> 
+    Ben Schneider is a professor of practice in the Interactive Media and Game Development (IMGD) program. Schneider is a video game writer and designer with twenty years of industry experience, who has created content for games such as “Empire Earth,” “Titan Quest,” “Dawn of War,” “Kingdoms of Amalur: Reckoning,” and “Lord of the Rings Online.” His creative interests include procedural narrative systems, conventional prose, folklore, and experimental interactive narrative. 
+  </p>
+</div>
+
+<div class="h-card">
+  <img class="u-photo w-24 h-24 rounded-full" src="/assets/gmsmith.jpg" alt="Gillian Smith" />
+  <h1 class="p-name text-2xl font-bold mt-2">Gillian Smith</h1>
+  <div class="flex">
+    <p class="font-semibold">Interactive Media & Game Development</p>
+    <p class="ml-2">Program Director</p>
+  </div>
+  <div class="flex">
+    <p class="font-semibold">Computer Science</p>
+    <p class="ml-2">Associate Professor</p>
+  </div>
+  <div class="contact-info mt-2 flex flex-wrap gap-3 items-center">
+    {% from "partials/icons.njk" import icon %}
+    <a class="u-email inline-flex items-center gap-1" href="mailto:gmsmith@wpi.edu">
+      {{ icon('mail','w-4 h-4') }} <span>gmsmith@wpi.edu</span>
+    </a>
+  </div>
+  <p class="mt-2"> 
+    Gillian Smith, an award-winning game designer, whose work merges technical research in AI and HCI with creative practice in textiles and games. Their research interests are in computational creativity, game design, computer science education, and the intersection of traditional crafts and computation.In 2021 Professor Smith was appointed director of WPI’s Interactive Media and Games Development program – one of the earliest gaming programs in the nation.
+  </p>
+</div>
