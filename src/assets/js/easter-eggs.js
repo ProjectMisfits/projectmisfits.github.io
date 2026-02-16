@@ -130,7 +130,7 @@ class EasterEggs {
 
   setupTypingEasterEgg() {
     let typedSequence = '';
-    const secretWord = 'blog';
+    const secretWord = 'fenn';
     
     document.addEventListener('keypress', (e) => {
       typedSequence += e.key.toLowerCase();
