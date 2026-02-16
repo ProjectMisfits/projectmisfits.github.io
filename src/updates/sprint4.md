@@ -5,7 +5,7 @@ subtitle: Prototype/Minimum Viable Product Week!
 author: Blog Author
 date: 2026-02-06
 description: Our minimum viable product prototype (Week 4).
-tags: [prototyping, design, partial animation, playable]
+tags: [minimum viable, design, partial animation, playable]
 featuredImage: https://picsum.photos/800/400?random=3
 ---
 
