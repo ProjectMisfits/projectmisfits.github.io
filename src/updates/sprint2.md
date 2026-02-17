@@ -10,7 +10,18 @@ featuredImage: https://picsum.photos/800/400?random=3
 ---
 
 ## **Sprint #2 1/20-1/23 - Early Prototype Week!**
+---
+**Production Goals for the Week**:
 
+| System Goals |  Asset Goals | Documentation Goals | Playtesting Goals |
+| --- | --- | --- | --- |
+| All systems exist (not necessarily glued together) | Art: critical assests complete | N/A | Internal Playtesting: experience of navigating an area and talking to characters as Fenn |
+|   | Writing: all dialogue draft 1 |   |   |
+|   | Audio: placeholder assets |   |   |
+|   | Design: all challenges designed, all level challenges grayboxed |   |   |
+|   | Marketing: playtesting advertisement|   |   |
+
+---
 This sprint, we made strides with the core game systems and critical assets. We created a state machine-driven player entity with easily tunable parameters. The player can run, jump, and leaf dash. We also held four playtesting sessions to get initial feedback on player movement. We created a dynamic moving platform system and a few basic obstacles. Additionally, we got the scene manager and gameplay manager up and running. Once we set these up, we started setting up and testing room and door mechanics. On the UI side, we set a godot theme that matches our UI standards and added our chosen font. Once this was done, we created initial scenes for the main menu, main settings menu, and save selection menu.
 
 We made good steps in terms of level design as well. We designed many of the obstacles we plan to use, and we blocked out all of the rooms and challenges we plan to have in the cellar level. We also made significant progress on narrative. We filled out all but the pipeline in the narrative bible and outlined the level plot structure which included a detailed map describing the content of individual scenes. We then identified the kinds of writing necessary for the game and nearly completed the first draft of the core dialogue.

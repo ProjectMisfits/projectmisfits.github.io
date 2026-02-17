@@ -10,7 +10,17 @@ featuredImage: https://picsum.photos/800/400?random=3
 ---
 
 ## **Sprint #5 2/9-2/12 - Feature Freeze Week!**
+---
+**Production Goals for the Week**:
 
+| System Goals |  Asset Goals | Documentation Goals | Playtesting Goals |
+| --- | --- | --- | --- |
+| All systems integrated and refined | Art: character animations done, all props finished and in engine | website 1st draft (all content but not formatted) | External Playtesting: does everything fit together to create the desired player experience? |
+| All critical assets implemented and integrated | Writing: playtest and iterate narrative |   |   |
+| Bug logging begins | Audio: all music second draft, all SFX edited and implemented |   |   |
+|   | Marketing: logo |   |   |
+
+---
 With only a four day week and feature freeze approaching rapidly, we pushed to get as many things completed as possible. After thoroughly considering feedback from last week's playtesting, we made significant adjustments to the player. Some of the notable adjustments include adding player hitstun, implementing an invincibility system, and re-adding player “fling” from the leaf dash with adjustable velocity and gravity. Additionally, we created 12 trigger classes and added a screen transition system which should also aid in the level and room implementation. We also made significant iterations on our game logo thanks to input from a variety of students and advisors.
 
 Throughout the week, we got a lot of good feedback from a professor who listened to the current draft of our level music, and from the 12 total playtesting sessions we ran with current students. This week's playtesting feedback pushed us to make significant progress on design by coming up with some new design guides that will help us solidify our design principles. Some of our ideas were:
