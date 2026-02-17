@@ -10,7 +10,17 @@ featuredImage: https://picsum.photos/800/400?random=3
 ---
 
 ## **Sprint #3 1/26-1/30 - First Playable Prototype Week!**
+---
+**Production Goals for the Week**:
 
+| System Goals |  Asset Goals | Documentation Goals | Playtesting Goals |
+| --- | --- | --- | --- |
+| All systems integrated | Art: all character art complete | N/A | Internal Playtesting: does core game loop align with pillars of game |
+| First iteration of a fully complete game | Writing: all dialogue second draft |   |   |
+| Enough assets implemented for cohesive story | Design: all challenges designed and locked |   |   |
+|   | Marketing: list of potential game names |   |   |
+
+---
 This week, we really pushed to have our first playable build. We finished many critical technical tasks across many different areas. For the player, we added controller support for movement and created a health system. The health system visualizes the players health and transports the player back to the start of the room when they lose all of their health. We also attached the leaf dash to a leaf meter that charges when the player moves and depletes when the player uses the leaf dash or stops moving. Lastly, we added a leaf pile state for the player.
 
 Additionally in tech, we started grayboxing rooms and levels. We set up a room structure to streamline the process of implementing and creating rooms using entities, decals and other assets. We created a grabbable moving platform, added a base enemy class, and started creating the ice cube enemies. We also added a debug menu to help with further tech adjustments, debugging, and teleporting to different rooms for testing. On the UI side, we integrated the dialogue manager, finished all of the UI menus, and attached them to the gameplay. We also finished the heads up display (HUD) design and added a few story elements. The last big technical thing we did was start cleaning and refactoring the code as a whole. This week, we have over 55 pull requests and, with our first playable build, we held 6 internal playtesting sessions that revealed many bugs that we will address in the coming weeks.

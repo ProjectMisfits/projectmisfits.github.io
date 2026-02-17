@@ -10,7 +10,19 @@ featuredImage: https://picsum.photos/800/400?random=3
 ---
 
 ## **Sprint #4 2/2-2/6 - Prototype/Minimum Viable Product Week!**
+---
+**Production Goals for the Week**:
 
+| System Goals |  Asset Goals | Documentation Goals | Playtesting Goals |
+| --- | --- | --- | --- |
+| All systems integrated | Art: Environment tiles done, architecture decor, environment backgrounds, post processing and lighting effects done, ice cube and claw animation done | website set up done | External Playtesting: gameplay intuitive and immersive? narrative coherent? |
+| Critical assets implemented | UI: all critical complete |   |   |
+| Player locked in (only minor tweaks as necessary) | Writing: iterate on narrative & dialogue |   |   |
+| Level design only tweaked to match player tweaks | Audio: music first draft, find all sounds |   |   |
+|   | Design: first draft of cellar level |   |   |
+|   | Marketing: finalize name of game |   |   |
+
+---
 With the goal of producing a minimum viable product (MVP) in mind, the team pushed really hard to complete as many tasks as possible. This week, we created break away platforms and level design zones (kill zones, and wind drain or gain zones) to create variety in level design. We also made a game state tracking script that utilizes flags to prevent repeat conversations and allow context-dependent changes to happen. In terms of design, we made significant progress on a ton of challenge rooms. We refined enemies, decided on exactly how the boss fight was going to work and landed on having the player regain health every time they enter a new room. Additionally, we scripted a cutscene, created a cutscene system that pauses player input, and added dialogue triggers for NPC interactions. We also integrated UI and menus with gameplay. 
 
 Along with all of the technical work, we made great strides in art as well. Because we received many art assets last week, we were able to start adding the rooms and room decor into the game. Our contractors were able to finish one of our enemy animations and most of the companion character animations which we then implemented along with a leaf poof particle effect. Our contractors started working on our antagonist animations and even finished character portraits for our protagonist and antagonist. They also made blur and rim light shaders to further enhance the background assets that we continue to receive. 
