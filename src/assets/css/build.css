@@ -831,6 +831,10 @@ a:hover:not(.nav-item) {
   height: 1rem;
 }
 
+.h-5\/6 {
+  height: 83.333333%;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -1739,11 +1743,6 @@ a:hover:not(.nav-item) {
 .text-yellow-800 {
   --tw-text-opacity: 1;
   color: rgb(133 77 14 / var(--tw-text-opacity, 1));
-}
-
-.text-emerald-800 {
-  --tw-text-opacity: 1;
-  color: rgb(6 95 70 / var(--tw-text-opacity, 1));
 }
 
 .underline {
