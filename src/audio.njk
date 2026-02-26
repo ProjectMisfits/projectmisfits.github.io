@@ -3,3 +3,192 @@ layout: layouts/base.njk
 permalink: "/game/audio/"
 title: Audio
 ---
+
+<a href="/game/" class="inline-flex items-center text-green-600 hover:text-green-800 mb-3">
+  ← Back to About the Game
+</a>
+
+<nav class="text-sm text-gray-600 mb-4" aria-label="Breadcrumb">
+  <ol class="flex space-x-2">
+    <li><a href="/" class="hover:text-blue-600">Home</a></li>
+    <li><span aria-hidden="true">›</span></li>
+    <li><a href="/game/" class="hover:text-blue-600">Game</a></li>
+    <li><span aria-hidden="true">›</span></li>
+    <li class="text-gray-900 dark:text-gray-100">{{ title }}</li>
+  </ol>
+</nav>
+
+<h1 class="mb-2 font-bold text-2xl"> 🔊 About Audio 🔊 </h1>
+
+<div class="mb-4 rounded-lg p-2 border border-green-200 dark:border-green-800 bg-green-50 dark:bg-green-900/20 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors">
+    <h2 class="text-xl font-semibold">Table of Contents</h2>
+    <aside class="ml-8">
+        <ul class="text-green-800 dark:text-green-200">
+            <li><a href="#goals">Goals</a></li>
+            <li>
+                <a href="#inspiration">Inspiration</a>
+                <ul class="ml-6">
+                    <li><a href="#music">Music</a></li>
+                    <li><a href="#sfx">SFX</a></li>
+                </ul>
+            </li>
+            <li><a href="#process">General Process</a></li>
+            <li><a href="#sfxp">SFX Process</a></li>
+            <li>
+                <a href="#musicp">Music Process</a>
+                <ul class="ml-6">
+                    <li><a href="#refs">References and Tutorials</a></li>
+                    <li><a href="#hall">Great Hall Music</a></li>
+                    <li><a href="#cellar">Cellar Music</a></li>
+                </ul>    
+            </li>
+            <li><a href="#bible">Audio Bible</a></li>
+        </ul>
+    </aside>
+</div>
+
+<h2 id="goals" class="font-semibold text-xl mb-2">Goals</h2>
+<p>Our game audio should</p>
+<ul class="list-disc ml-8">
+    <li>Capture the feeling of goin on a grand adventure</li>
+    <li>Create an uplifiting, active atmosphere</li>
+    <li>Avoid being jarring or distracting from gameplay</li>
+</ul>
+<p class="mt-2">We initially planned to have four audio tracks for the game:</p>
+<ul class="list-disc ml-8">
+    <li>The Great Hall</li>
+    <li>The Main Level (The Cellar)</li>
+    <li>A Boss Encounter</li>
+    <li>A Main Theme</li>
+</ul>
+
+<h2 id="inspiration" class="font-semibold text-xl mb-2 mt-4">Inspiration</h2>
+<p>We had a few key inspirations for audio.</p>
+<h3 id="music" class="mt-2 underline">Music</h3>
+<p> We were inspired by music from Stardew Valley, Lil Gator Game, and Celeste.
+    Specifically, we used the following songs as inspiration for each in game track.
+</p>
+<ul class="list-disc ml-8">
+    <li>
+        The Great Hall
+        <ul class="list-disc ml-8">
+            <li>
+                <a class="text-green-600 dark:text-green-300" href="https://www.youtube.com/watch?v=UKVuj7ygOHQ&list=PLzDYU_yTyBvLXyduKS61L0JOMTUhfGvPt&index=17" target="_blank">Lil Gator Game Creek</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        The Cellar and Boss Encounter
+        <ul class="list-disc ml-8">
+            <li>
+                <p>Stardew Valley's <a class="text-green-600 dark:text-green-300" href="https://www.youtube.com/watch?v=JecdkxSZob8" target="_blank">Marimba of Frozen Bones</a></p>
+            </li>
+            <li>
+                <p>Celeste's <a class="text-green-600 dark:text-green-300" href="https://www.youtube.com/watch?v=-YjgOzSQNQ0" target="_blank">Resurrections</a></p>
+            </li>
+            <li>
+                <a class="text-green-600 dark:text-green-300" href="https://www.youtube.com/watch?v=xr9wHI51Zao&list=PLzDYU_yTyBvLXyduKS61L0JOMTUhfGvPt&index=24" target="_blank">Lil Gator Game Forest</a>
+            </li>
+        </ul>
+    </li>
+    <li>
+        Main Theme
+        <ul class="list-disc ml-8">
+            <li>
+                <a class="text-green-600 dark:text-green-300" href="https://www.youtube.com/watch?v=FQSHcl6TJb4" target="_blank">Stardew Valley Overture</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+<h3 id="sfx" class="mt-2 underline">SFX</h3>
+<p> We were inspired by Lil Gator Game and Stardew Valley. 
+    For general purpose sound effects and beep speech, we used Lil Gator Game. 
+    For ambience and footsteps, we looked at Stardew Valley.
+</p>
+
+<h2 id="process" class="font-semibold text-xl mb-2 mt-4">General Process</h2>
+<p class="mb-2"> For all audio, we found free sound effects which we could use as placeholders, so we could implement them into the game engine.</p>
+<p class="mb-2"> Then, once we found final assets, we could drag them into the engine (since implementation would already be taken care of).</p>
+<p> We followed a strict pipeline of getting assets into the engine, which included editing the sounds and using proper naming conventions (see the Audio Bible for more).</p>
+
+<h2 id="sfxp" class="font-semibold text-xl mb-2 mt-4">SFX Process</h2>
+<p class="mb-2">We divided SFX into several categories: General SFX, Ambience, Footsteps, and Beep Speech.</p>
+<p> For these sounds, we sourced free assets (CC0) from
+    <a class="text-green-600 dark:text-green-300" href="http://freesound.org" target="_blank">freesound.org</a>, 
+    then processed the sounds in Audacity or Reaper, before importing them into Reaper.
+</p>
+
+<h2 id="musicp" class="font-semibold text-xl mb-2 mt-4">Music Process</h2>
+<p class="mb-2"> For writing music, generally, we would start by creating a melody and bassline, followed by creating a matching chord progression and percussion line. Then, we’d repeat the process for a B section.</p>
+<p class="mb-2"> For each track, we would use basic instruments that roughly estimated the sound we were aiming for using the free Spitfire LABS plugin. Then, once the song was finished, we would pick final instruments using the Kontakt 8 plugin.</p>
+
+<h3 id="refs" class="mt-4 underline">References and Tutorials</h3>
+<ul class="list-disc ml-8 mb-2">
+    {% from "partials/icons.njk" import icon %}
+    <li>
+        <a class="mb-2 p-1 bg-green-100 dark:bg-green-900/30 rounded-lg hover:bg-green-200 dark:hover:bg-green-900/40 transition-colors inline-flex items-center gap-1" href="https://www.youtube.com/watch?v=CUta8DMy82w">
+            {{ icon('youtube','w-4 h-4') }} <span>How to Compose Video Game Music Fast for Indie Developers</span>
+        </a>
+    </li>
+    <li>
+        <a class="mb-2 p-1 bg-green-100 dark:bg-green-900/30 rounded-lg hover:bg-green-200 dark:hover:bg-green-900/40 transition-colors inline-flex items-center gap-1" href="https://www.youtube.com/watch?v=dMkTdYmOgiQ">
+            {{ icon('youtube','w-4 h-4') }} <span>A Guide to Making Video Game Music</span>
+        </a>
+    </li>
+    <li>
+        <a class="mb-2 p-1 bg-green-100 dark:bg-green-900/30 rounded-lg hover:bg-green-200 dark:hover:bg-green-900/40 transition-colors inline-flex items-center gap-1" href="https://www.youtube.com/watch?v=FoMmVlAvjmM">
+            {{ icon('youtube','w-4 h-4') }} <span>How to Write Drum Parts (for non drummers)</span>
+        </a>
+    </li>
+    <li>
+        <a class="mb-2 p-1 bg-green-100 dark:bg-green-900/30 rounded-lg hover:bg-green-200 dark:hover:bg-green-900/40 transition-colors inline-flex items-center gap-1" href="https://www.youtube.com/watch?v=noRO43cY1TM">
+            {{ icon('youtube','w-4 h-4') }} <span>How to Easily Compose Medieval Music (Using the Dorian Scale)</span>
+        </a>
+    </li>
+    <li>
+        <a class="mb-2 p-1 bg-green-100 dark:bg-green-900/30 rounded-lg hover:bg-green-200 dark:hover:bg-green-900/40 transition-colors inline-flex items-center gap-1" href="https://www.youtube.com/watch?v=rtnarC6v-pw">
+            {{ icon('youtube','w-4 h-4') }} <span>7 Steps To Writing GREAT Basslines</span>
+        </a>
+    </li>
+</ul>
+
+<p>Here are two of the songs we composed for Leaves of Fate! The Great Hall and the Cellar and pictures of the Reaper Files for each of these songs.</p>
+
+<h3 id="hall" class="mt-4 mb-2 underline">Great Hall Music</h3>
+<div class="flex flex-wrap justify-center mb-2">
+    <div class="flex justify-between w-full mb-2">
+        <div>
+            <p>Great Hall - Original</p>
+            <audio controls><source src="/assets/audio/GreatHall-OST.ogg" type="audio/ogg"></audio>
+        </div>
+        <div>
+            <p>Great Hall - Slow</p>
+            <audio controls><source src="/assets/audio/Slow-100bpm-4_4-P32b-loop.ogg" type="audio/ogg"></audio>
+        </div>
+    </div>
+    <img class="mt-2" src="/assets/audio/GreatHall-Reaper-File.JPG" alt="Great Hall Music Reaper File">
+    <p class="mb-2">Image of the Great Hall Music Reaper File</p>
+</div>
+
+<h3 id="cellar" class="mt-4 underline">Cellar Music</h3>
+<div class="flex flex-wrap justify-center mb-2">
+    <div class="flex justify-between w-full mb-2">
+        <div>
+            <p>Cellar - Original</p>
+            <audio controls><source src="/assets/audio/Cellar-OST.ogg" type="audio/ogg"></audio>
+        </div>
+        <div>
+            <p>Cellar - Slow</p>
+            <audio controls><source src="/assets/audio/Cellar-120bpm-4_4-P64b-loop.ogg" type="audio/ogg"></audio>
+        </div>
+    </div>
+    <img class="mt-2" src="/assets/audio/Cellar-Reaper-File.JPG" alt="Cellar Music Reaper File">
+    <p class="mb-2">Image of the Cellar Music Reaper File</p>
+</div>
+
+<h2 id="bible" class="font-semibold text-xl mb-2 mt-4">Audio Bible</h2>
+<p>Want to see even more about audio? Check out the Audio Bible below for more details.</p>
+<div class="border border-grey-300 rounded-lg shadow-lg text-right mt-4">
+    <iframe src="/assets/audio/Audio Bible.pdf" width="618" height="800"></iframe>
+    <a class="text-green-600 hover:text-green-800 text-right" href="https://docs.google.com/document/d/1qmk8pGEREBaRwZrr1hLl5kfTuJ-W-WDDC1oR79uudWI/edit?usp=sharing" target="_blank">Link to Full Document</a> 
+</div>
