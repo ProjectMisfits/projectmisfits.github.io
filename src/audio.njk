@@ -42,6 +42,12 @@ title: Audio
                     <li><a href="#cellar">Cellar Music</a></li>
                 </ul>    
             </li>
+            <li>
+                <a href="#lessons">Lessons Learned</a>
+                <ul class="ml-6">
+                    <li><a href="#learned">How We Learned This</a>
+                </ul>
+            </li>
             <li><a href="#bible">Audio Bible</a></li>
         </ul>
     </aside>
@@ -64,7 +70,7 @@ title: Audio
 
 <h2 id="inspiration" class="font-semibold text-xl mb-2 mt-4">Inspiration</h2>
 <p>We had a few key inspirations for audio.</p>
-<h3 id="music" class="mt-2 underline">Music</h3>
+<h3 id="music" class="mt-2 font-semibold">Music</h3>
 <p> We were inspired by music from Stardew Valley, Lil Gator Game, and Celeste.
     Specifically, we used the following songs as inspiration for each in game track.
 </p>
@@ -100,7 +106,7 @@ title: Audio
         </ul>
     </li>
 </ul>
-<h3 id="sfx" class="mt-2 underline">SFX</h3>
+<h3 id="sfx" class="mt-2 font-semibold">SFX</h3>
 <p> We were inspired by Lil Gator Game and Stardew Valley. 
     For general purpose sound effects and beep speech, we used Lil Gator Game. 
     For ambience and footsteps, we looked at Stardew Valley.
@@ -113,16 +119,17 @@ title: Audio
 
 <h2 id="sfxp" class="font-semibold text-xl mb-2 mt-4">SFX Process</h2>
 <p class="mb-2">We divided SFX into several categories: General SFX, Ambience, Footsteps, and Beep Speech.</p>
-<p> For these sounds, we sourced free assets (CC0) from
+<p class="mb-2"> For these sounds, we sourced free assets (CC0) from
     <a class="text-green-600 dark:text-green-300" href="http://freesound.org" target="_blank">freesound.org</a>, 
-    then processed the sounds in Audacity or Reaper, before importing them into Reaper.
+    then processed the sounds in Audacity or Reaper, before importing them into the engine.
 </p>
+<p>For most of our SFX, we contracted other people to find, edit, and import the sounds into the game.</p>
 
 <h2 id="musicp" class="font-semibold text-xl mb-2 mt-4">Music Process</h2>
 <p class="mb-2"> For writing music, generally, we would start by creating a melody and bassline, followed by creating a matching chord progression and percussion line. Then, we’d repeat the process for a B section.</p>
 <p class="mb-2"> For each track, we would use basic instruments that roughly estimated the sound we were aiming for using the free Spitfire LABS plugin. Then, once the song was finished, we would pick final instruments using the Kontakt 8 plugin.</p>
 
-<h3 id="refs" class="mt-4 underline">References and Tutorials</h3>
+<h3 id="refs" class="mt-4 font-semibold">References and Tutorials</h3>
 <ul class="list-disc ml-8 mb-2">
     {% from "partials/icons.njk" import icon %}
     <li>
@@ -154,7 +161,7 @@ title: Audio
 
 <p>Here are two of the songs we composed for Leaves of Fate! The Great Hall and the Cellar and pictures of the Reaper Files for each of these songs.</p>
 
-<h3 id="hall" class="mt-4 mb-2 underline">Great Hall Music</h3>
+<h3 id="hall" class="mt-4 mb-2 font-semibold">Great Hall Music</h3>
 <div class="flex flex-wrap justify-center mb-2">
     <div class="flex justify-between w-full mb-2">
         <div>
@@ -166,7 +173,7 @@ title: Audio
     <p class="mb-2">Image of the Great Hall Music Reaper File</p>
 </div>
 
-<h3 id="cellar" class="mt-4 underline">Cellar Music</h3>
+<h3 id="cellar" class="mt-4 font-semibold">Cellar Music</h3>
 <div class="flex flex-wrap justify-center mb-2">
     <div class="flex justify-between w-full mb-2">
         <div>
@@ -178,7 +185,18 @@ title: Audio
     <p class="mb-2">Image of the Cellar Music Reaper File</p>
 </div>
 
-<h2 id="bible" class="font-semibold text-xl mb-2 mt-4">Audio Bible</h2>
+<h2 id="lessons" class="font-semibold text-xl mb-2 mt-4">Lessons Learned</h2>
+<ol class="list-decimal list-inside">
+    <li>Don't Forget about audio!</li>
+    <li>We followed a standard audio pipeline and it worked well for us.</li>
+</ol>
+<h3 id="learned" class="font-semibold mt-4">How We Learned This</h3>
+<h4>Lesson 1</h4>
+<p> From other projects, we know audio is often neglected until the later stages of production, which can lead to underdeveloped products and a lack of player feedback.
+    We wanted to address audio early by finding and implementing placeholder sounds before finding final assets, which worked well for us.     
+</p>
+
+<h2 id="bible" class="font-semibold text-xl mb-2 mt-6">Audio Bible</h2>
 <p>Want to see even more about audio? Check out the Audio Bible below for more details.</p>
 <div class="border border-grey-300 rounded-lg shadow-lg text-right mt-4">
     <iframe src="/assets/audio/Audio Bible.pdf" width="618" height="800"></iframe>
