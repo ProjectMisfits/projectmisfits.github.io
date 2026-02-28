@@ -239,6 +239,118 @@
 </nav>
 
 <h1 class="mb-2 font-bold text-2xl"> 💡 About Design 💡</h1>
+
+<div class="mb-4 rounded-lg p-2 border border-orange-200 dark:border-orange-800 bg-orange-50 dark:bg-orange-900/20 rounded-lg hover:bg-orange-100 dark:hover:bg-orange-900/30 transition-colors">
+    <h2 class="text-xl font-semibold">Table of Contents</h2>
+    <aside class="ml-8">
+        <ul class="text-orange-700 dark:text-orange-200">
+            <li><a href="#about">About</a></li>
+            <li><a href="#ownership">Design Domain Ownership</a></li>
+            <li><a href="#design">Design Domains</a>
+                <ul class="ml-6">
+                    <li><a href="#player">Player Abilities</a>
+                    <li><a href="#levels">Levels and Rooms</a>
+                    <li><a href="#obstacles">Obstacles and Threats</a>
+                    <li><a href="#ui">UI/UX and Interfaces</a>
+                </ul>
+            </li>
+            <li><a href="#vs">Player Iteration vs. Room Iteration</a></li>
+            <li><a href="#oops">Design Blew Up. It's Okay. What We Did When It Happened</a></li>
+            <li><a href="#lessons">Lessons Learned</a>
+                <ul class="ml-6">
+                    <li><a href="#learned">How We Learned This</a>
+                </ul>
+            </li>
+            <li><a href="#bible">Design Bible</a></li>
+        </ul>
+    </aside>
+</div>
+
+<h2 id="about" class="font-semibold text-xl mb-2">About</h2>
+  <p>The main design goal we started with was to create a player who had free form movement balanced with more standard running and jumping mechanics to create a feeling of freedom.</p>
+
+<h2 id="ownership" class="font-semibold text-xl mb-2 mt-4">Design Domain Ownership</h2>
+<p class="mb-2">In the last two weeks of pre-production, we realized we were having trouble splitting up the responsibility of making design decisions. Based on advice from advisors, we decided to switch our design process to use Design Domain Ownership. Under Design Domain Ownership, team members take responsibility for specific domains of design, ensuring that related tasks are completed on schedule. It is up to the domain owner whether they do the tasks themselves or delegate to other team members; their job is to make sure design decisions happen before deadlines.</p>
+
+<p>The design domains we identified are as follows:</p>
+<ul class="ml-8 list-disc mb-4">
+  <li>Player Abilities</li>
+  <li>Obstacles and Threats</li>
+  <li>Levels and Rooms</li>
+  <li>Narrative and Dialogue</li>
+  <li>UI/UX and Interfaces</li>
+  <li>Art and Aesthertics</li>
+  <li>Audio and Music</li>
+</ul>
+
+<p class="mb-2">Because Narrative, Art, and Audio are all asset-heavy domains, you can read more about their design processes here:
+  <a class="text-orange-700 dark:text-orange-200" href="/games/art/">Art Page</a> --
+  <a class="text-orange-700 dark:text-orange-200" href="/games/audio/">Audio Page</a> --
+  <a class="text-orange-700 dark:text-orange-200" href="/games/narrative/">Narrative Page</a>
+</p>
+
+<p>You can read more about how we used design domain ownership here: <a target="_blank" class="text-orange-700 dark:text-orange-200" href="https://docs.google.com/document/d/1IBiAL9DKJrxi6PZBs6QaPd42ccu7iJqAAUcAh5n113c/edit?tab=t.azn71u2r9gx3#heading=h.v32ddjjecv1k">Game Design Document</a></p>
+
+<h2 id="design" class="font-semibold text-xl mb-2 mt-4">Design Domains</h2>
+<p>Throughout production, we each did our part to iterate on each domain and bring them together as the game took shape. Let’s go over the major game design decisions of each domain and how we reached them.</p>
+<h3 id="player" class="font-semibold mt-4">Player Abilities</h3>
+<p>There were 3 levels of player design that we iterated through the process of making the game alongside the levels.</p>
+<h4 class="mt-2">Iteration 1</h4>
+  <p class="ml-8">The player had a resource meter which increased as the player moved with levels that required more precise control. The player base movements like running and jumping were clunky while leaf dashing and flinging, a small burst after exiting dash were well liked. </p>
+<h4>Iteration 2</h4>
+  <p class="ml-8">The resource meter remained the same but player movements were refined much more which highlighted how much chaining between the two modes with the fling was the real fun of our game.</p>
+<h4>Iteration 3</h4>
+  <p class="ml-8">The resource meter now came back when the player hit the ground allowing for more dynamic chaining and much shorter of just the player running or dashing. This allowed for much more coherent level design and a player that felt much more fun to control.</p>
+
+<h3 id="levels" class="font-semibold mt-4">Levels and Rooms</h3>
+<p class="mb-2">Balancing gameplay and narrative was done by trying to ensure that between every narrative room there were at least  two gameplay levels. Because of how much iteration was required in terms of gameplay we had to cut down on the number of  levels as gameplay became more refined based on weekly playtests. We had to shift and follow the fun of the game and ended up almost completely changing the movement style of the player to fit new design pillars we had created as time went on.</p>
+
+<p>To streamline level and room design, we utilized this spreadsheet to help track the status of each room.</p>
+<div class="border border-grey-300 rounded-lg shadow-lg text-right mt-2">
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSjTg4dxaGuNoZFglANPDIDEPddDPvPuBOFBO31owue4qgVufKFb8FxnhZlT0wTcpO18khFUesNEz0-/pubhtml?widget=true&amp;headers=false" width="618" height="500"></iframe>
+    <a class="text-orange-600 hover:text-orange-800 text-right" href="https://docs.google.com/spreadsheets/d/1Tu575VAt5x4FH-_bNnUIiZ06fPF_UiOGqk_cHEcGfAw/edit?usp=sharing" target="_blank">Link to Full Document</a> 
+</div>
+
+<h3 id="obstacles" class="font-semibold mt-4">Obstacles and Threats</h3>
+<p>Obstacles and threats in the game were always in flux but the final versions all served one of two purposes, forcing the player to switch between their two modes or creating pressure on the player to always keep moving. The reason for this was that as we iterated on everything in the game we realized that an important aspect of our game was ensuring that gameplay felt like a continuous line of movement with very little parts where the player had to slow down or stop.</p>
+
+<h3 id="ui" class="font-semibold mt-4">UI/UX and Interfaces</h3>
+<p>Our initial designs for UI focused on a simple, clean, and easy to understand interface. The first iteration got decent feedback during playtesting, so we decided it was not worth continuing to iterate on.
+
+<h2 id="vs" class="font-semibold text-xl mb-2 mt-4">Player Iteration vs. Room Iteration</h2>
+<p>Throughout production, we swapped back and forth between tweaking our player to match our room designs and tweaking our rooms to match our player design. We wish we had identified this pattern sooner and made the decision to favor just tweaking rooms to fit the feel of the player. Our vision and pillars emphasize the feel and experience of controlling the player, so using that as a design anchor point would have kept us better aligned with our original vision and pillars.</p>
+
+<h2 id="oops" class="font-semibold text-xl mb-2 mt-4">Design Blew Up. It's Okay. What We Did When It Happened</h2>
+<p class="mb-2">Even with all of this preparation, we noticed in week four of production that our gameplay domains had slowly become mismatched. Once we noticed there was growing friction in the gameplay experience, we took a step back. The owners of each domain met together to realign our design decisions with our vision, pillars, and the feedback we were getting from playtesters. From this discussion we developed a refreshed set of design rules to guide each domain going forward.</p>
+<p>These are the rules we came up with:</p>
+<ul class="ml-8 list=disc mb-2">
+  <li>Don't stop moving</li>
+  <li>Leaf Dash as a performance</li>
+  <li>Pressure player through time-based events or enemies chasing</li>
+  <li>Chain together dashes to maintain momentum</li>
+</ul>
+<p>The intent of these design rules was to lean into the fun our playtesters found in our game. Up to this point we hadn’t fully identified that momentum was the core of the fun in the game, and taking a step back to assess instead of trying to brute-force a flawed system helped us follow the fun. Pivoting our design decisions in the direction of fun while sticking to the core intent behind our vision and pillars helped us produce a better game.</p>
+
+<h2 id="lessons" class="font-semibold text-xl mb-2 mt-4">Lessons Learned</h2>
+<ol class="list-decimal list-inside mt-2">
+  <li>Design domain ownership worked well for us because it gave us clear, separate responsibilities while maintaining our team roles.</li>
+  <li>Follow the fun. It’s natural for your ideas to change shape!</li>
+  <li>Design requires iteration and dropping things that don’t work even if you’re attached to it.</li>
+</ol>
+<h3 id="learned" class="font-semibold mt-4">How We Learned This</h3>
+<h4>Lesson 1</h4>
+  <p class="ml-8">Once we established our domains, our trouble with splitting up responsibility disappeared, and we felt ready to tackle production as independent members of a cohesive team. Design domain ownership is a great way to split up responsibility and allow the team to focus on what design.</p>
+<h4>Lesson 2</h4>
+  <p class="ml-8">Throughout the design process we consistently iterated on our design to make the game more fun for players. We were always tweaking numbers, adjusting mechanics, watching what playtesters found the most fun, and going back to the drawing board to brainstorm new ideas.</p>
+<h4>Lesson 3</h4>
+  <p class="ml-8">When developing the player and levels, if we had tried to hold onto the design aspects which were not working the player would have remained in clunky unfun state of iteration 1.</p>
+
+<h2 id="bible" class="font-semibold text-xl mb-2 mt-4">Design Bible</h2>
+<p>Want to see even more about design? Check out the Design Bible below for all the details.</p>
+<div class="border border-grey-300 rounded-lg shadow-lg text-right mt-4">
+    <iframe src="/assets/design/Design Bible.pdf" width="618" height="800"></iframe>
+    <a class="text-orange-600 hover:text-orange-800 text-right" href="https://docs.google.com/document/d/1LNCkyL08TSTXJuOZQtq4Ba9OvzdTHPv2d42fOezP75c/edit?usp=sharing" target="_blank">Link to Full Document</a> 
+</div>
     </main>
   </div>
 

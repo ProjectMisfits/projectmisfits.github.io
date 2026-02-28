@@ -239,6 +239,75 @@
 </nav>
 
 <h1 class="mb-2 font-bold text-2xl"> 🔨 About Playtesting 🔨</h1>
+
+<div class="mb-4 rounded-lg p-2 border border-yellow-200 dark:border-yellow-800 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg hover:bg-yellow-100 dark:hover:bg-yellow-900/30 transition-colors">
+    <h2 class="text-xl font-semibold">Table of Contents</h2>
+    <aside class="ml-8">
+        <ul class="text-yellow-700 dark:text-yellow-200">
+            <li><a href="#plan">Playtesting Plan</a>
+                <ul class="ml-6">
+                    <li><a href="#inspiration">Inspiration</a>
+                    <li><a href="#schedule">Schedule</a>
+                </ul>
+            </li>
+            <li><a href="#procon">Pros and Cons</a></li>
+            <li><a href="#lessons">Lessons Learned</a>
+                <ul class="ml-6">
+                    <li><a href="#learned">How We Learned This</a>
+                </ul>
+            </li>
+            <li><a href="#bible">Playtesting Bible</a></li>
+        </ul>
+    </aside>
+</div>
+
+<h2 id="plan" class="font-semibold text-xl mb-2">Playtesting Plan</h2>
+<p class="mb-2">Playtesting was at the core of our production timeline. In fact, our weekly schedule was centered around preparing for, executing, and reviewing playtests.</p>
+<p class="mb-2">From the start of our project, we made playtesting a priority because of a few reasons: Firstly, we aimed to design a platformer, which demands a considerable amount of design work to not just design and iterate on fun & unique mechanics and levels. Secondly, our Player’s Leaf Dash was unconventional, so we needed to iterate and refine it a lot to ensure it created interesting gameplay scenarios. Lastly, we only had a short 7-week production period to create the entire game, which left  less time to naturally discover design trends. To expedite our design discovery, we needed to iterate faster to “find the fun” as soon as possible.</p>
+
+<h3 id="inspiration" class="font-semibold mt-4">Inspiration</h3>
+<p class="mb-2">Our playtesting schedule & format drew heavily from the principles of “iterative game design”, outlined in Colleen Macklin and John Sharp’s book
+  <a class="text-yellow-700 dark:text-yellow-200 italic" href="http://www.gamesdesignandplay.com/">Games, Design and Play</a>,
+  as well as Valve’s playtesting philosophy outlined in Mark Brown’s article
+  <a class="text-yellow-700 dark:text-yellow-200 italic" href="https://gmtk.substack.com/p/valves-secret-weapon">Valve's "Secret Weapon"</a>.
+  We took these ideas to their extreme by playtesting every week and outlining specific goals for what we wanted to test for each playtest.
+<p class="mb-2">
+
+<h3 id="schedule" class="font-semibold mt-4">Schedule</h3>
+<p>Our weekly schedule was as follows: From Monday through Wednesday, we prepared a prototype by adding and tweaking features. On Thursday, we playtested with participants from our playtest interest form and took notes on player behaviors & discussions. After playtesting, we compiled our notes into quantitative counts of behavior patterns. On Fridays after our end-of-week work showcase, we had a “playtesting report” where we gave an overview of our compiled data and suggested possible changes or additions to tackle any design issues.</p>
+
+<h2 id="procon" class="font-semibold text-xl mb-2 mt-4">Pros and Cons</h2>
+<p class="mb-2">Our playtesting plan successfully helped to guide our game design, but came at the cost of taking away development time and pressuring the team to rush changes out for playtesting builds.</p>
+<p class="mb-2">The biggest reason for this were our one-week turnarounds for playtesting, which proved to be a double-edged sword. On one hand, this ensured that we would have a playable build every week, which was good and helped give us a sense of progress over time. Weekly playtests also enabled us to easily course-correct by getting immediate feedback on changes or additions to the game. However, one-week turnarounds also pressured us to rush in additions to ensure we had something playtestable, which led to increased technical debt and stress on the team. The tight timeline also forced us to weigh what feedback we wanted to address from the last playtest versus what new content we wanted in the next build. We could not always tackle both of these.</p>
+<p class="mb-2">Our method for gathering data was effective in some ways, but redundant in others. Our passive approach to notetaking helped us note genuine player behaviors and showed us where many design pain points were. Including a discussion period afterwards let us supplement our notes with plenty of qualitative feedback and suggestions. On the flip side, our tight timeline meant we had very little time to create relevant questions for our playtests. Instead, our questions remained broad.</p>
+<p class="mb-2">We compiled our playtesting data by transcribing our qualitative notes into quantitative numbers. This proved to be ineffective because the process detached the data from the important context and player bias surrounding it, leaving the actual numbers devoid of meaning. The compilation process was also very time-consuming, since every noted player behavior had to be transcribed into numbers. Ultimately, all of our design decisions came from our existing qualitative notes rather than by analyzing our quantitative data points.</p>
+<p class="mb-2">Here is a collection of our playtesting data summaries:</p>
+<div class="border border-grey-300 rounded-lg shadow-lg text-right mt-2">
+    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSrWTKWijNgXnDHEP_9uAoVzkV9t8uiWdJI0J3D0RNX_r-6VeUXw3UV510yX-QxtKLtO7d7UPSVOc2n/pubhtml?widget=true&amp;headers=false" width="618" height="500"></iframe>
+    <a class="text-yellow-600 hover:text-yellow-800 text-right" href="https://docs.google.com/spreadsheets/d/1XCC455MYtx-HBhzWbQFdjgKIZjUcGjDKi5hPNapXJpM/edit?usp=sharing" target="_blank">Link to Full Document</a> 
+</div>
+
+<h2 id="lessons" class="font-semibold text-xl mb-2 mt-4">Lessons Learned</h2>
+<ol class="list-decimal list-inside mt-2">
+  <li>Too much playtesting can take away from development efforts</li>
+  <li>It is important to develop specific questions to ask playtesters.</li>
+  <li>Very good qualitative data was impartitive to improving our design.</li>
+</ol>
+
+<h3 id="learned" class="font-semibold mt-4">How We Learned This</h3>
+<h4>Lesson 1</h4>
+  <p class="ml-8">We underestimated the impact that 2 hours of playtesting meant in the time span of the one term MQP. This meant that playtesting cut into a more significant portion of development time than expected.</p>
+<h4>Lesson 2</h4>
+  <p class="ml-8">We found this as playtesters themselves often had trouble qualitatively assessing certain aspects that were more subtle.</p>
+<h4>Lesson 3</h4>
+  <p class="ml-8"> We found that as a platformer it is hard to understand what to change merely through numerical values.</p>
+
+<h2 id="bible" class="font-semibold text-xl mb-2 mt-4">Playtesting Bible</h2>
+<p>Want to see even more about playtesting? Check out the Playtesting Bible below for all the details.</p>
+<div class="border border-grey-300 rounded-lg shadow-lg text-right mt-4">
+    <iframe src="/assets/playtesting/Playtesting Bible.pdf" width="618" height="800"></iframe>
+    <a class="text-yellow-600 hover:text-yellow-800 text-right" href="https://docs.google.com/document/d/1wWdhSLz9uNO9o-iREhJVLITz2unHHHhHD--ZdIIYUZM/edit?usp=sharing" target="_blank">Link to Full Document</a> 
+</div>
     </main>
   </div>
 
