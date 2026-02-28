@@ -19,3 +19,58 @@ title: Tech
 </nav>
 
 <h1 class="mb-2 font-bold text-2xl"> 💻 About Tech 💻</h1>
+
+<div class="mb-4 rounded-lg p-2 border border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
+    <h2 class="text-xl font-semibold">Table of Contents</h2>
+    <aside class="ml-8">
+        <ul class="text-blue-700 dark:text-blue-200">
+            <li><a href="#focus">Focus on Modular Design</a></li>
+            <li><a href="#patterns">Using Data Driven Design Patterns</a>
+                <ul class="ml-6">
+                    <li><a href="#plugins">Plugins</a>
+                    <li><a href="#godot">Godot & GDScript</a>
+                    <li><a href="#architecture">Architecture & YAGNI</a>
+                </ul>
+            </li>
+            <li><a href="#lessons">Lessons Learned</a>
+                <ul class="ml-6">
+                    <li><a href="#learned">How We Learned This</a>
+                </ul>
+            </li>
+            <li><a href="#bible">Tech Bible</a></li>
+        </ul>
+    </aside>
+</div>
+
+<h2 id="focus" class="font-semibold text-xl mb-2">Focus on Modular Design</h2>
+<p class="mb-2">Our production timeline focused around weekly playtesting and rapid iteration. To enable quick additions and changes to the game, our codebase had to be extremely modular and easily tweakable. With this idea in mind, our codebase centered around “data-driven design”, which is outlined in Jonas Tyroller’s video 
+    <a class="text-blue-700 dark:text-blue-200 italic" href="https://www.youtube.com/watch?v=8WqYQ1OwxJ4">Best Code Architecture for Indie Games</a>.
+</p>
+<p class="mb-2">Data-driven design emphasizes modularity through rigid segmentation. One of the largest benefits of this is being able to store all design-related parameters in separate resource files, which are read by the game at runtime to determine behaviors. This would allow the whole game to be easily tweakable without even opening the Godot editor, which would be very designer-friendly.</p>
+<p class="mb-2">Data-driven design also emphasizes modularity by creating systems that can be applied to many different contexts, like creating a “hurt” component that could be applied to anything to make it capable of having health and taking damage. Since platformers can have many different systems working with each other in creative ways, using modular components would make it easy to tweak design and smoothly enable complex interactions.</p>
+
+<h2 id="patterns" class="font-semibold text-xl mb-2">Using Data Driven Design Patterns</h2>
+<p class="mb-2">Throughout development, data-driven design proved to be very useful, especially as our game’s design work became a larger focus. Having numerical parameters in separate text files made it extremely easy to modify how entities behaved. This was especially helpful when tweaking the Player, which had to undergo many design changes throughout development. Similarly, prioritizing modular features helped our systems scale when we wanted to add or change features.</p>
+<p class="mb-2">Investing into a debug menu also paid off; it allowed us to see how values like Player velocity & states changed in real-time, which expedited debugging. Being able to swap from scene-to-scene without having to close the game and navigate the editor was also a great time-saver.</p>
+
+<h3 id="plugins" class="font-semibold mt-4">Plugins</h3>
+<p class="mb-2">Plugins proved to be very helpful & saved us a lot of time. LimboAI simplified the creation of state machines for the Player and Ice Scream enemies, and was very easy to work with.</p.
+<p class="mb-2">We originally planned to use InkGD to handle dialogue sequences, but found its ease of use lacking. With that in mind, we switched to DialogueManager early on in our production. DialogueManager worked right out-of-the-box and streamlined our dialogue implementation. Unfortunately, the plugin had some shortcomings we had to wrestle with, like dialogue scripts only being able to call Autoloads and not having built-in compatibility with dialogue interruptions.</p>
+<p class="mb-2">We started using PhantomCamera midway through development and found it to be a very powerful tool with multiple convenient and intuitive features like camera priorities. However, we encountered issues with understanding the more complex features of the tool. This was largely because the plugin was relatively new, and thus did not have the ease of use associated with more mature tools. Additionally, the plugin’s documentation was broad but not very detailed, leading to times when we struggled to understand PhantomCamera’s full feature set.</p>
+
+<h3 id="godot" class="font-semibold mt-4">Godot & GDScript</h3>
+<p class="mb-2">Godot proved to be very powerful for developing our game, but served as a double-edged sword. The engine is very flexible, providing many options to accomplish the same task while also making it easy to rebuild a system if one option does not work out. Documentation is also plentiful and detailed, which helped us understand the engine’s capabilities quickly.</p>
+<p class="mb-2">However, Godot and GDScript were not as mature as other engines & languages, which created some roadblocks when Godot and GDScript lacked useful features, like structs and interfaces. We also encountered issues using Godot’s JSON resources, which would not open up in the editor and forced us to use an external text editor for parameter tweaks. The sheer number of options to create systems also made it difficult to know which option would work best for the game. During development, we under-utilized TileMapLayers and over-used CanvasLayers, both of which forced us to refactor our architecture later in the project.</p>
+
+<h3 id="architecture" class="font-semibold mt-4">Architecture & YAGNI</h3>
+<p class="mb-2">A major issue we struggled with throughout this project was creating systems that accomplished only what we wanted, and nothing more or less. As a team of less experienced programmers, we found it hard to know in advance exactly what functionality each system would need. This was further exacerbated by our constantly shifting design. This resulted in times when we over-engineered or under-engineered a system, both of which detracted from our development time. We had multiple occurrences where we succeeded and failed to create properly-scoped systems.</p>
+
+<h2 id="lessons" class="font-semibold text-xl mb-2 mt-4">Lessons Learned</h2>
+<h3 id="learned" class="font-semibold mt-4">How We Learned This</h3>
+
+<h2 id="bible" class="font-semibold text-xl mb-2">Tech Bible</h2>
+<p>Want to see even more about tech? Check out the Tech Bible below for all the details.</p>
+<div class="border border-grey-300 rounded-lg shadow-lg text-right mt-4">
+    <iframe src="/assets/tech/Tech Bible.pdf" width="618" height="800"></iframe>
+    <a class="text-blue-600 hover:text-blue-800 text-right" href="https://docs.google.com/document/d/1RLFovLXyq1iZRcvJPZH87XuezBGwWk8Z36G45-7-5Sg/edit?usp=sharing" target="_blank">Link to Full Document</a> 
+</div>
