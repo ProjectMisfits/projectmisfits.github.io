@@ -1,7 +1,7 @@
 ---
 layout: layouts/contractor.njk
 title: Paige Webster
-date: 2026-09-01
+date: 2026-09-02
 description: Environmental Art
 ---
 
