@@ -4,7 +4,7 @@ title: Sprint 7 (Feb 23 - Feb 27, 2026)
 subtitle: Documentation Week!
 author: Blog Author
 date: 2026-02-27
-description: Focus switches to properly documenting the development process(Week 7).
+description: Focus switches to properly documenting the development process (Week 7).
 tags: [disconnected, design, partial animation, playable]
 featuredImage: "https://docs.google.com/presentation/d/e/2PACX-1vQ6AzZhe6eGcvy0UYvzmg_fOqsZ_JCWHU-i5DAQ1SSYMrv0Qo81VcPVzM2MpuGm1BTeHqKjFn9MV7hZ/pubembed?start=true&loop=true&delayms=3000"
 ---
