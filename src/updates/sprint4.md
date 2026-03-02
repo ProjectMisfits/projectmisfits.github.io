@@ -15,7 +15,7 @@ featuredImage: https://picsum.photos/800/400?random=3
 
 | System Goals |  Asset Goals | Documentation Goals | Playtesting Goals |
 | --- | --- | --- | --- |
-| All systems integrated | Art: Environment tiles done, architecture decor, environment backgrounds, post processing and lighting effects done, ice cube and claw animation done | website set up done | External Playtesting: gameplay intuitive and immersive? narrative coherent? |
+| All systems integrated | Art: Environment tiles done, architecture decor, environment backgrounds, post processing and lighting effects done, ice cube and claw animation done | Website set up done | External Playtesting: gameplay intuitive and immersive? narrative coherent? |
 | Critical assets implemented | UI: all critical complete |   |   |
 | Player locked in (only minor tweaks as necessary) | Writing: iterate on narrative & dialogue |   |   |
 | Level design only tweaked to match player tweaks | Audio: music first draft, find all sounds |   |   |

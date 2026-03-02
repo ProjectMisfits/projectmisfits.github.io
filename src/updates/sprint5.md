@@ -15,7 +15,7 @@ featuredImage: https://picsum.photos/800/400?random=3
 
 | System Goals |  Asset Goals | Documentation Goals | Playtesting Goals |
 | --- | --- | --- | --- |
-| All systems integrated and refined | Art: character animations done, all props finished and in engine | website 1st draft (all content but not formatted) | External Playtesting: does everything fit together to create the desired player experience? |
+| All systems integrated and refined | Art: character animations done, all props finished and in engine | Website 1st draft (all content but not formatted) | External Playtesting: does everything fit together to create the desired player experience? |
 | All critical assets implemented and integrated | Writing: playtest and iterate narrative |   |   |
 | Bug logging begins | Audio: all music second draft, all SFX edited and implemented |   |   |
 |   | Marketing: logo |   |   |
