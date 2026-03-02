@@ -9,13 +9,13 @@ tags: [minimum viable, design, partial animation, playable]
 featuredImage: https://picsum.photos/800/400?random=3
 ---
 
-## **Sprint #5 2/9-2/12 - Feature Freeze Week!**
+## **Sprint #6 2/16-2/20 - Content Freeze Week!**
 ---
 **Production Goals for the Week**:
 
 | System Goals |  Asset Goals | Documentation Goals | Playtesting Goals |
 | --- | --- | --- | --- |
-| Asset integration | Writing: iterate on narrative & dialogue | website 2nd draft (content more refined and formatted) | QA Testing: what major or minor bugs, issues, and tweaks remain? |
+| Asset integration | Writing: iterate on narrative & dialogue | Website 2nd draft (content more refined and formatted) | QA Testing: what major or minor bugs, issues, and tweaks remain? |
 | Bug logging | Audio: revisions on music, tweaking soundscape and mixing |   |   |
 |   | Design: iterate and playtest |   |   |
 
