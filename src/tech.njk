@@ -66,9 +66,24 @@ title: Tech
 <p class="mb-2">A major issue we struggled with throughout this project was creating systems that accomplished only what we wanted, and nothing more or less. As a team of less experienced programmers, we found it hard to know in advance exactly what functionality each system would need. This was further exacerbated by our constantly shifting design. This resulted in times when we over-engineered or under-engineered a system, both of which detracted from our development time. We had multiple occurrences where we succeeded and failed to create properly-scoped systems.</p>
 
 <h2 id="lessons" class="font-semibold text-xl mb-2 mt-4">Lessons Learned</h2>
-<h3 id="learned" class="font-semibold mt-4">How We Learned This</h3>
+<ol class="list-decimal list-inside mt-2">
+    <li>Taking the time to develop custom tooling will pay off.</li>
+    <li>Borrow, don’t build.</li>
+    <li>Try to understand the relationship between your engine and your assets.</li>
+    <li>Focus on developing features you know you’ll need and ignore features you only think you’ll need.</li>
+</ol>
 
-<h2 id="bible" class="font-semibold text-xl mb-2">Tech Bible</h2>
+<h3 id="learned" class="font-semibold mt-4">How We Learned This</h3>
+<h4>Lesson 1</h4>
+<p class="ml-8">We developed a rudimentary debug menu early on in development, sort of on a whim. It only had two features: a debug property panel that let us watch added variables change during runtime and a noclip panel that let us teleport the player to any room in the game. It seems somewhat insignificant at first glance, but the debug panel singlehandedly enabled us to iterate on room designs super quickly. Developing custom features that players will never see may seem like a waste of time for such a short timeframe but it actually paid off massively in the end.</p>
+<h4>Lesson 2</h4>
+<p class="ml-8">There are several features in Leaves of Fate that we simply would not have had the time to add if we developed them ourselves. The dialogue system, smooth camera manipulations, and player states all depend heavily on Godot plugins we found and implemented into our tech stack. These three features are fundamental to the gameplay experience and would not be nearly as polished if we had tried to build those systems ourselves instead of borrowing from existing projects.</p>
+<h4>Lesson 3</h4>
+<p class="ml-8">As a technical team member, it is important that you understand how the engine processes art to properly communicate to your art team how to make assets. This came about specifically with how Godot handles importing of art vs how it tiles art. There are things that the engine did under the hood that shifted line weights that were unknown until assets were already mostly done.</p>
+<h4>Lesson 4</h4>
+<p class="ml-8">We sometimes fell into the trap of designing code systems for things we thought we would need instead of what we actually needed at the moment. Learning the difference between wanting a feature and needing a feature is important because working on something we never use wastes our already limited time.</p>
+
+<h2 id="bible" class="font-semibold text-xl mb-2 mt-4">Tech Bible</h2>
 <p>Want to see even more about tech? Check out the Tech Bible below for all the details.</p>
 <div class="border border-grey-300 rounded-lg shadow-lg text-right mt-4">
     <iframe src="/assets/tech/Tech Bible.pdf" width="618" height="800"></iframe>
