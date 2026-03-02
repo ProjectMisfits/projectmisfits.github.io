@@ -17,7 +17,9 @@ layout: layouts/base.njk
 
 <article class="h-entry">
   {% if featuredImage %}
-    <img class="u-photo w-full rounded-lg mb-6" src="{{ featuredImage }}" alt="Featured image for {{ title }}" />
+    <div class="flex justify-center mb-8"> 
+      <iframe src="{{ featuredImage }}" frameborder="0" width="100%" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
   {% endif %}
   
   <header class="mb-6">
