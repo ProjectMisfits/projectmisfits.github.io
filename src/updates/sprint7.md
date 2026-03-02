@@ -6,7 +6,7 @@ author: Blog Author
 date: 2026-02-27
 description: Focus switches to properly documenting the development process(Week 7).
 tags: [disconnected, design, partial animation, playable]
-featuredImage: https://picsum.photos/800/400?random=3
+featuredImage: "https://docs.google.com/presentation/d/e/2PACX-1vQ6AzZhe6eGcvy0UYvzmg_fOqsZ_JCWHU-i5DAQ1SSYMrv0Qo81VcPVzM2MpuGm1BTeHqKjFn9MV7hZ/pubembed?start=true&loop=true&delayms=3000"
 ---
 
 ## **Sprint #7 2/23-2/27 - Documentation Week!**

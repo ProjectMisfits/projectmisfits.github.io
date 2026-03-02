@@ -6,7 +6,7 @@ author: Blog Author
 date: 2026-02-12
 description: The last week to add new features (Week 5).
 tags: [minimum viable, design, partial animation, playable]
-featuredImage: https://picsum.photos/800/400?random=3
+featuredImage: https://docs.google.com/presentation/d/e/2PACX-1vSxQS4I3HZe-RdMi9tzRN5J1eju3MSQbTOR5R7jwMcgGm3enjQ-TkU3S7zF9sD41or1tNVtyvleVRfr/pubembed?start=true&loop=true&delayms=3000
 ---
 
 ## **Sprint #5 2/9-2/12 - Feature Freeze Week!**

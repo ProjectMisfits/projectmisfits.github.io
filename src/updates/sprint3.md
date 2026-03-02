@@ -6,7 +6,7 @@ author: Blog Author
 date: 2026-01-30
 description: Our first playable build (Week 3).
 tags: [prototyping, design, unanimated, playable]
-featuredImage: https://picsum.photos/800/400?random=3
+featuredImage: https://docs.google.com/presentation/d/e/2PACX-1vQypLAR8IEY4w3-Q3FscBqytd5B-UnydyPYIbizxpjdieeaZOJmg3DvvN_xIRJQ8dGeF9YL-3YfWBs0/pubembed?start=true&loop=true&delayms=3000
 ---
 
 ## **Sprint #3 1/26-1/30 - First Playable Prototype Week!**

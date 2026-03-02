@@ -6,7 +6,7 @@ author: Blog Author
 date: 2026-02-20
 description: All content should be complete (Week 6).
 tags: [minimum viable, design, partial animation, playable]
-featuredImage: https://picsum.photos/800/400?random=3
+featuredImage: https://docs.google.com/presentation/d/e/2PACX-1vRlaZO3zBpoKLK1ucLTmduDCb2MdtoFvf7n6_vl3kKHfeIh0xjE25kIx6IPJcRVY8HSiOXihVE1yhMv/pubembed?start=true&loop=true&delayms=3000
 ---
 
 ## **Sprint #6 2/16-2/20 - Content Freeze Week!**

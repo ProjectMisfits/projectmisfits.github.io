@@ -6,7 +6,7 @@ author: Blog Author
 date: 2026-01-23
 description: The team's progress on an early prototype (Week 2).
 tags: [prototyping, design, unanimated, draft]
-featuredImage: https://picsum.photos/800/400?random=3
+featuredImage: https://docs.google.com/presentation/d/e/2PACX-1vTSWu9A_M_zZ_rszARMmPaVyn44cch0JkZOViOZAHFdOj-VM0EbIE7o7YQjSUnXuxbt3_H9xiG7iLyE/pubembed?start=true&loop=true&delayms=3000
 ---
 
 ## **Sprint #2 1/20-1/23 - Early Prototype Week!**

@@ -6,7 +6,7 @@ author: Project Misfits Team
 date: 2026-01-16
 description: What the team did during Set Up Week (Week 1).
 tags: [prototyping, design, unanimated, draft]
-featuredImage: https://picsum.photos/800/400?random=3
+featuredImage: https://docs.google.com/presentation/d/e/2PACX-1vRjoFtWKRcB34k6qSsBaOW-kjCiMHuxz0x8stqwbG946ff_CYfqmznc-eq1ksezIiXvqcLQw0d2Mise/pubembed?start=true&loop=true&delayms=3000
 ---
 
 ## **Sprint #1 1/14-1/16  - Set Up Week!**

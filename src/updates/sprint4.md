@@ -6,7 +6,7 @@ author: Blog Author
 date: 2026-02-06
 description: Our minimum viable product prototype (Week 4).
 tags: [minimum viable, design, partial animation, playable]
-featuredImage: https://picsum.photos/800/400?random=3
+featuredImage: https://docs.google.com/presentation/d/e/2PACX-1vSQjW497cOOS2zka0kaoE1lBgg9lP0u8WST3_g1TuckfoZ8dF6pYaH2f3kxxWOzr_jnc1fDGSLoc4AQ/pubembed?start=true&loop=true&delayms=3000
 ---
 
 ## **Sprint #4 2/2-2/6 - Prototype/Minimum Viable Product Week!**
