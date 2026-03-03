@@ -907,6 +907,10 @@ a:hover:not(.nav-item) {
   flex: 1 1 0%;
 }
 
+.shrink-0 {
+  flex-shrink: 0;
+}
+
 .flex-grow {
   flex-grow: 1;
 }
@@ -1396,6 +1400,11 @@ a:hover:not(.nav-item) {
 
 .to-pink-100 {
   --tw-gradient-to: #fce7f3 var(--tw-gradient-to-position);
+}
+
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-1 {
