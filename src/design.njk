@@ -24,11 +24,16 @@ title: Design
     <h2 class="text-xl font-semibold">Table of Contents</h2>
     <aside class="ml-8">
         <ul class="text-orange-700 dark:text-orange-200">
-            <li><a href="#about">About</a></li>
+            <li><a href="#lessons">Key Takeaways</a></li>
+            <li><a href="#goals">Design Goals</a></li>
             <li><a href="#ownership">Design Domain Ownership</a></li>
+            <li><a href="#learned1">Lesson 1</a></li>
             <li><a href="#design">Design Domains</a>
                 <ul class="ml-6">
-                    <li><a href="#player">Player Abilities</a>
+                    <li><a href="#player">Player Abilities</a></li>
+                </ul>
+                <li><a href="#learned2">Lesson 2</a></li>
+                <ul class="ml-6">
                     <li><a href="#levels">Levels and Rooms</a>
                     <li><a href="#obstacles">Obstacles and Threats</a>
                     <li><a href="#ui">UI/UX and Interfaces</a>
@@ -36,17 +41,20 @@ title: Design
             </li>
             <li><a href="#vs">Player Iteration vs. Room Iteration</a></li>
             <li><a href="#oops">Design Blew Up. It's Okay. What We Did When It Happened</a></li>
-            <li><a href="#lessons">Lessons Learned</a>
-                <ul class="ml-6">
-                    <li><a href="#learned">How We Learned This</a>
-                </ul>
-            </li>
+            <li><a href="#learned3">Lesson 3</a></li>            
             <li><a href="#bible">Design Bible</a></li>
         </ul>
     </aside>
 </div>
 
-<h2 id="about" class="font-semibold text-xl mb-2">About</h2>
+<h2 id="lessons" class="font-semibold text-xl mb-2 mt-4">Key Takeaways</h2>
+<ol class="list-decimal list-inside mt-2">
+  <li><a href="#learned1" class="text-orange-700 dark:text-orange-200">Design Domain Ownership</a> gave us clear, separate responsibilities while maintaining our team roles.</li>
+  <li><a href="#learned2" class="text-orange-700 dark:text-orange-200">Follow the Fun.</a> It’s natural for your ideas to change shape!</li>
+  <li><a href="#learned3" class="text-orange-700 dark:text-orange-200">Design Requires Iteration</a> and dropping things that don’t work even if you’re attached to it.</li>
+</ol>
+
+<h2 id="goals" class="font-semibold text-xl mb-2 mt-4">Design Goals</h2>
   <p>The main design goal we started with was to create a player who had free form movement balanced with more standard running and jumping mechanics to create a feeling of freedom.</p>
 
 <h2 id="ownership" class="font-semibold text-xl mb-2 mt-4">Design Domain Ownership</h2>
@@ -70,6 +78,11 @@ title: Design
 </p>
 
 <p>You can read more about how we used design domain ownership here: <a target="_blank" class="text-orange-700 dark:text-orange-200" href="https://docs.google.com/document/d/1IBiAL9DKJrxi6PZBs6QaPd42ccu7iJqAAUcAh5n113c/edit?tab=t.azn71u2r9gx3#heading=h.v32ddjjecv1k">Game Design Document</a></p>
+{# LESSON 1 #}
+<div class="mb-8 mt-8 rounded-lg p-2 border border-orange-200 dark:border-orange-800 bg-orange-100 dark:bg-orange-900/20 rounded-lg">
+  <h3 id="learned1" class="font-semibold">Lesson 1: Design Domain Ownership</h3>
+    <p class="ml-8">Once we established our domains, our trouble with splitting up responsibility disappeared, and we felt ready to tackle production as independent members of a cohesive team. Design domain ownership is a great way to split up responsibility and allow the team to focus on what design.</p>
+</div>
 
 <h2 id="design" class="font-semibold text-xl mb-2 mt-4">Design Domains</h2>
 <p>Throughout production, we each did our part to iterate on each domain and bring them together as the game took shape. Let’s go over the major game design decisions of each domain and how we reached them.</p>
@@ -81,6 +94,12 @@ title: Design
   <p class="ml-8">The resource meter remained the same but player movements were refined much more which highlighted how much chaining between the two modes with the fling was the real fun of our game.</p>
 <h4>Iteration 3</h4>
   <p class="ml-8">The resource meter now came back when the player hit the ground allowing for more dynamic chaining and much shorter of just the player running or dashing. This allowed for much more coherent level design and a player that felt much more fun to control.</p>
+
+{# LESSON 2 #}
+<div class="mb-8 mt-8 rounded-lg p-2 border border-orange-200 dark:border-orange-800 bg-orange-100 dark:bg-orange-900/20 rounded-lg">
+  <h3 id="learned2" class="font-semibold">Lesson 2: Follow the Fun</h3>
+    <p class="ml-8">Throughout the design process we consistently iterated on our design to make the game more fun for players. We were always tweaking numbers, adjusting mechanics, watching what playtesters found the most fun, and going back to the drawing board to brainstorm new ideas.</p>
+</div>
 
 <h3 id="levels" class="font-semibold mt-4">Levels and Rooms</h3>
 <p class="mb-2">Balancing gameplay and narrative was done by trying to ensure that between every narrative room there were at least  two gameplay levels. Because of how much iteration was required in terms of gameplay we had to cut down on the number of  levels as gameplay became more refined based on weekly playtests. We had to shift and follow the fun of the game and ended up almost completely changing the movement style of the player to fit new design pillars we had created as time went on.</p>
@@ -111,19 +130,11 @@ title: Design
 </ul>
 <p>The intent of these design rules was to lean into the fun our playtesters found in our game. Up to this point we hadn’t fully identified that momentum was the core of the fun in the game, and taking a step back to assess instead of trying to brute-force a flawed system helped us follow the fun. Pivoting our design decisions in the direction of fun while sticking to the core intent behind our vision and pillars helped us produce a better game.</p>
 
-<h2 id="lessons" class="font-semibold text-xl mb-2 mt-4">Lessons Learned</h2>
-<ol class="list-decimal list-inside mt-2">
-  <li>Design domain ownership worked well for us because it gave us clear, separate responsibilities while maintaining our team roles.</li>
-  <li>Follow the fun. It’s natural for your ideas to change shape!</li>
-  <li>Design requires iteration and dropping things that don’t work even if you’re attached to it.</li>
-</ol>
-<h3 id="learned" class="font-semibold mt-4">How We Learned This</h3>
-<h4>Lesson 1</h4>
-  <p class="ml-8">Once we established our domains, our trouble with splitting up responsibility disappeared, and we felt ready to tackle production as independent members of a cohesive team. Design domain ownership is a great way to split up responsibility and allow the team to focus on what design.</p>
-<h4>Lesson 2</h4>
-  <p class="ml-8">Throughout the design process we consistently iterated on our design to make the game more fun for players. We were always tweaking numbers, adjusting mechanics, watching what playtesters found the most fun, and going back to the drawing board to brainstorm new ideas.</p>
-<h4>Lesson 3</h4>
-  <p class="ml-8">When developing the player and levels, if we had tried to hold onto the design aspects which were not working the player would have remained in clunky unfun state of iteration 1.</p>
+{# LESSON 3 #}
+<div class="mb-8 mt-8 rounded-lg p-2 border border-orange-200 dark:border-orange-800 bg-orange-100 dark:bg-orange-900/20 rounded-lg">
+  <h3 id="learned3" class="font-semibold">Lesson 3: Design Required Iteration</h3>
+    <p class="ml-8">When developing the player and levels, if we had tried to hold onto the design aspects which were not working the player would have remained in clunky unfun state of iteration 1.</p>
+</div>
 
 <h2 id="bible" class="font-semibold text-xl mb-2 mt-4">Design Bible</h2>
 <p>Want to see even more about design? Check out the Design Bible below for all the details.</p>
