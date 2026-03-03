@@ -105,17 +105,17 @@ permalink: "/team/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumbe
 
 <nav class="mt-8 flex items-center justify-between" aria-label="Pagination">
   {% if pagination.href.previous %}
-    <a class="px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:bg-gray-200" href="{{ pagination.href.previous }}">← Newer</a>
+    <a class="px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:bg-gray-200" href="{{ pagination.href.previous }}">← Back</a>
   {% else %}
-    <span class="px-4 py-2 text-gray-400">← Newer</span>
+    <span class="px-4 py-2 text-gray-400">← Back</span>
   {% endif %}
 
   <span class="text-sm text-gray-600 dark:text-gray-400">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages | length }}</span>
 
   {% if pagination.href.next %}
-    <a class="px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:bg-gray-200" href="{{ pagination.href.next }}">Older →</a>
+    <a class="px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:bg-gray-200" href="{{ pagination.href.next }}">Next →</a>
   {% else %}
-    <span class="px-4 py-2 text-gray-400">Older →</span>
+    <span class="px-4 py-2 text-gray-400">Next →</span>
   {% endif %}
 </nav>
 {% endif %}
