@@ -5,7 +5,7 @@ date: 2026-07-02
 description: Audio
 ---
 
-Jackson sdfg
+Jackson was brought on as a SFX artist and created all the footsteps SFX in the project. 
 
 **Highlights**<br>
 [insert here]

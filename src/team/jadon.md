@@ -5,7 +5,7 @@ date: 2026-08-01
 description: Environmental and Tech Art
 ---
 
-A majority of Jadon's work is focused on making the environment look nice and within the desired aesthetic. They made tilesets and room decor items such as lamps to decorate levels and rooms. They also worked on shaders and volumetrics to add more depth and visual interest to the spaces. 
+Jadon worked as both a tech and environmental artist. They created all shaders in game alongside the dust particles and several ground tile assets. 
 
 **Highlights**<br>
 ![Light Shaders](/assets/highlights/Jadon1.png)

@@ -5,7 +5,7 @@ date: 2026-01-01
 description: Environmental, Character, and Enemy Art
 ---
 
-Bella's work spanned many different areas. She helped with very early iterations of the main character, and created mock-ups of all of the knights in the game. She created many decorative set pieces such as shelves, food, and windows. She also concepted and animated our Ice Scream enemey and the bangles grab. Lastly, some of her fan art is now the game icon. 
+Bella is a long time artist for the project from concept to asset art. She created several concepts for potential characters in the story alongside producing a large amount of environmental assets for the game. 
 
 **Highlights**<br>
 ![Ice Maker Version 1](/assets/highlights/Bella1.PNG)

@@ -5,7 +5,7 @@ date: 2026-07-01
 description: Environmental and UI Art
 ---
 
-Isabella started working with Project Misfits on character portraits for dialogue. Once she finished those, she moved to working on art for the bronze pipe system and the level heater. 
+Isabella worked as a UI and environmental artist. She was responsible for all character portraits and several environmental assets such as the pipes and heaters. 
 
 **Highlights**<br>
 ![Hooded Winston Character Profile - Nervous](/assets/highlights/Isabella1.png)
