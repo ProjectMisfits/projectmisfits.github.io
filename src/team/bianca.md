@@ -5,7 +5,7 @@ date: 2026-02-01
 description: Environmental Art
 ---
 
-Bianca worked on creating modular environmental assets. She created a collection of pillars, arches, and bases that can be put together in a varity of ways to make unique but cohesive rooms. 
+Bianca is the main environmental architecture artist. She created pillars, arches, wall/floor patterns, and several different kinds of ground tiles. 
 
 **Highlights**<br>
 ![Decorative Pillar](/assets/highlights/Bianca1.png)

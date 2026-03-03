@@ -5,7 +5,7 @@ date: 2026-09-02
 description: Environmental Art
 ---
 
-Paige worked on the initial sketches and concpets of the architecture and environment of the game. 
+Paige worked as an environment concept artist. She created all environmental concepts for the game alongside a visual style guide for the environment. 
 
 **Highlights**<br>
 ![Pantry Concept Art](/assets/highlights/Paige1.png)

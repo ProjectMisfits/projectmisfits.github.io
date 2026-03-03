@@ -5,9 +5,6 @@ date: 2026-07-02
 description: Audio
 ---
 
-Jackson sdfg
+Jackson was brought on as a SFX artist and created all the footsteps SFX in the project. 
 
-**Highlights**<br>
-[insert here]
-
-Check Out Jackson's Full Project Misfits Portfolio: <a href="https://drive.google.com/drive/folders/1i-0XW97rH3WljVswG6um-LxrhhtHUAFb?usp=sharing" target="_blank">Here</a>
+Check Out Jackson's Full Project Misfits Audio Portfolio: <a href="https://drive.google.com/drive/folders/1i-0XW97rH3WljVswG6um-LxrhhtHUAFb?usp=sharing" target="_blank">Here</a>

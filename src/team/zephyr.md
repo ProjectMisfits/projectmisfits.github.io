@@ -5,7 +5,7 @@ date: 2026-10-01
 description: Character Art
 ---
 
-Zephyr did a large amount of our character concpeting at the start of the project. They did initial sketches for all chracters and helped with color selection for Fenn and Winston (the main character and the antagonist).
+Zephyr worked as a character concept artist. They created the concepts for both Fenn and Winston which ended up being the final versions that were used to create their in game assets. 
 
 **Highlights**<br>
 ![Fenn Headshot](/assets/highlights/Zephyr1.png)

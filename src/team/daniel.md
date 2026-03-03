@@ -5,7 +5,7 @@ date: 2026-03-01
 description: Character Art 
 ---
 
-Daniel worked significnatly on Az (the companion character). He did the final color selections and all animations for Az. He also worked on the character death animation utilizing particle effects. 
+Daniel worked as both a tech artist and animator. He created all animations for Az along with particle effects such as the wind zones. 
 
 **Highlights**<br>
 ![Az Idle Animation](/assets/highlights/Dan1.gif)
