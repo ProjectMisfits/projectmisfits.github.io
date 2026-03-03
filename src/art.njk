@@ -24,20 +24,28 @@ title: Art
     <h2 class="text-xl font-semibold">Table of Contents</h2>
     <aside class="ml-8">
         <ul class="text-rose-700 dark:text-rose-200">
+            <li><a href="#lessons">Key Takeaways</a></li>
+            <li><a href="#learned1">Lesson 1</a></li>
+            <li><a href="#learned2">Lesson 2</a></li>
+            <li><a href="#learned3">Lesson 3</a></li>
+            <li><a href="#learned4">Lesson 4</a></li>
             <li><a href="#beginning">Art at the Beginning</a></li>
             <li><a href="#production">Art During Production</a></li>
-            <li><a href="#lessons">Lessons Learned</a>
-                <ul class="ml-6">
-                    <li><a href="#learned">How We Learned This</a>
-                </ul>
-            </li>
             <li><a href="#bible">Art Bible</a></li>
             <li><a href="#contract">Art Contract Agreement</a></li>
         </ul>
     </aside>
 </div>
 
-<h2 id="beginning" class="font-semibold text-xl mb-2">Art at the Beginning</h2>
+<h2 id="lessons" class="font-semibold text-xl mb-2 mt-4">Key Takeaways</h2>
+<ol class="list-decimal list-inside">
+    <li><a href="#learned1" class="text-rose-700 dark:text-rose-200">Develop a Style Guide</a> early</li>
+    <li><a href="#learned2" class="text-rose-700 dark:text-rose-200">Standardize Asset Resolution</a> ASAP</li>
+    <li><a href="#learned3" class="text-rose-700 dark:text-rose-200">Establish a Core Team Member</a> to organize external artists.</li>
+    <li>Lean into <a href="#learned4" class="text-rose-700 dark:text-rose-200">in-engine effects</a></li>
+</ol>
+
+<h2 id="beginning" class="font-semibold text-xl mb-2 mt-4">Art at the Beginning</h2>
 <p>When starting to think about art we knew that we wanted to have a less detailed style that leaned towards brighter natural colors. We decided that the Scavengers Reign fit this style the best.The world we were making is wacky with absurd characters and abilities and thus wanted our art to reflect that. This meant taking some inspiration from adventure time to incorporate strange creatures and comedic elements of modern technology into the world.</p>
 <p class="mt-2">Check out our art inspiration here:</p>
 <div class="flex justify-center mb-8"> 
@@ -55,26 +63,26 @@ title: Art
 <h2 id="production" class="font-semibold text-xl mb-2 mt-4">Art During Production</h2>
 <p>During production the fact that we did not have a core artist started to show as not having a very solid style caused dissonance between artists' work. Luckily one of our tech art contractors implemented shaders for lighting and reflections which brought new layers of depth for the games art and helped bridge things like lineweight differences. Additionally, setting up a pipeline to have artists get their art into the engine directly while easy for some artists proved difficult for less technically savvy artists who felt much more comfortable placing things in a google drive. Our process of designing rooms with art was to emphasize the arches and pillars with a mix of decorative items such as plants, books, and more.</p>
 
-<h2 id="lessons" class="font-semibold text-xl mb-2 mt-4">Lessons Learned</h2>
-<ol class="list-decimal list-inside">
-    <li>Develop a style guide early</li>
-    <li>You need to have specific rules regarding resolution and you need to understand how your engine processes art before creating too many assets</li>
-    <li>Ensure at least one person on your team can vouch for external artists you might work wtih</li>
-    <li>Have a core team member managing external artists</li>
-    <li>If you have no artisits, lean into a style that relies much more on in engine effects</li>
-</ol>
+<div class="mb-8 mt-8 rounded-lg p-2 border border-rose-200 dark:border-rose-800 bg-rose-100 dark:bg-rose-900/20 rounded-lg">
+  <h3 id="learned1" class="font-semibold">Lesson 1: Style Guide</h3>
+    <p class="ml-8">We understood this because, even though we had references for inspirations, without a concrete style guide, artists filled in gaps with their own styles, which caused noticiable differences in their work.</p>
+</div>
 
-<h3 id="learned" class="font-semibold mt-4">How We Learned This</h3>
-<h4>Lesson 1</h4>
-  <p class="ml-8">We understood this because even though we had references for inspirations, without a concrete style guide artists filled in gaps with their own styles which caused noticiable differences in their work.</p>
-<h4>Lesson 2</h4>
-  <p class="ml-8">We discovered this when utilizing Godot’s tilemap layer system where scaling tiles was much more static and different resolutions caused inconsistencies in the tile sets.</p>
-<h4>Lesson 3</h4>
-  <p class="ml-8">The external artists that someone in the team personally vouched for did far more art for us then those who we met through other external folks.</p>
-<h4>Lesson 4</h4>
-  <p class="ml-8">We assigned one team member to organize the artists and this was key to being able to get the art we did have into the game.</p>
-<h4>Lesson 5</h4>
-  <p class="ml-8">While we got enough art to create a coherent game without a core artist to consistently make assets it will always put a strain on the project.</p>
+<div class="mb-8 mt-8 rounded-lg p-2 border border-rose-200 dark:border-rose-800 bg-rose-100 dark:bg-rose-900/20 rounded-lg">
+  <h3 id="learned2" class="font-semibold">Lesson 2: Asset Resolution<h3>
+    <p class="ml-8">You need to have specific rules regarding resolution and you need to understand how your engine processes art before creating too many assets. We discovered this when utilizing Godot’s tilemap layer system where scaling tiles was much more static and different resolutions caused inconsistencies in the tile sets.</p>
+</div>
+
+<div class="mb-8 mt-8 rounded-lg p-2 border border-rose-200 dark:border-rose-800 bg-rose-100 dark:bg-rose-900/20 rounded-lg">
+  <h3 id="learned3" class="font-semibold">Lesson 3: Managing External Artists</h3>
+    <p class="ml-8">We assigned one core team member to manage all the art contractors that worked on our project. This was crucial in having consistent communication with the artists. </p>
+</div>
+
+<div class="mb-8 mt-8 rounded-lg p-2 border border-rose-200 dark:border-rose-800 bg-rose-100 dark:bg-rose-900/20 rounded-lg">
+  <h3 id="learned4" class="font-semibold">Lesson 4: In-Engine Effects</h3>
+    <p class="ml-8">While we got enough art to create a coherent game, without a core artist to consistently make assets it will always put a strain on the project.</p>
+    <p class="ml-8">Instead, we should've focused on what we COULD do: in-engine effects (i.e. particles and shaders).</p>
+</div>
 
 <h2 id="bible" class="font-semibold text-xl mb-2 mt-4">Art Bible</h2>
 <p>Want to see even more about art? Check out the Art Bible below for all the details.</p>
