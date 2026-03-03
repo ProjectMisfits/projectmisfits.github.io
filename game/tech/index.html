@@ -243,6 +243,7 @@
 <div class="mb-4 rounded-lg p-2 border border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
     <h2 class="text-xl font-semibold">Table of Contents</h2>
     <aside class="ml-8">
+        <li><a href="#lessons">Key Takeaways</a></li>
         <ul class="text-blue-700 dark:text-blue-200">
             <li><a href="#focus">Focus on Modular Design</a></li>
             <li><a href="#patterns">Using Data Driven Design Patterns</a>
@@ -252,17 +253,24 @@
                     <li><a href="#architecture">Architecture & YAGNI</a>
                 </ul>
             </li>
-            <li><a href="#lessons">Lessons Learned</a>
-                <ul class="ml-6">
-                    <li><a href="#learned">How We Learned This</a>
-                </ul>
-            </li>
+            <li><a href="#learned1">Lesson 1</a></li>
+            <li><a href="#learned2">Lesson 2</a></li>
+            <li><a href="#learned3">Lesson 3</a></li>
+            <li><a href="#learned4">Lesson 4</a></li>
             <li><a href="#bible">Tech Bible</a></li>
         </ul>
     </aside>
 </div>
 
-<h2 id="focus" class="font-semibold text-xl mb-2">Focus on Modular Design</h2>
+<h2 id="lessons" class="font-semibold text-xl mb-2 mt-4">Key Takeaways</h2>
+<ol class="list-decimal list-inside mt-2">
+    <li><a href="#learned1" class="text-blue-700 dark:text-blue-200">Custom Tools</a> are worth it.</li>
+    <li><a href="#learned1" class="text-blue-700 dark:text-blue-200">Borrow, don’t build.</a></li>
+    <li><a href="#learned1" class="text-blue-700 dark:text-blue-200">Understand the Relationship</a> between your engine and your assets.</li>
+    <li><a href="#learned1" class="text-blue-700 dark:text-blue-200">Prioritize</a> on necessary features first.</li>
+</ol>
+
+<h2 id="focus" class="font-semibold text-xl mt-4 mb-2">Focus on Modular Design</h2>
 <p class="mb-2">Our production timeline focused around weekly playtesting and rapid iteration. To enable quick additions and changes to the game, our codebase had to be extremely modular and easily tweakable. With this idea in mind, our codebase centered around “data-driven design”, which is outlined in Jonas Tyroller’s video 
     <a class="text-blue-700 dark:text-blue-200 italic" href="https://www.youtube.com/watch?v=8WqYQ1OwxJ4">Best Code Architecture for Indie Games</a>.
 </p>
@@ -274,7 +282,7 @@
 <p class="mb-2">Investing into a debug menu also paid off; it allowed us to see how values like Player velocity & states changed in real-time, which expedited debugging. Being able to swap from scene-to-scene without having to close the game and navigate the editor was also a great time-saver.</p>
 
 <h3 id="plugins" class="font-semibold mt-4">Plugins</h3>
-<p class="mb-2">Plugins proved to be very helpful & saved us a lot of time. LimboAI simplified the creation of state machines for the Player and Ice Scream enemies, and was very easy to work with.</p.
+<p class="mb-2">Plugins proved to be very helpful & saved us a lot of time. LimboAI simplified the creation of state machines for the Player and Ice Scream enemies, and was very easy to work with.</p>
 <p class="mb-2">We originally planned to use InkGD to handle dialogue sequences, but found its ease of use lacking. With that in mind, we switched to DialogueManager early on in our production. DialogueManager worked right out-of-the-box and streamlined our dialogue implementation. Unfortunately, the plugin had some shortcomings we had to wrestle with, like dialogue scripts only being able to call Autoloads and not having built-in compatibility with dialogue interruptions.</p>
 <p class="mb-2">We started using PhantomCamera midway through development and found it to be a very powerful tool with multiple convenient and intuitive features like camera priorities. However, we encountered issues with understanding the more complex features of the tool. This was largely because the plugin was relatively new, and thus did not have the ease of use associated with more mature tools. Additionally, the plugin’s documentation was broad but not very detailed, leading to times when we struggled to understand PhantomCamera’s full feature set.</p>
 
@@ -285,23 +293,29 @@
 <h3 id="architecture" class="font-semibold mt-4">Architecture & YAGNI</h3>
 <p class="mb-2">A major issue we struggled with throughout this project was creating systems that accomplished only what we wanted, and nothing more or less. As a team of less experienced programmers, we found it hard to know in advance exactly what functionality each system would need. This was further exacerbated by our constantly shifting design. This resulted in times when we over-engineered or under-engineered a system, both of which detracted from our development time. We had multiple occurrences where we succeeded and failed to create properly-scoped systems.</p>
 
-<h2 id="lessons" class="font-semibold text-xl mb-2 mt-4">Lessons Learned</h2>
-<ol class="list-decimal list-inside mt-2">
-    <li>Taking the time to develop custom tooling will pay off.</li>
-    <li>Borrow, don’t build.</li>
-    <li>Try to understand the relationship between your engine and your assets.</li>
-    <li>Focus on developing features you know you’ll need and ignore features you only think you’ll need.</li>
-</ol>
 
-<h3 id="learned" class="font-semibold mt-4">How We Learned This</h3>
-<h4>Lesson 1</h4>
-<p class="ml-8">We developed a rudimentary debug menu early on in development, sort of on a whim. It only had two features: a debug property panel that let us watch added variables change during runtime and a noclip panel that let us teleport the player to any room in the game. It seems somewhat insignificant at first glance, but the debug panel singlehandedly enabled us to iterate on room designs super quickly. Developing custom features that players will never see may seem like a waste of time for such a short timeframe but it actually paid off massively in the end.</p>
-<h4>Lesson 2</h4>
-<p class="ml-8">There are several features in Leaves of Fate that we simply would not have had the time to add if we developed them ourselves. The dialogue system, smooth camera manipulations, and player states all depend heavily on Godot plugins we found and implemented into our tech stack. These three features are fundamental to the gameplay experience and would not be nearly as polished if we had tried to build those systems ourselves instead of borrowing from existing projects.</p>
-<h4>Lesson 3</h4>
-<p class="ml-8">As a technical team member, it is important that you understand how the engine processes art to properly communicate to your art team how to make assets. This came about specifically with how Godot handles importing of art vs how it tiles art. There are things that the engine did under the hood that shifted line weights that were unknown until assets were already mostly done.</p>
-<h4>Lesson 4</h4>
-<p class="ml-8">We sometimes fell into the trap of designing code systems for things we thought we would need instead of what we actually needed at the moment. Learning the difference between wanting a feature and needing a feature is important because working on something we never use wastes our already limited time.</p>
+<div class="mb-8 mt-8 rounded-lg p-2 border border-blue-200 dark:border-blue-800 bg-blue-100 dark:bg-blue-900/20 rounded-lg">
+<h3 id="learned1" class="font-semibold">Lesson 1: Custom Tools</h3>
+    <p class="ml-8">We developed a rudimentary debug menu early on in development, sort of on a whim. It only had two features: a debug property panel that let us watch added variables change during runtime and a noclip panel that let us teleport the player to any room in the game. It seems somewhat insignificant at first glance, but the debug panel singlehandedly enabled us to iterate on room designs super quickly. Developing custom features that players will never see may seem like a waste of time for such a short timeframe but it actually paid off massively in the end.</p>
+</div>
+
+
+<div class="mb-8 mt-8 rounded-lg p-2 border border-blue-200 dark:border-blue-800 bg-blue-100 dark:bg-blue-900/20 rounded-lg">
+<h3 id="learned2" class="font-semibold">Lesson 2: Borrow, don't build</h3>
+    <p class="ml-8">There are several features in Leaves of Fate that we simply would not have had the time to add if we developed them ourselves. The dialogue system, smooth camera manipulations, and player states all depend heavily on Godot plugins we found and implemented into our tech stack. These three features are fundamental to the gameplay experience and would not be nearly as polished if we had tried to build those systems ourselves instead of borrowing from existing projects.</p>
+</div>
+
+
+<div class="mb-8 mt-8 rounded-lg p-2 border border-blue-200 dark:border-blue-800 bg-blue-100 dark:bg-blue-900/20 rounded-lg">
+<h3 id="learned3" class="font-semibold">Lesson 3: Relationship between Engine and Assets</h3>
+    <p class="ml-8">As a technical team member, it is important that you understand how the engine processes art to properly communicate to your art team how to make assets. This came about specifically with how Godot handles importing of art vs how it tiles art. There are things that the engine did under the hood that shifted line weights that were unknown until assets were already mostly done.</p>
+</div>
+
+
+<div class="mb-8 mt-8 rounded-lg p-2 border border-blue-200 dark:border-blue-800 bg-blue-100 dark:bg-blue-900/20 rounded-lg">
+<h3 id="learned4" class="font-semibold">Lesson 4: Prioritize Necessary Systems</h3>
+    <p class="ml-8">We sometimes fell into the trap of designing code systems for things we thought we would need instead of what we actually needed at the moment. Learning the difference between wanting a feature and needing a feature is important because working on something we never use wastes our already limited time.</p>
+</div>
 
 <h2 id="bible" class="font-semibold text-xl mb-2 mt-4">Tech Bible</h2>
 <p>Want to see even more about tech? Check out the Tech Bible below for all the details.</p>
