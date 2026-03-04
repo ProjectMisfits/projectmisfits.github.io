@@ -246,22 +246,26 @@
         <ul class="text-orange-700 dark:text-orange-200">
             <li><a href="#lessons">Key Takeaways</a></li>
             <li><a href="#goals">Design Goals</a></li>
-            <li><a href="#ownership">Design Domain Ownership</a></li>
-            <li><a href="#learned1">Lesson 1</a></li>
+            <li><a href="#ownership">Design Domain Ownership</a>
+              <ul class="ml-6">
+                <li><a href="#learned1">Lesson 1</a></li>
+              </ul>
+            </li>
             <li><a href="#design">Design Domains</a>
                 <ul class="ml-6">
                     <li><a href="#player">Player Abilities</a></li>
-                </ul>
-                <li><a href="#learned2">Lesson 2</a></li>
-                <ul class="ml-6">
                     <li><a href="#levels">Levels and Rooms</a>
                     <li><a href="#obstacles">Obstacles and Threats</a>
                     <li><a href="#ui">UI/UX and Interfaces</a>
+                      <li><a href="#learned2">Lesson 2</a></li>
                 </ul>
             </li>
             <li><a href="#vs">Player Iteration vs. Room Iteration</a></li>
-            <li><a href="#oops">Design Blew Up. It's Okay. What We Did When It Happened</a></li>
-            <li><a href="#learned3">Lesson 3</a></li>            
+            <li><a href="#oops">Design Blew Up. It's Okay. What We Did When It Happened</a>
+              <ul class="ml-6">
+                <li><a href="#learned3">Lesson 3</a></li>  
+              </ul>
+            </li>          
             <li><a href="#bible">Design Bible</a></li>
         </ul>
     </aside>
@@ -315,12 +319,6 @@
 <h4>Iteration 3</h4>
   <p class="ml-8">The resource meter now came back when the player hit the ground allowing for more dynamic chaining and much shorter of just the player running or dashing. This allowed for much more coherent level design and a player that felt much more fun to control.</p>
 
-
-<div class="mb-8 mt-8 rounded-lg p-2 border border-orange-200 dark:border-orange-800 bg-orange-100 dark:bg-orange-900/20 rounded-lg">
-  <h3 id="learned2" class="font-semibold">Lesson 2: Follow the Fun</h3>
-    <p class="ml-8">Throughout the design process we consistently iterated on our design to make the game more fun for players. We were always tweaking numbers, adjusting mechanics, watching what playtesters found the most fun, and going back to the drawing board to brainstorm new ideas.</p>
-</div>
-
 <h3 id="levels" class="font-semibold mt-4">Levels and Rooms</h3>
 <p class="mb-2">Balancing gameplay and narrative was done by trying to ensure that between every narrative room there were at least  two gameplay levels. Because of how much iteration was required in terms of gameplay we had to cut down on the number of  levels as gameplay became more refined based on weekly playtests. We had to shift and follow the fun of the game and ended up almost completely changing the movement style of the player to fit new design pillars we had created as time went on.</p>
 
@@ -337,6 +335,12 @@
 
 <h3 id="ui" class="font-semibold mt-4">UI/UX and Interfaces</h3>
 <p>Our initial designs for UI focused on a simple, clean, and easy to understand interface. The first iteration got decent feedback during playtesting, so we decided it was not worth continuing to iterate on the design.
+
+
+<div class="mb-8 mt-8 rounded-lg p-2 border border-orange-200 dark:border-orange-800 bg-orange-100 dark:bg-orange-900/20 rounded-lg">
+  <h3 id="learned2" class="font-semibold">Lesson 2: Follow the Fun</h3>
+    <p class="ml-8">Throughout the design process we consistently iterated on our design to make the game more fun for players. We were always tweaking numbers, adjusting mechanics, watching what playtesters found the most fun, and going back to the drawing board to brainstorm new ideas.</p>
+</div>
 
 <h2 id="vs" class="font-semibold text-xl mb-2 mt-4">Player Iteration vs. Room Iteration</h2>
 <p>Throughout production, we swapped back and forth between tweaking our player to match our room designs and tweaking our rooms to match our player design. We wish we had identified this pattern sooner and made the decision to favor just tweaking rooms to fit the feel of the player. Our vision and pillars emphasize the feel and experience of controlling the player, so using that as a design anchor point would have kept us better aligned with our original vision and pillars.</p>
