@@ -1,7 +1,7 @@
 ---
 layout: layouts/contractor.njk
 title: Our Playtesters
-date: 2026-09-01
+date: 2026-11-01
 description: All the people who gave us the feedback to make the game great!
 ---
 
