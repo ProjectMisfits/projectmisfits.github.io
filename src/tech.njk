@@ -23,20 +23,34 @@ title: Tech
 <div class="mb-4 rounded-lg p-2 border border-blue-200 dark:border-blue-800 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
     <h2 class="text-xl font-semibold">Table of Contents</h2>
     <aside class="ml-8">
-        <li><a href="#lessons">Key Takeaways</a></li>
         <ul class="text-blue-700 dark:text-blue-200">
-            <li><a href="#focus">Focus on Modular Design</a></li>
-            <li><a href="#patterns">Using Data Driven Design Patterns</a>
+            <li><a href="#lessons">Key Takeaways</a></li>
+            <li><a href="#goals">Tech Goals</a>
                 <ul class="ml-6">
-                    <li><a href="#plugins">Plugins</a>
-                    <li><a href="#godot">Godot & GDScript</a>
-                    <li><a href="#architecture">Architecture & YAGNI</a>
+                    <li><a href="#git">Source Control and GitHub</a></li>
+                    <li><a href="#learned1">Lesson 1</a></li>
+                    <li><a href="#systems">Major Code Systems</a></li>
+                    <li><a href="#learned2">Lesson 2</a></li>
+                    <li><a href="#modular">Modular Design & Game Programming Patterns</a></li>
+                    <li><a href="#learned3">Lesson 3</a></li>
+                    <li><a href="#tools">Creating Dev Tools</a></li>
+                    <li><a href="#learned4">Lesson 4</a></li>
                 </ul>
             </li>
-            <li><a href="#learned1">Lesson 1</a></li>
-            <li><a href="#learned2">Lesson 2</a></li>
-            <li><a href="#learned3">Lesson 3</a></li>
-            <li><a href="#learned4">Lesson 4</a></li>
+            <li><a href="#pipeline">General Tech Pipeline</a>
+                <ul class="ml-6">
+                    <li><a href="#support">How Godot Supported Our Tech Goals</a></li>
+                    <li><a href="#hindered">How Godot Hindered Our Tech Goals</a></li>
+                    <li><a href="#learned5">Lesson 5</a></li>
+                    <li><a href="#plugins">Using Plugins</a></li>
+                    <li><a href="#learned6">Lesson 6</a></li>
+                </ul>
+            </li>
+            <li><a href="#retrospective">Retrospective</a>
+                <ul class="ml-6">
+                    <li><a href="#learned7">Lesson 7</a></li>
+                </ul>
+            </li>
             <li><a href="#bible">Tech Bible</a></li>
         </ul>
     </aside>
@@ -44,57 +58,160 @@ title: Tech
 
 <h2 id="lessons" class="font-semibold text-xl mb-2 mt-4">Key Takeaways</h2>
 <ol class="list-decimal list-inside mt-2">
-    <li><a href="#learned1" class="text-blue-700 dark:text-blue-200">Custom Tools</a> are worth it.</li>
+    <li><a href="#learned1" class="text-blue-700 dark:text-blue-200">Using source control</a> is critical to the technical process.</li>
+    <li><a href="#learned1" class="text-blue-700 dark:text-blue-200">Develop crucial features first</a> and ignore everything else.</li>
+    <li><a href="#learned1" class="text-blue-700 dark:text-blue-200">Research game code and architecture</a> ahead of time.</li>
+    <li><a href="#learned1" class="text-blue-700 dark:text-blue-200">Plan for and create custom developer tools.</a> It will pay off.</li>
+    <li><a href="#learned1" class="text-blue-700 dark:text-blue-200">Understand what your engine can do</a>, can’t do, and how it’s set up to help you.</li>
     <li><a href="#learned1" class="text-blue-700 dark:text-blue-200">Borrow, don’t build.</a></li>
-    <li><a href="#learned1" class="text-blue-700 dark:text-blue-200">Understand the Relationship</a> between your engine and your assets.</li>
-    <li><a href="#learned1" class="text-blue-700 dark:text-blue-200">Prioritize</a> on necessary features first.</li>
+    <li>Be careful about <a href="#learned1" class="text-blue-700 dark:text-blue-200">technical debt.</a></li>
 </ol>
 
-<h2 id="focus" class="font-semibold text-xl mt-4 mb-2">Focus on Modular Design</h2>
-<p class="mb-2">Our production timeline focused around weekly playtesting and rapid iteration. To enable quick additions and changes to the game, our codebase had to be extremely modular and easily tweakable. With this idea in mind, our codebase centered around “data-driven design”, which is outlined in Jonas Tyroller’s video 
-    <a class="text-blue-700 dark:text-blue-200 italic" href="https://www.youtube.com/watch?v=8WqYQ1OwxJ4">Best Code Architecture for Indie Games</a>.
-</p>
-<p class="mb-2">Data-driven design emphasizes modularity through rigid segmentation. One of the largest benefits of this is being able to store all design-related parameters in separate resource files, which are read by the game at runtime to determine behaviors. This would allow the whole game to be easily tweakable without even opening the Godot editor, which would be very designer-friendly.</p>
-<p class="mb-2">Data-driven design also emphasizes modularity by creating systems that can be applied to many different contexts, like creating a “hurt” component that could be applied to anything to make it capable of having health and taking damage. Since platformers can have many different systems working with each other in creative ways, using modular components would make it easy to tweak design and smoothly enable complex interactions.</p>
+<h2 id="goals" class="font-semibold text-xl mt-4 mb-2">Tech Goals</h2>
+<p>Because our core team is basically all programmers, we established strong technical conventions and practices early. We set up our development process to be quick and easy to give us more time to iterate on our designs. To this end, we developed a comprehensive Tech Bible to use as a reference throughout production for anything related to tech. Here are the major decisions we made.</p>
 
-<h2 id="patterns" class="font-semibold text-xl mb-2">Using Data Driven Design Patterns</h2>
-<p class="mb-2">Throughout development, data-driven design proved to be very useful, especially as our game’s design work became a larger focus. Having numerical parameters in separate text files made it extremely easy to modify how entities behaved. This was especially helpful when tweaking the Player, which had to undergo many design changes throughout development. Similarly, prioritizing modular features helped our systems scale when we wanted to add or change features.</p>
-<p class="mb-2">Investing into a debug menu also paid off; it allowed us to see how values like Player velocity & states changed in real-time, which expedited debugging. Being able to swap from scene-to-scene without having to close the game and navigate the editor was also a great time-saver.</p>
-
-<h3 id="plugins" class="font-semibold mt-4">Plugins</h3>
-<p class="mb-2">Plugins proved to be very helpful & saved us a lot of time. LimboAI simplified the creation of state machines for the Player and Ice Scream enemies, and was very easy to work with.</p>
-<p class="mb-2">We originally planned to use InkGD to handle dialogue sequences, but found its ease of use lacking. With that in mind, we switched to DialogueManager early on in our production. DialogueManager worked right out-of-the-box and streamlined our dialogue implementation. Unfortunately, the plugin had some shortcomings we had to wrestle with, like dialogue scripts only being able to call Autoloads and not having built-in compatibility with dialogue interruptions.</p>
-<p class="mb-2">We started using PhantomCamera midway through development and found it to be a very powerful tool with multiple convenient and intuitive features like camera priorities. However, we encountered issues with understanding the more complex features of the tool. This was largely because the plugin was relatively new, and thus did not have the ease of use associated with more mature tools. Additionally, the plugin’s documentation was broad but not very detailed, leading to times when we struggled to understand PhantomCamera’s full feature set.</p>
-
-<h3 id="godot" class="font-semibold mt-4">Godot & GDScript</h3>
-<p class="mb-2">Godot proved to be very powerful for developing our game, but served as a double-edged sword. The engine is very flexible, providing many options to accomplish the same task while also making it easy to rebuild a system if one option does not work out. Documentation is also plentiful and detailed, which helped us understand the engine’s capabilities quickly.</p>
-<p class="mb-2">However, Godot and GDScript were not as mature as other engines & languages, which created some roadblocks when Godot and GDScript lacked useful features, like structs and interfaces. We also encountered issues using Godot’s JSON resources, which would not open up in the editor and forced us to use an external text editor for parameter tweaks. The sheer number of options to create systems also made it difficult to know which option would work best for the game. During development, we under-utilized TileMapLayers and over-used CanvasLayers, both of which forced us to refactor our architecture later in the project.</p>
-
-<h3 id="architecture" class="font-semibold mt-4">Architecture & YAGNI</h3>
-<p class="mb-2">A major issue we struggled with throughout this project was creating systems that accomplished only what we wanted, and nothing more or less. As a team of less experienced programmers, we found it hard to know in advance exactly what functionality each system would need. This was further exacerbated by our constantly shifting design. This resulted in times when we over-engineered or under-engineered a system, both of which detracted from our development time. We had multiple occurrences where we succeeded and failed to create properly-scoped systems.</p>
+<h3 id="git" class="font-semibold mt-4">Source Control and GitHub</h3>
+<p class="mb-2">We established clear cut conventions and practices for using source control, git, and GitHub in our tech bible and made setting up source control and a GitHub repository the very first production task.</p>
+<p>Read more about our git guidelines and conventions in the "Source Control Rules" section of the <a href="#bible" class="text-blue-700 dark:text-blue-200">Tech Bible</a>.</p>
 
 {# LESSON 1 #}
 <div class="mb-8 mt-8 rounded-lg p-2 border border-blue-200 dark:border-blue-800 bg-blue-100 dark:bg-blue-900/20 rounded-lg">
-<h3 id="learned1" class="font-semibold">Lesson 1: Custom Tools</h3>
-    <p class="ml-8">We developed a rudimentary debug menu early on in development, sort of on a whim. It only had two features: a debug property panel that let us watch added variables change during runtime and a noclip panel that let us teleport the player to any room in the game. It seems somewhat insignificant at first glance, but the debug panel singlehandedly enabled us to iterate on room designs super quickly. Developing custom features that players will never see may seem like a waste of time for such a short timeframe but it actually paid off massively in the end.</p>
+<h3 id="learned1" class="font-semibold">Lesson 1: Using source control is critical to the technical process.</h3>
+    <p class="ml-8">Collaboration at this scale is impossible without source control and clear conventions. Make a plan and make it the first step of production.</p>
 </div>
+
+<h3 id="systems" class="font-semibold mt-4">Major Code Systems</h3>
+<p>Knowing that we wanted to make a 2D platformer, the major systems we started with were:</p>
+<ul class="list-disc ml-8">
+    <li>Player Movement</li>
+    <li>Player Health</li>
+    <li>HUD</li>
+    <li>Various Enemy Types</li>
+    <li>Rooms and Room Transitions</li>
+    <li>Heater Entities</li>
+    <li>Collisions</li>
+    <li>Developer and Debug Tools</li>
+</ul>
+
+<p class="mt-2">See the list of systems we brainstormed in pre-production here:</p>
+<div class="flex justify-center mb-4">
+    <div class="border border-grey-300 rounded-lg shadow-lg text-center mt-4 w-[620]">
+        <iframe src="/assets/tech/Major Code Systems List.pdf" width="618" height="800"></iframe>
+        <a class="text-blue-600 hover:text-blue-800" href="https://docs.google.com/document/d/18FZlECH2FoVDatjkE_0aYV7YIDADqTHJfcKEsDAYQ4k/edit?tab=t.0#heading=h.3fx31g4falhz" target="_blank">Link to Full Document</a> 
+    </div>
+</div>
+
+<p>The major systems we figured out we also needed during production were:</p>
+<ul class="list-disc ml-8 mb-2">
+    <li>Various menus and non-HUD UI elements</li>
+    <li>Triggers</li>
+    <li>Event flags and tracking game state</li>
+    <li>Grab ability</li>
+    <li>Non-enemy entities (bronze pipes, moving platforms)</li>
+    <li>Fine control over scene swapping</li>
+    <li>Camera manipulation and management</li>
+    <li>Cutscene systems</li>
+    <li>Dialogue systems</li>
+</ul>
+
+<p>We sometimes fell into the trap of designing code for features we thought we would need, not simply the feature we needed, which wasted development time. One example is player health. We developed a full player health system and had to build the player dying on top of it. Then we switched to making the player die from any hazard, meaning we had to refactor and disentangle player health from player death logic.</p>
 
 {# LESSON 2 #}
 <div class="mb-8 mt-8 rounded-lg p-2 border border-blue-200 dark:border-blue-800 bg-blue-100 dark:bg-blue-900/20 rounded-lg">
-<h3 id="learned2" class="font-semibold">Lesson 2: Borrow, don't build</h3>
-    <p class="ml-8">There are several features in Leaves of Fate that we simply would not have had the time to add if we developed them ourselves. The dialogue system, smooth camera manipulations, and player states all depend heavily on Godot plugins we found and implemented into our tech stack. These three features are fundamental to the gameplay experience and would not be nearly as polished if we had tried to build those systems ourselves instead of borrowing from existing projects.</p>
+<h3 id="learned2" class="font-semibold">Lesson 2: Develop crucial features first and ignore everything else.</h3>
+    <p class="ml-8">If you find yourself working on a feature you think you might need, table it. You can come back to it once you realize you actually need it. It will make your code less cluttered and easier to understand.</p>
 </div>
+
+<h3 id="modular" class="font-semibold mt-4">Modular Design & Game Programming Patterns</h3>
+<p class="mb-2">We wanted to develop code that let us modify a value to test its impact on game feel without recompilation or idle time. For this purpose we decided to use data driven design as our main programming paradigm. We successfully used data driven design throughout production, especially in the early stages.</p>
+<p class="mb-2">Read more about our use of data driven design in the "Data-driven Design" section of the <a href="#bible" class="text-blue-700 dark:text-blue-200">Tech Bible</a>.</p>
+<p class="mb-2">Later in production we discovered the value of entity-component systems (ECS). ECS is a software architecture pattern that focuses on composition instead of inheritance. Data-driven design focuses on modularity through reusable systems, and ECS takes the concept of modular code to a much higher level than OOP. We realized that ECS complemented many of the systems we hadn’t anticipated needing and pivoted to make use of its principles. Adapting to make use of entity-component systems gave us the modularity we use for cutscenes, the player interact and grab, and game event triggers.</p>
+<p class="mb-2">Read more about our use of ECS in the "Entity-component System" section of the <a href="#bible" class="text-blue-700 dark:text-blue-200">Tech Bible</a>.</p>
 
 {# LESSON 3 #}
 <div class="mb-8 mt-8 rounded-lg p-2 border border-blue-200 dark:border-blue-800 bg-blue-100 dark:bg-blue-900/20 rounded-lg">
-<h3 id="learned3" class="font-semibold">Lesson 3: Relationship between Engine and Assets</h3>
-    <p class="ml-8">As a technical team member, it is important that you understand how the engine processes art to properly communicate to your art team how to make assets. This came about specifically with how Godot handles importing of art vs how it tiles art. There are things that the engine did under the hood that shifted line weights that were unknown until assets were already mostly done.</p>
+<h3 id="learned3" class="font-semibold">Lesson 3: Research game code and architecture ahead of time.</h3>
+    <p class="ml-8">Doing research helps you determine what architecture or programming patterns will best support your game. It also gives you reference code that makes designing your systems easier.</p>
 </div>
+
+<h3 id="tools" class="font-semibold mt-4">Creating Dev Tools</h3>
+<p class="mb-2">In pre-production we determined that making custom developer tools would make our development process faster. Our primary ideas for custom tools were a level editor and a debug menu. While we had these ideas in mind, we did not document or plan out what tools we wanted explicitly.</p>
+<p class="mb-2">Early in production we developed a rudimentary debug menu, essentially on a whim. It had two features: a debug property panel for watching values change during runtime and a noclip panel for teleporting the player to any room. As simple as it was, the “on a whim” debug menu ended up being critical to our design process because it let us quickly test ideas and playtest room designs.</p>
+<p class="mb-2">Read more about our design process on the <a href="/game/design/" class="text-blue-700 dark:text-blue-200">Design Page</a>.</p>
 
 {# LESSON 4 #}
 <div class="mb-8 mt-8 rounded-lg p-2 border border-blue-200 dark:border-blue-800 bg-blue-100 dark:bg-blue-900/20 rounded-lg">
-<h3 id="learned4" class="font-semibold">Lesson 4: Prioritize Necessary Systems</h3>
-    <p class="ml-8">We sometimes fell into the trap of designing code systems for things we thought we would need instead of what we actually needed at the moment. Learning the difference between wanting a feature and needing a feature is important because working on something we never use wastes our already limited time.</p>
+<h3 id="learned4" class="font-semibold">Lesson 4: Plan for and create custom developer tools. It will pay off.</h3>
+    <p class="ml-8">Take some time to plan out some developer tools that would be helpful to your team and put effort into them early. Developer tools should not be an afterthought.</p>
+    <p class="ml-8 mt-2">Also, keep it simple. Simple tools can have a big impact. You don’t need a fully fledged level editor to speed up your process.</p>
+</div>
+
+<h2 id="pipeline" class="font-semibold text-xl mt-4 mb-2">General Tech Pipeline</h2>
+<h3 id="support" class="font-semibold mt-4">How Godot Supported Our Tech Goals</h3>
+<p>We decided to use Godot because it was the best fit for our game’s genre and our goals. Here are some of the major draws of the engine:</p>
+<ul class="ml-8 list-disc">
+    <li>Features aligned with object-oriented programming and inheritance</li>
+    <li>Built-in features targeted at 2D platformers, including complex physics</li>
+    <li>In-depth documentation and community support</li>
+    <li>Plugin support</li>
+    <li>Godot is free, open-source, and doesn’t require licensing fees</li>
+</ul>
+<p class="mt-2">Selecting Godot as our engine worked out really well for us. We prioritized understanding Godot’s core features and OOP-based mindset. Here are some engine features that we used and learned from throughout the entire development timeline:</p>
+<ul class="ml-8 list-disc">
+    <li>Signals</li>
+    <li>Autolaods</li>
+    <li>Plugin Support</li>
+    <li>Typed Nodes</li>
+    <li>TileMapLayers</li>
+    <li>Resources</li>
+    <li>Nested Scenes</li>
+    <li>Input Mapping</li>
+</ul>
+<p class="mt-2">Because we prioritized understanding Godot’s core features and OOP-based mindset during production, there were some features we planned to use that ended up on the backburner. In future projects we want to take advantage of features like:</p>
+<ul class="ml-8 list-disc mb-2">
+    <li>Running scripts in the editor</li>
+    <li>Scene collections</li>
+    <li>Custom resources</li>
+</ul>
+<p class="mb-2">Read more about how we set up and used Godot here: <a href="#bible" class="text-blue-700 dark:text-blue-200">Tech Bible</a></p>
+<p class="mb-2">Read more about Godot Engine's features here: <a href="https://docs.godotengine.org/en/stable/" target="_blank" class="text-blue-700 dark:text-blue-200">Godot Official Docs</a></p>
+
+<h3 id="hindered" class="font-semibold mt-4">How Godot Hindered Our Tech Goals</h3>
+<p>Godot has some limitations that slowed development because we had to find workarounds to get things up and running. For example, Godot’s scripting language does not have support for structs, interfaces, or nullable static types. This hindered our ability to follow Godot’s OOP-based mindset and is what led us to learn about and use entity-component systems. Going into production we did not realize that these features were unsupported by Godot, and we could have prevented some of our technical debt if we had known earlier.</p>
+
+{# LESSON 5 #}
+<div class="mb-8 mt-8 rounded-lg p-2 border border-blue-200 dark:border-blue-800 bg-blue-100 dark:bg-blue-900/20 rounded-lg">
+<h3 id="learned5" class="font-semibold">Lesson 5: Understand what your engine can do, can’t do, and how it’s set up to help you.</h3>
+    <p class="ml-8">Game engines are designed to serve a specific purpose for a particular programming mindset. For example, you wouldn’t use RPGMaker to develop a first person hero shooter. Once you make a decision about what engine to use, do some research to understand how the engine wants you to structure your project and what features it provides for your use case.</p>
+    <p class="mt-2 ml-8">Also be lenient with yourself. Projects like this are a learning experience, and no one knows exactly how to use an engine out the gate. You don’t know what you don’t know, so don’t beat yourself up over it; be willing to adapt and learn what to do better next time.</p>
+</div>
+
+<h3 id="plugins" class="font-semibold mt-4">Using Plugins</h3>
+<p class="mb-2">Godot provides powerful building blocks, but developers need to build their game’s systems out of those blocks. Using Godot plugins saved us a lot of time by giving us pre-built versions of complicated systems that show up in many different games. For example, the dialogue system, smooth camera manipulations, and player states are all thanks to Godot plugins we found and used in our code.  Plugins let us focus on implementing the systems unique to our game.</p>
+<p class="mb-2">Read more about the plugins we used here: <a href="#bible" class="text-blue-700 dark:text-blue-200">Tech Bible</a></p>
+
+{# LESSON 6 #}
+<div class="mb-8 mt-8 rounded-lg p-2 border border-blue-200 dark:border-blue-800 bg-blue-100 dark:bg-blue-900/20 rounded-lg">
+<h3 id="learned6" class="font-semibold">Lesson 6: Borrow, don’t build.</h3>
+    <p class="ml-8">Borrowing from existing projects made Leaves of Fate possible. Borrow from existing projects instead of reinventing the wheel.</p>
+</div>
+
+<h2 id="retrospective" class="font-semibold text-xl mt-4 mb-2">Retrospective</h2>
+<p>One of the biggest challenges we faced was <a href="https://en.wikipedia.org/wiki/Technical_debt" target="_blank" class="text-blue-700 dark:text-blue-200">technical debt</a>, especially in the last three weeks of production. The rapidly approaching deadline led us to cut technical corners a lot of the time. The conventions we had difficulty maintaining during production were:</p>
+<ul class="list-disc ml-8 mb-2">
+    <li>Consistent file names</li>
+    <li>Creating small releases frequently using semantic versioning</li>
+    <li>Storing files in the appropriate asset/ or src/ folders</li>
+    <li>Following certain coding guidelines, like connecting signals in the editor or only using autoloads for always-needed logic</li>
+    <li>Following certain Git and GitHub practices, like conducting thorough code reviews</li>
+    <li>Using log messages in code</li>
+</ul>
+<p>Looking back, we realized that it is important to routinely iron out inconsistencies and bring project files up to standard to prevent technical debt. We did do some cleanup but it was always when someone didn’t have something else to do or was already refactoring something anyway. This caused us a lot of stress and crunch time in the final weeks of production because we had to deal with disorganized code to get final features and systems working.</p>
+
+{# LESSON 7  #}
+<div class="mb-8 mt-8 rounded-lg p-2 border border-blue-200 dark:border-blue-800 bg-blue-100 dark:bg-blue-900/20 rounded-lg">
+<h3 id="learned7" class="font-semibold">Lesson 7:  Be careful about technical debt.</h3>
+    <p class="ml-8">Periodically make sure to bring your project files up to par. It’s never a bad idea, especially if you’re working on a project over a long period of time. Conventions are easy to overlook when you “just need to get it done”, but technical debt slows everything down the longer it goes unattended.</p>
 </div>
 
 <h2 id="bible" class="font-semibold text-xl mb-2 mt-4">Tech Bible</h2>
