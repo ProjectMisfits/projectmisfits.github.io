@@ -94,7 +94,7 @@ permalink: "/team/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumbe
 {% else %}
 <section>
   {% for item in items %}
-  <article class="border-t border-b py-4 hover:bg-blue-100 transition-colors">
+  <article class="border-t border-b py-4 hover:bg-blue-100 dark:hover:bg-blue-700/30 transition-colors">
     <h2 class="text-lg font-semibold"><a class="u-url" href="{{ item.url }}">{{ item.data.title or 'Untitled' }}</a></h2>
     {% if item.data.description %}
       <p class="p-summary">{{ item.data.description }}</p>

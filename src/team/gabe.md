@@ -5,8 +5,8 @@ date: 2026-05-01
 description: Audio
 ---
 
-Gabe worked on both SFX and programming. He found many of the sounds used in the game and also created the games save and load system. 
+Gabe worked on both SFX and programming. He found and edited many of the sounds used in the game, as well as created the save and load system. 
 
-Check out more about the Game Audio: [🔊 Here](https://projectmisfits.github.io/game/audio/)
+Read more about our audio [here](https://projectmisfits.github.io/game/audio/)!
 
-Check out more about Tech: [💻 Here](https://projectmisfits.github.io/game/tech/)
+Read more about our tech [here](https://projectmisfits.github.io/game/tech/)!

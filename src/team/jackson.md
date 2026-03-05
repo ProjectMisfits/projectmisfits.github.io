@@ -7,4 +7,4 @@ description: Audio
 
 Jackson was brought on as a SFX artist and created all the footsteps SFX in the project. 
 
-Check Out Jackson's Full Project Misfits Audio Portfolio: <a href="https://drive.google.com/drive/folders/1i-0XW97rH3WljVswG6um-LxrhhtHUAFb?usp=sharing" target="_blank">Here</a>
+You can find Jackson's full Project Misfits portfolio <a href="https://drive.google.com/drive/folders/1i-0XW97rH3WljVswG6um-LxrhhtHUAFb?usp=sharing" target="_blank">here</a>!
