@@ -35,10 +35,6 @@
     "enabled": true,
     "domain": ""
   },
-  "webring": {
-    "enabled": false,
-    "url": "https://indieweb.org/webring"
-  },
   "lighthouse": {
     "enabled": false,
     "url": "https://pagespeed.web.dev/"
