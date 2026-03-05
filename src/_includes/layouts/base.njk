@@ -40,16 +40,6 @@
   <meta property="og:image" content="{{ ogImage }}" />
   <meta property="og:image:alt" content="{{ site.name }} preview" />
 
-  {# Twitter Card #}
-  <meta name="twitter:card" content="summary_large_image" />
-  {% if site.social and site.social.twitter %}
-    <meta name="twitter:site" content="{{ site.social.twitter }}" />
-    <meta name="twitter:creator" content="{{ site.social.twitter }}" />
-  {% endif %}
-  <meta name="twitter:title" content="{{ ogTitle }}" />
-  <meta name="twitter:description" content="{{ ogDescription }}" />
-  <meta name="twitter:image" content="{{ ogImage }}" />
-  <meta name="twitter:image:alt" content="{{ site.name }} preview" />
   <link rel="stylesheet" href="/assets/css/build.css" />
   <link rel="alternate" type="application/atom+xml" title="{{ site.name }} Feed" href="/feed.xml" />
   {# Favicon and theme color #}
