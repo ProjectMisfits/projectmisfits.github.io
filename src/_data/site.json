@@ -25,12 +25,6 @@
     "title": "Join the Newsletter",
     "description": "Get thoughtful updates delivered to your inbox. No spam, just meaningful content."
   },
-  "analytics": {
-    "enabled": false,
-    "provider": "plausible",
-    "domain": "",
-    "siteId": ""
-  },
   "indieweb": {
     "h_card": true,
     "rel_me": true,
