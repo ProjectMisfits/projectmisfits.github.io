@@ -14,6 +14,7 @@ Our Playtesters:
 - Rose Briggs 'Strawberry' 
 - Carter Cermak
 - Anthony Curcio
+- Jacob Curtis
 - Joaquin Donahue
 - Charles Engler
 - Dennis Field
