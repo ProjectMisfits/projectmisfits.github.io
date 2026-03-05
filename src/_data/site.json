@@ -31,10 +31,6 @@
     "domain": "",
     "siteId": ""
   },
-  "webmentions": {
-    "enabled": true,
-    "domain": ""
-  },
   "lighthouse": {
     "enabled": false,
     "url": "https://pagespeed.web.dev/"
