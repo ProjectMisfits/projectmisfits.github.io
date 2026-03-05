@@ -98,40 +98,10 @@ title: Site Directory
       </ul>
     </div>
 
-     <!-- Recent Posts -->
-    <div class="bg-[var(--surface)] rounded-lg p-6 border border-pink-200 dark:border-pink-800 md:col-span-2">
-      <h2 class="text-lg font-semibold mb-4 text-pink-700 dark:text-pink-300">📝 Recent Updates</h2>
-
-      {# Fallback to searchIndex like homepage if posts collection is empty #}
-      {% set recent = collections.updates | default([]) %}
-      {% if (recent | length) == 0 %}
-        {% set recent = collections.searchIndex | default([]) %}
-      {% endif %}
-
-      {% if recent | length > 0 %}
-      <ul class="space-y-2">
-        {% for post in recent | head(5) %}
-        {% set url = post.url or post.id %}
-        {% set title = (post.data and post.data.title) or post.title %}
-        <li>
-          <a href="{{ url }}" class="block hover:text-pink-600 dark:hover:text-pink-400">
-            <span class="font-medium">{{ title }}</span>
-            {% if post.date %}
-            <span class="text-sm text-gray-500 dark:text-gray-400 block">{{ post.date | readableDate }}</span>
-            {% endif %}
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-      {% else %}
-      <p class="text-gray-500 dark:text-gray-400 italic">No posts yet. Start writing!</p>
-      {% endif %}
-    </div>
-
     <!-- Fun Stuff -->
-    <div class="bg-[var(--surface)] rounded-lg p-6 border border-indigo-200 dark:border-indigo-800">
+    <div class="bg-[var(--surface)] rounded-lg p-6 border border-indigo-200 dark:border-indigo-800 md:col-span-3">
       <h2 class="text-lg font-semibold mb-4 text-indigo-700 dark:text-indigo-300">🎪 Fun Stuff</h2>
-      <ul class="space-y-2 text-sm">
+      <ul class="flex flex-col md:flex-row text-base md:space-y-0 justify-center">
         <li class="text-gray-600 dark:text-gray-400">🎮 Try the Konami code</li>
         <li class="text-gray-600 dark:text-gray-400">⌨️ Type "fenn" anywhere</li>
         <li class="text-gray-600 dark:text-gray-400">🌙 Toggle dark mode</li>
