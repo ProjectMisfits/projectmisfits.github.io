@@ -5,7 +5,10 @@ date: 2026-02-25
 description: Check out our content complete release!
 ---
 
-### **Download the release <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.5.0" target="_blank">here</a>!**
+### **Download a release for your operating system here:**
+[Windows](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.5.0/leaves_of_fate_v1.5.0_win.zip)  
+[Linux](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.5.0/leaves_of_fate_v1.5.0_linux.zip)  
+[Mac](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.5.0/leaves_of_fate_v1.5.0_mac.zip)  
 
 #### **Major Changes:**
 - Dialogue draft 3
@@ -48,4 +51,4 @@ description: Check out our content complete release!
 - Cutscene refinements 
 
 
-View Full Changelog Here: <a href="https://github.com/ProjectMisfits/mqp-project/compare/v1.4.0...v1.5.0" target="_blank">v1.4.0...v1.5.0</a> 
+See the full list of changes on the Github release here: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.5.0" target="_blank">v1.5.0</a>

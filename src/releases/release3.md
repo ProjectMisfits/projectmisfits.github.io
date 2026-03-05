@@ -5,7 +5,10 @@ date: 2026-02-04
 description: Check out our first playable!
 ---
 
-### **Download the release <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.2.0" target="_blank">here</a>!**
+### **Download a release for your operating system here:**
+[Windows](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.2.0/project_misfits_v1.2.0.zip)  
+[Linux (not available yet)]()  
+[Mac (not available yet)]()  
 
 #### **Major Changes:**
 - Audio manager implementation 
@@ -26,4 +29,5 @@ description: Check out our first playable!
 - Room prototypes 
 - And more! 
 
-View Full Changelog Here: <a href="https://github.com/ProjectMisfits/mqp-project/compare/v1.1.0...v1.2.0" target="_blank">v1.1.0...v1.2.0</a> 
+
+See the full list of changes on the Github release here: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.2.0" target="_blank">v1.2.0</a>

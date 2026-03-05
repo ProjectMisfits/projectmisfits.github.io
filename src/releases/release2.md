@@ -5,7 +5,10 @@ date: 2026-01-29
 description: Check out our first prototype!
 ---
 
-### **Download the release <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.1.0" target="_blank">here</a>!**
+### **Download a release for your operating system here:**
+[Windows](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.1.0/project_misfits_v1.1.0.zip)  
+[Linux (not available yet)]()  
+[Mac (not available yet)]()  
 
 #### **Major Changes:**
 - Main menu & settings menu 
@@ -23,4 +26,5 @@ description: Check out our first prototype!
 - Adjusted player parameters
 - Great hall & cellar room prototypes 
 
-View Full Changelog Here: <a href="https://github.com/ProjectMisfits/mqp-project/compare/v1.0.0...v1.1.0" target="_blank">v1.0.0...v1.1.0</a>
+
+See the full list of changes on the Github release here: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.1.0" target="_blank">v1.1.0</a>

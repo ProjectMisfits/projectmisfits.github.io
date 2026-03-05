@@ -5,7 +5,10 @@ date: 2026-02-11
 description: Check out our minimum viable product!
 ---
 
-### **Download the release <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.3.0" target="_blank">here</a>!**
+### **Download a release for your operating system here:**
+[Windows](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.3.0/project_misfits_v1.3.0.zip)  
+[Linux](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.3.0/project_misfits_v1.3.0_linux.zip)  
+[Mac (not available yet)]()  
 
 #### **Major Changes:**
 - Added Ice Scream sprites
@@ -40,4 +43,4 @@ description: Check out our minimum viable product!
 - Character portrait UI
 
 
-View Full Changelog Here: <a href="https://github.com/ProjectMisfits/mqp-project/compare/v1.2.0...v1.3.0" target="_blank">v1.2.0...v1.3.0</a> 
+See the full list of changes on the Github release here: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.3.0" target="_blank">v1.3.0</a>
