@@ -209,29 +209,38 @@
     <div id="primary-nav" class="container mx-auto px-4 py-2 hidden md:block">
       {# Nav items #}
       <ul class="flex flex-col md:flex-row text-base md:text-sm space-y-3 md:space-y-0 md:space-x-6">
+        {# Set variables to check what pages in the navbar the user is on #}
+        {% set url = page.url or '/' %}
+        {% set isHome = url == '/' %}
+        {% set isAboutGame = url == '/game/' %}
+        {% set isAboutTeam = url == '/team/' %}
+        {% set isUpdates = url == '/updates/' %}
+        {% set isTimeline = url == '/timeline/' %}
+        {% set isReleases = url == '/releases/' %}
+
         <li>
           <a href="/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isHome %}underline font-semibold{% endif %}"
              {% if isHome %}aria-current="page"{% endif %}>🏠 Home</a>
         </li>
         <li>
-          <a href="/game/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isUses %}underline font-semibold{% endif %}"
-             {% if isUses %}aria-current="page"{% endif %}>💡 About the Game</a>
+          <a href="/game/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isAboutGame %}underline font-semibold{% endif %}"
+             {% if isAboutGame %}aria-current="page"{% endif %}>💡 About the Game</a>
         </li>
         <li>
-          <a href="/team/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isAbout %}underline font-semibold{% endif %}"
-             {% if isAbout %}aria-current="page"{% endif %}>👋 About the Team</a>
+          <a href="/team/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isAboutTeam %}underline font-semibold{% endif %}"
+             {% if isAboutTeam %}aria-current="page"{% endif %}>👋 About the Team</a>
         </li>
         <li>
-          <a href="/updates/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isBlog %}underline font-semibold{% endif %}"
-             {% if isBlog %}aria-current="page"{% endif %}>🛠️ Dev Updates</a>
+          <a href="/updates/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isUpdates %}underline font-semibold{% endif %}"
+             {% if isUpdates %}aria-current="page"{% endif %}>🛠️ Dev Updates</a>
         </li>
         <li>
-          <a href="/timeline/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isNow %}underline font-semibold{% endif %}"
-             {% if isNow %}aria-current="page"{% endif %}>🗓️ Dev Timeline</a>
+          <a href="/timeline/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isTimeline %}underline font-semibold{% endif %}"
+             {% if isTimeline %}aria-current="page"{% endif %}>🗓️ Dev Timeline</a>
         </li>
         <li>
-          <a href="/releases/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isContact %}underline font-semibold{% endif %}"
-             {% if isContact %}aria-current="page"{% endif %}>🎮 Releases</a>
+          <a href="/releases/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isReleases %}underline font-semibold{% endif %}"
+             {% if isReleases %}aria-current="page"{% endif %}>🎮 Releases</a>
         </li>
       </ul>
     </div>
