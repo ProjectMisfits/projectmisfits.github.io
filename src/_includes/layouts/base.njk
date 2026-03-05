@@ -117,7 +117,7 @@
   <nav class="bg-[var(--surface)] border-b border-gray-200 dark:border-gray-700">
     <div id="primary-nav" class="container mx-auto px-4 py-2 hidden md:block">
       {# Nav items #}
-      <ul class="flex flex-col md:flex-row text-base md:text-sm space-y-3 md:space-y-0 md:space-x-6">
+      <ul class="flex flex-col md:flex-row text-base md:text-sm space-y-3 md:space-y-0 md:space-x-6 justify-center">
         {# Set variables to check what pages in the navbar the user is on #}
         {% set url = page.url or '/' %}
         {% set isHome = url == '/' %}
