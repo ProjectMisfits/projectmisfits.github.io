@@ -2,13 +2,12 @@
 layout: layouts/release.njk
 title: Release 4 (v1.3.0)
 date: 2026-02-11
-description: Download Release 4 Here!
+description: Check out our minimum viable product!
 ---
 
-## **Download the Release Off of GitHub Here**: 
-GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.3.0" target="_blank">Dowload Here</a>
+### **Download the release <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.3.0" target="_blank">here</a>!**
 
-### **Major Additions**
+#### **Major Changes:**
 - Added Ice Scream sprites
 - Created interact prompt
 - Relative zoom in camera controls

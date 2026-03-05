@@ -2,13 +2,12 @@
 layout: layouts/release.njk
 title: Release 3 (v1.2.0)
 date: 2026-02-04
-description: Download Release 3 Here!
+description: Check out our first playable!
 ---
 
-## **Download the Release Off of GitHub Here**: 
-GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.2.0" target="_blank">Dowload Here</a>
+### **Download the release <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.2.0" target="_blank">here</a>!**
 
-### **Major Additions**
+#### **Major Changes:**
 - Audio manager implementation 
 - Fixed pause menu
 - Introductory letter sequence 

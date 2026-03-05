@@ -2,13 +2,12 @@
 layout: layouts/release.njk
 title: Release 5 (v1.4.0)
 date: 2026-02-18
-description: Download Release 5 Here!
+description: Check out our feature complete release!
 ---
 
-## **Download the Release Off of GitHub Here**: 
-GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.4.0" target="_blank">Dowload Here</a>
+### **Download the release <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.4.0" target="_blank">here</a>!**
 
-### **Major Additions**
+#### **Major Changes:**
 - Az laugh character profile
 - Adding new audio
 - Player checkpoints

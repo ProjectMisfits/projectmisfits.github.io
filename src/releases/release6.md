@@ -2,13 +2,12 @@
 layout: layouts/release.njk
 title: Release 6 (v1.5.0)
 date: 2026-02-25
-description: Download Release 6 Here!
+description: Check out our content complete release!
 ---
 
-## **Download the Release Off of GitHub Here**: 
-GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.5.0" target="_blank">Dowload Here</a>
+### **Download the release <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.5.0" target="_blank">here</a>!**
 
-### **Major Additions**
+#### **Major Changes:**
 - Dialogue draft 3
 - New Rooms 
     - Workshop
