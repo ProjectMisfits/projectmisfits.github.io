@@ -8,7 +8,7 @@ description: Download Release 6 Here!
 ## **Download the Release Off of GitHub Here**: 
 GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.5.0" target="_blank">Dowload Here</a>
 
-### **Major Aditions**
+### **Major Additions**
 - Dialogue draft 3
 - New Rooms 
     - Workshop

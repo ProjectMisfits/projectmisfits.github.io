@@ -8,7 +8,7 @@ description: Download Release 3 Here!
 ## **Download the Release Off of GitHub Here**: 
 GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.2.0" target="_blank">Dowload Here</a>
 
-### **Major Aditions**
+### **Major Additions**
 - Audio manager implementation 
 - Fixed pause menu
 - Introductory letter sequence 

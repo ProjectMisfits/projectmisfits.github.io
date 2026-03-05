@@ -8,7 +8,7 @@ description: Download Release 4 Here!
 ## **Download the Release Off of GitHub Here**: 
 GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.3.0" target="_blank">Dowload Here</a>
 
-### **Major Aditions**
+### **Major Additions**
 - Added Ice Scream sprites
 - Created interact prompt
 - Relative zoom in camera controls

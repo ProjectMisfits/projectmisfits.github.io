@@ -8,7 +8,7 @@ description: Download Release 1 Here!
 ## **Download the Release Off of GitHub Here**: 
 GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.0.0" target="_blank">Dowload Here</a>
 
-### **Major Features**
+### **Major Additions**
 - Project setup + sddons
 - Placeholder audio files (found not implemented)
 - Player movement & leaf dash
