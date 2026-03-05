@@ -12,6 +12,7 @@ Our Playtesters:
 - Emma Alpert
 - Rose Briggs 'Strawberry' 
 - Carter Cermak
+- Anthony Curcio
 - Charles Engler
 - Dennis Field
 - Brody Graham
