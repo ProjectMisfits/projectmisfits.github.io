@@ -10,8 +10,10 @@ We are forever thankful for all of the people who volunteered to playtest our ga
 Our Playtesters:
 - Jacob Almo
 - Emma Alpert
+- Kylie Beaudry
 - Rose Briggs 'Strawberry' 
 - Carter Cermak
+- Joaquin Donahue
 - Charles Engler
 - Dennis Field
 - Brody Graham
@@ -28,6 +30,7 @@ Our Playtesters:
 - Matt Nickerson
 - Olivia Olsen
 - Zephyr Paxton
+- Walton Pelkey
 - Keenan Porter
 - James Prendergast
 - Daisha Ramos Ortiz
