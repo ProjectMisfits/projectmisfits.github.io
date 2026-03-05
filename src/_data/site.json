@@ -31,10 +31,6 @@
     "domain": "",
     "siteId": ""
   },
-  "lighthouse": {
-    "enabled": false,
-    "url": "https://pagespeed.web.dev/"
-  },
   "indieweb": {
     "h_card": true,
     "rel_me": true,
