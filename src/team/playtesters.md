@@ -13,6 +13,7 @@ Our Playtesters:
 - Kylie Beaudry
 - Rose Briggs 'Strawberry' 
 - Carter Cermak
+- Anthony Curcio
 - Joaquin Donahue
 - Charles Engler
 - Dennis Field
