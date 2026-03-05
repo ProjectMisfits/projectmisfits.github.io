@@ -22,6 +22,7 @@ Our Playtesters:
 - E Hanford
 - Freddie Hatch
 - Nick Kurtz
+- Eric Maher
 - Noah Memel
 - Michael Monda
 - Carter Moore
