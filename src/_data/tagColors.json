@@ -9,7 +9,7 @@
   "disconnected": "#ec4899",
   "tutorial": "#f97316",
   "tips": "#eab308",
-  "review": "#14b8a6",
-  "css": "#8b5cf6",
+  "connected": "#14b8a6",
+  "decorated": "#8b5cf6",
   "tech": "#6b7280"
 }
