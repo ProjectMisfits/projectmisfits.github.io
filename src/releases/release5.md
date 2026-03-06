@@ -2,13 +2,15 @@
 layout: layouts/release.njk
 title: Release 5 (v1.4.0)
 date: 2026-02-18
-description: Download Release 5 Here!
+description: Check out our feature complete release!
 ---
 
-## **Download the Release Off of GitHub Here**: 
-GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.4.0" target="_blank">Dowload Here</a>
+### **Download a release for your operating system here:**
+[Windows (not available yet)]()  
+[Linux (not available yet)]()  
+[Mac](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.4.0/leaves_of_fate_v1.4.0_mac.zip)  
 
-### **Major Aditions**
+#### **Major Changes:**
 - Az laugh character profile
 - Adding new audio
 - Player checkpoints
@@ -39,4 +41,4 @@ GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/
 - Volume sliders function and speed of slider 
 
 
-View Full Changelog Here: <a href="https://github.com/ProjectMisfits/mqp-project/compare/v1.3.0...v1.4.0" target="_blank">v1.3.0...v1.4.0</a> 
+See the full list of changes on the Github release here: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.4.0" target="_blank">v1.4.0</a>

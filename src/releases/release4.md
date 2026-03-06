@@ -2,13 +2,15 @@
 layout: layouts/release.njk
 title: Release 4 (v1.3.0)
 date: 2026-02-11
-description: Download Release 4 Here!
+description: Check out our minimum viable product!
 ---
 
-## **Download the Release Off of GitHub Here**: 
-GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.3.0" target="_blank">Dowload Here</a>
+### **Download a release for your operating system here:**
+[Windows](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.3.0/project_misfits_v1.3.0.zip)  
+[Linux](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.3.0/project_misfits_v1.3.0_linux.zip)  
+[Mac (not available yet)]()  
 
-### **Major Aditions**
+#### **Major Changes:**
 - Added Ice Scream sprites
 - Created interact prompt
 - Relative zoom in camera controls
@@ -41,4 +43,4 @@ GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/
 - Character portrait UI
 
 
-View Full Changelog Here: <a href="https://github.com/ProjectMisfits/mqp-project/compare/v1.2.0...v1.3.0" target="_blank">v1.2.0...v1.3.0</a> 
+See the full list of changes on the Github release here: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.3.0" target="_blank">v1.3.0</a>

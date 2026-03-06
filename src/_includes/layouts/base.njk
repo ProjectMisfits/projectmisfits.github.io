@@ -40,16 +40,6 @@
   <meta property="og:image" content="{{ ogImage }}" />
   <meta property="og:image:alt" content="{{ site.name }} preview" />
 
-  {# Twitter Card #}
-  <meta name="twitter:card" content="summary_large_image" />
-  {% if site.social and site.social.twitter %}
-    <meta name="twitter:site" content="{{ site.social.twitter }}" />
-    <meta name="twitter:creator" content="{{ site.social.twitter }}" />
-  {% endif %}
-  <meta name="twitter:title" content="{{ ogTitle }}" />
-  <meta name="twitter:description" content="{{ ogDescription }}" />
-  <meta name="twitter:image" content="{{ ogImage }}" />
-  <meta name="twitter:image:alt" content="{{ site.name }} preview" />
   <link rel="stylesheet" href="/assets/css/build.css" />
   <link rel="alternate" type="application/atom+xml" title="{{ site.name }} Feed" href="/feed.xml" />
   {# Favicon and theme color #}
@@ -94,102 +84,13 @@
     .contrast { filter: contrast(1.2) saturate(1.1); }
     .reduce-motion * { transition: none !important; animation: none !important; }
   </style>
-  {% include "partials/analytics.njk" %}
-
-  {# SEO: Structured Data (JSON-LD) #}
-  {% if site.url %}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "url": "{{ site.url }}",
-        "name": "{{ site.name }}",
-        "description": "{{ site.description }}"
-      },
-      {
-        "@type": "Organization",
-        "name": "{{ site.author }}",
-        "url": "{{ site.url }}",
-        "sameAs": [
-          {% set sameAs = [] %}
-          {% if site.social and site.social.github %}
-            {% set sameAs = sameAs.concat(['https://github.com/' + site.social.github]) %}
-          {% endif %}
-          {% if site.social and site.social.twitter %}
-            {% set sameAs = sameAs.concat(['https://twitter.com/' + (site.social.twitter | replace('@',''))]) %}
-          {% endif %}
-          {% if site.social and site.social.instagram %}
-            {% set sameAs = sameAs.concat(['https://instagram.com/' + (site.social.twitter | replace('@',''))]) %}
-          {% endif %}
-          {% for link in sameAs %}
-            "{{ link }}"{% if not loop.last %},{% endif %}
-          {% endfor %}
-        ]
-      }
-    ]
-  }
-  </script>
-
-  {# Breadcrumbs: Home > Current #}
-  {% set isHome = (page.url or '/') == '/' %}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "{{ site.url }}"
-      }{% if not isHome %},
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "{{ title or site.name }}",
-        "item": "{{ site.url }}{{ page.url or '/' }}"
-      }
-      {% endif %}
-    ]
-  }
-  </script>
-
-  {# BlogPosting for content pages (#blog, #notes, #poetry, #journal) #}
-  {% set url = page.url or '/' %}
-  {% set isPostLike = (url | slice(0,6) == '/blog/' ) or (url | slice(0,7) == '/notes/' ) or (url | slice(0,8) == '/poetry/' ) or (url | slice(0,9) == '/journal/' ) %}
-  {% if isPostLike %}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "{{ (site.url and (site.url + (page.url or '/'))) or '' }}"
-    },
-    "headline": "{{ title or site.name }}",
-    {% if ogImage %}"image": ["{{ ogImage }}"],{% endif %}
-    "datePublished": "{{ page.date | htmlDateString }}",
-    "dateModified": "{{ page.date | htmlDateString }}",
-    "author": {
-      "@type": "Person",
-      "name": "{{ author or site.author }}"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "{{ site.name }}"
-    },
-    "description": "{{ description or site.description }}"
-  }
-  </script>
-  {% endif %}
-  {% endif %}
 </head>
+
+{# Body #}
 <body class="bg-[var(--bg)] text-[var(--text)] min-h-screen flex flex-col">
-  {# <div id="progress-bar" aria-hidden="true"></div> #}
+  {# Header #}
   <header class="bg-[var(--surface)] border-b border-gray-200 dark:border-gray-700">
-    <div class="container mx-auto px-4 py-3 flex items-center gap-3 justify-between">
+    <div class="container mx-auto px-4 py-3 flex items-center gap-3 justify-between h-[4rem]">
       <button id="hamburger" class="md:hidden p-2 rounded border border-gray-300 dark:border-gray-600" aria-label="Toggle menu" aria-controls="primary-nav" aria-expanded="false">
         <span class="bar-1 block w-5 h-0.5 bg-gray-700 dark:bg-gray-200 mb-1 transition-transform"></span>
         <span class="bar-2 block w-5 h-0.5 bg-gray-700 dark:bg-gray-200 mb-1 transition-opacity"></span>
@@ -197,7 +98,6 @@
       </button>
       <a class="text-lg font-semibold" href="/"><img src="/assets/Title-UI-001.png" alt="Leaves of Fate Logo" class="w-56"></a>
       <div class="flex items-center gap-2 ml-2">
-        <a class="px-2 py-1 text-sm border rounded" href="/sitemap/">Sitemap</a>
         <button id="dark-toggle" class="px-2 py-1 text-sm border rounded" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
         <div class="relative">
           <button id="a11y-toggle" class="px-2 py-1 text-sm border rounded" aria-expanded="false" aria-controls="a11y-menu">A11y</button>
@@ -213,56 +113,65 @@
     </div>
   </header>
 
+  {# Navbar #}
   <nav class="bg-[var(--surface)] border-b border-gray-200 dark:border-gray-700">
     <div id="primary-nav" class="container mx-auto px-4 py-2 hidden md:block">
-      {% set url = page.url or '/' %}
-      {% set isHome = url == '/' %}
-      {% set isBlog = (url and (url | slice(0, 6) == '/blog/')) %}
-      {% set isAbout = url == '/about/' %}
-      {% set isUses = url == '/uses/' %}
-      {% set isNow = url == '/now/' %}
-      {% set isContact = url == '/contact/' %}
-      <ul class="flex flex-col md:flex-row text-base md:text-sm space-y-3 md:space-y-0 md:space-x-6">
+      {# Nav items #}
+      <ul class="flex flex-col md:flex-row text-base md:text-sm space-y-3 md:space-y-0 md:space-x-6 justify-center">
+        {# Set variables to check what pages in the navbar the user is on #}
+        {% set url = page.url or '/' %}
+        {% set isHome = url == '/' %}
+        {% set isAboutGame = url == '/game/' %}
+        {% set isAboutTeam = url == '/team/' %}
+        {% set isUpdates = url == '/updates/' %}
+        {% set isTimeline = url == '/timeline/' %}
+        {% set isReleases = url == '/releases/' %}
+
         <li>
           <a href="/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isHome %}underline font-semibold{% endif %}"
              {% if isHome %}aria-current="page"{% endif %}>🏠 Home</a>
         </li>
         <li>
-          <a href="/game/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isUses %}underline font-semibold{% endif %}"
-             {% if isUses %}aria-current="page"{% endif %}>💡 About the Game</a>
+          <a href="/game/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isAboutGame %}underline font-semibold{% endif %}"
+             {% if isAboutGame %}aria-current="page"{% endif %}>💡 About the Game</a>
         </li>
         <li>
-          <a href="/team/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isAbout %}underline font-semibold{% endif %}"
-             {% if isAbout %}aria-current="page"{% endif %}>👋 About the Team</a>
+          <a href="/team/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isAboutTeam %}underline font-semibold{% endif %}"
+             {% if isAboutTeam %}aria-current="page"{% endif %}>👋 About the Team</a>
         </li>
         <li>
-          <a href="/updates/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isBlog %}underline font-semibold{% endif %}"
-             {% if isBlog %}aria-current="page"{% endif %}>🛠️ Dev Updates</a>
+          <a href="/updates/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isUpdates %}underline font-semibold{% endif %}"
+             {% if isUpdates %}aria-current="page"{% endif %}>🛠️ Dev Updates</a>
         </li>
         <li>
-          <a href="/timeline/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isNow %}underline font-semibold{% endif %}"
-             {% if isNow %}aria-current="page"{% endif %}>🗓️ Dev Timeline</a>
+          <a href="/timeline/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isTimeline %}underline font-semibold{% endif %}"
+             {% if isTimeline %}aria-current="page"{% endif %}>🗓️ Dev Timeline</a>
         </li>
         <li>
-          <a href="/releases/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isContact %}underline font-semibold{% endif %}"
-             {% if isContact %}aria-current="page"{% endif %}>🎮 Releases</a>
+          <a href="/releases/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 {% if isReleases %}underline font-semibold{% endif %}"
+             {% if isReleases %}aria-current="page"{% endif %}>🎮 Releases</a>
         </li>
       </ul>
     </div>
   </nav>
 
+  {# Insert page content #}
   <div class="container mx-auto px-4 py-6 max-w-4xl flex-1">
     <main>
       {{ content | safe }}
     </main>
   </div>
 
+  {# Footer #}
   <footer class="bg-[var(--surface)] border-t border-gray-200 dark:border-gray-700 mt-12">
     <div class="container mx-auto px-4 py-8 max-w-4xl">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+        {# Footer logo #}
         <div>
           <img class="h-5/6" src="/assets/GameLogo-001.png" alt="Leaves of Fate Logo">
         </div>
+
+        {# Site navigation quick links #}
         <div>
           <h3 class="font-semibold mb-2">Navigation</h3>
           <ul class="space-y-1 text-gray-600 dark:text-gray-400">
@@ -272,6 +181,8 @@
             <li><a href="/tags/" class="hover:text-blue-600">Tags</a></li>
           </ul>
         </div>
+
+        {# Connect/social links #}
         <div>
           <h3 class="font-semibold mb-2">Connect</h3>
           <ul class="space-y-1 text-gray-600 dark:text-gray-400">
@@ -288,20 +199,6 @@
               </a>
             </li>
             {% endif %}
-            {% if site.social.mastodon %}
-            <li>
-              <a href="{{ site.social.mastodon | replace('@', 'https://') | replace('@', '/') }}" target="_blank" rel="me noopener" class="inline-flex items-center gap-2 hover:text-blue-600">
-                {{ icon('mastodon', 'w-4 h-4') }} <span>Mastodon</span>
-              </a>
-            </li>
-            {% endif %}
-            {% if site.social.twitter %}
-            <li>
-              <a href="https://twitter.com/{{ site.social.twitter | replace('@','') }}" target="_blank" rel="me noopener" class="inline-flex items-center gap-2 hover:text-blue-600">
-                {{ icon('x', 'w-4 h-4') }} <span>Twitter</span>
-              </a>
-            </li>
-            {% endif %}
             {% if site.social.instagram %}
             <li>
               <a href="https://instagram.com/{{ site.social.instagram | replace('@','') }}" target="_blank" rel="me noopener" class="inline-flex items-center gap-2 hover:text-blue-600">
@@ -312,12 +209,16 @@
           </ul>
         </div>
       </div>
+
+      {# License information #}
       <div class="border-t border-gray-200 dark:border-gray-700 mt-4 pt-4 text-center text-gray-500">
         <p>
           2026 {{ site.name }} •
           Code: <a href="https://opensource.org/license/mit" target="_blank" rel="noopener" class="hover:text-blue-600">MIT</a> •
           Content: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener" class="hover:text-blue-600">CC BY-NC-SA 4.0</a>
         </p>
+
+        {# WPI MQP disclaimer #}
         <div class="flex items-center text-xs border-t border-gray-200 dark:border-gray-700 mt-4 pt-4 text-left text-gray-500">
           <img class="h-10 pr-2" src="/assets/wpiLogo.png" alt="WPI Logo">
           <p>This report represents the work of one or more WPI undergraduate students submitted to the faculty as evidence of completion of a degree requirement. WPI routinely publishes these reports on its website without editorial or peer review.</p>

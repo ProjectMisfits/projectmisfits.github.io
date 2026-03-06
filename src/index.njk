@@ -5,17 +5,15 @@ title: "Home"
 ---
 <div class="h-feed">
   <!-- Hero Section -->
-  <div class="text-center mb-12 py-8">
-    <h1 class="p-name text-4xl font-bold mb-4 float-animation">{{ site.name }}</h1>
-    <p class="p-summary text-xl text-gray-600 dark:text-gray-400 mb-6">{{ site.description }}</p>
-    <a class="u-url hidden" href="{{ site.url }}/"></a>
-    
-    <div class="max-w-2xl mx-auto mb-8">
-      <p class="text-lg leading-relaxed text-gray-700 dark:text-gray-300 mb-6">
-        Project Misfits aims to create a zany, feel-good adventure game that encourages players to reflect on finding their self worth. In a world that twists traditional fantasy, the protagonist inspires other characters with their optimistic and empathetic perspective while avoiding violence.
+  <div class="text-center mb-2 py-4">
+    {# Game brief #}
+    <h1 class="p-name text-5xl font-bold mb-4">Leaves of Fate</h1>
+    <div class="mx-auto mb-6">
+      <p class="mx-auto p-summary text-xl text-gray-600 dark:text-gray-400 mb-4">
+        Leaves of Fate is a zany, feel-good 2D platformer with fluid movement and strong narrative themes. Float around your foes with Fenn's leafy dash and toss obstacles aside with Az's forceful strength. Get through to the evil wizards and save the Great Knights of the realm.
       </p>
-      
-      <div class="flex flex-wrap justify-center gap-4 text-sm">
+      {# Game Tags #}
+      <div class="flex flex-wrap justify-center gap-3 text-sm">
         <span class="bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-200 px-3 py-1 rounded-full">
           🧩 2D Puzzle Platformer
         </span>
@@ -31,20 +29,31 @@ title: "Home"
       </div>
     </div>
 
-    <div class="flex flex-wrap justify-center gap-4">
-      <a href="/releases/release6" class="bg-purple-600 hover:bg-purple-700 text-white px-6 py-2 rounded-lg transition-colors">
-        ⬇️ Download the Latest Release
+    <div class="flex flex-wrap justify-center gap-4 mb-12">
+      <a href="/game/" class="px-6 py-2 border border-green-700 dark:border-green-800 bg-green-100 dark:bg-green-900/20 hover:bg-green-200 dark:hover:bg-green-900/30 text-green-600 dark:text-green-200 rounded-lg transition-colors">
+        👾 Learn more about the game
       </a>
-      <a href="/game/" class="border border-purple-600 text-purple-600 hover:bg-purple-50 dark:hover:bg-purple-900/20 px-6 py-2 rounded-lg transition-colors">
-        👾 About the Game
+      <a href="/releases/release6" class="px-6 py-2 border border-purple-700 dark:border-purple-800 bg-purple-100 dark:bg-purple-900/20 hover:bg-purple-200 dark:hover:bg-purple-900/30 text-purple-600 dark:text-purple-200 rounded-lg transition-colors">
+        ⬇️ Download the latest release
+      </a>
+    </div>
+
+    {# Team brief #}
+    <h1 class="p-name text-4xl font-bold mb-2">Project Misfits</h1>
+    <p class="p-summary text-xl text-gray-600 dark:text-gray-400">We are Project Misfits, a team of five core game developers and ten contractors.</p>
+    <p class="p-summary text-xl text-gray-600 dark:text-gray-400 mb-4">We made Leaves of Fate in just eight weeks. Check it out.</p>
+
+    <div class="flex flex-wrap justify-center gap-4">
+      <a href="/game/" class="px-6 py-2 border border-blue-700 dark:border-blue-800 bg-blue-100 dark:bg-blue-900/20 hover:bg-blue-200 dark:hover:bg-blue-900/30 text-blue-600 dark:text-blue-200 rounded-lg transition-colors">
+        👾 Learn more about the team
       </a>
     </div>
   </div>
 
-  <!-- Recent Posts -->
+  <!-- Latest Posts -->
   <div class="mb-8">
     <h2 class="text-2xl font-semibold mb-6 flex items-center gap-2">
-      ✍️ Recent Updates
+      ✍️ Latest Updates
     </h2>
 
     {% set recent = collections.updates | default([]) %}
@@ -94,16 +103,12 @@ title: "Home"
         View all Dev Updates →
       </a>
     </div>
-    {% else %}
-    <div class="text-center py-12 bg-gray-50 dark:bg-gray-800/50 rounded-lg">
-      <p class="text-gray-500 dark:text-gray-400 text-lg mb-4">No posts yet!</p>
-      <p class="text-gray-600 dark:text-gray-300">This is where thoughtful writing will appear. Stay tuned! 📝</p>
-    </div>
     {% endif %}
   </div>
 
   <!-- Quick Links -->
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-12">
+  <h1 class="p-name text-xl font-bold mt-12 mb-4">Further Reading</h1>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
     <a href="/documents/" class="block p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition-colors">
       <div class="text-2xl mb-2">📁</div>
       <h3 class="font-semibold text-blue-800 dark:text-blue-200">Document Directory</h3>
@@ -113,13 +118,13 @@ title: "Home"
     <a href="/resources/" class="block p-4 bg-green-50 dark:bg-green-900/20 rounded-lg hover:bg-green-100 dark:hover:bg-green-900/30 transition-colors">
       <div class="text-2xl mb-2">🛠️</div>
       <h3 class="font-semibold text-green-800 dark:text-green-200">Development Resources</h3>
-      <p class="text-sm text-green-600 dark:text-green-300">Software, APIs, Assets, and more</p>
+      <p class="text-sm text-green-600 dark:text-green-300">Tools used during production.</p>
     </a>
     
     <a href="/sitemap/" class="block p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg hover:bg-purple-100 dark:hover:bg-purple-900/30 transition-colors">
       <div class="text-2xl mb-2">🗺️</div>
-      <h3 class="font-semibold text-purple-800 dark:text-purple-200">Explore the site</h3>
-      <p class="text-sm text-purple-600 dark:text-purple-300">Check out our site map.</p>
+      <h3 class="font-semibold text-purple-800 dark:text-purple-200">Site Directory</h3>
+      <p class="text-sm text-purple-600 dark:text-purple-300">Explore the various pages of this site!</p>
     </a>
   </div>
 </div>
