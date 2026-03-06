@@ -6,9 +6,9 @@ description: Check out our first release!
 ---
 
 ### **Download a release for your operating system here:**
-[Windows](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.0.0/project_misfits_v1.0.0.zip)  
-[Linux (not available yet)]()  
-[Mac (not available yet)]()  
+[Windows](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.0.0/leaves_of_fate_v1.0.0_windows.zip)  
+[Linux](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.0.0/leaves_of_fate_v1.0.0_linux.zip)  
+[Mac](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.0.0/leaves_of_fate_v1.0.0_mac.zip)  
 
 #### **Major Changes:**
 - Project setup + addons
