@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   
-  <title>Site Directory — Leaves of Fate</title>
+  <title>Development Timeline — Leaves of Fate</title>
   
   <meta name="description" content="Take a look at how Project Misfits created a game in just 8 weeks." />
   <meta name="generator" content="Eleventy" />
@@ -27,18 +27,11 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Leaves of Fate" />
   <meta property="og:url" content="https://projectmisfits.github.io/timeline/" />
-  <meta property="og:title" content="Site Directory" />
+  <meta property="og:title" content="Development Timeline" />
   <meta property="og:description" content="Take a look at how Project Misfits created a game in just 8 weeks." />
   <meta property="og:image" content="https://projectmisfits.github.io//screenshot.png" />
   <meta property="og:image:alt" content="Leaves of Fate preview" />
 
-  
-  <meta name="twitter:card" content="summary_large_image" />
-  
-  <meta name="twitter:title" content="Site Directory" />
-  <meta name="twitter:description" content="Take a look at how Project Misfits created a game in just 8 weeks." />
-  <meta name="twitter:image" content="https://projectmisfits.github.io//screenshot.png" />
-  <meta name="twitter:image:alt" content="Leaves of Fate preview" />
   <link rel="stylesheet" href="/assets/css/build.css" />
   <link rel="alternate" type="application/atom+xml" title="Leaves of Fate Feed" href="/feed.xml" />
   
@@ -83,81 +76,13 @@
     .contrast { filter: contrast(1.2) saturate(1.1); }
     .reduce-motion * { transition: none !important; animation: none !important; }
   </style>
-  
-
-
-
-
-  
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "WebSite",
-        "url": "https://projectmisfits.github.io",
-        "name": "Leaves of Fate",
-        "description": "Take a look at how Project Misfits created a game in just 8 weeks."
-      },
-      {
-        "@type": "Organization",
-        "name": "Project Misfits",
-        "url": "https://projectmisfits.github.io",
-        "sameAs": [
-          
-          
-            
-          
-          
-          
-            
-          
-          
-            "https://github.com/ProjectMisfits",
-          
-            "https://instagram.com/undefined"
-          
-        ]
-      }
-    ]
-  }
-  </script>
-
-  
-  
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://projectmisfits.github.io"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Site Directory",
-        "item": "https://projectmisfits.github.io/timeline/"
-      }
-      
-    ]
-  }
-  </script>
-
-  
-  
-  
-  
-  
 </head>
+
+
 <body class="bg-[var(--bg)] text-[var(--text)] min-h-screen flex flex-col">
   
   <header class="bg-[var(--surface)] border-b border-gray-200 dark:border-gray-700">
-    <div class="container mx-auto px-4 py-3 flex items-center gap-3 justify-between">
+    <div class="container mx-auto px-4 py-3 flex items-center gap-3 justify-between h-[4rem]">
       <button id="hamburger" class="md:hidden p-2 rounded border border-gray-300 dark:border-gray-600" aria-label="Toggle menu" aria-controls="primary-nav" aria-expanded="false">
         <span class="bar-1 block w-5 h-0.5 bg-gray-700 dark:bg-gray-200 mb-1 transition-transform"></span>
         <span class="bar-2 block w-5 h-0.5 bg-gray-700 dark:bg-gray-200 mb-1 transition-opacity"></span>
@@ -165,7 +90,6 @@
       </button>
       <a class="text-lg font-semibold" href="/"><img src="/assets/Title-UI-001.png" alt="Leaves of Fate Logo" class="w-56"></a>
       <div class="flex items-center gap-2 ml-2">
-        <a class="px-2 py-1 text-sm border rounded" href="/sitemap/">Sitemap</a>
         <button id="dark-toggle" class="px-2 py-1 text-sm border rounded" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
         <div class="relative">
           <button id="a11y-toggle" class="px-2 py-1 text-sm border rounded" aria-expanded="false" aria-controls="a11y-menu">A11y</button>
@@ -181,16 +105,20 @@
     </div>
   </header>
 
+  
   <nav class="bg-[var(--surface)] border-b border-gray-200 dark:border-gray-700">
     <div id="primary-nav" class="container mx-auto px-4 py-2 hidden md:block">
       
-      
-      
-      
-      
-      
-      
-      <ul class="flex flex-col md:flex-row text-base md:text-sm space-y-3 md:space-y-0 md:space-x-6">
+      <ul class="flex flex-col md:flex-row text-base md:text-sm space-y-3 md:space-y-0 md:space-x-6 justify-center">
+        
+        
+        
+        
+        
+        
+        
+        
+
         <li>
           <a href="/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 "
              >🏠 Home</a>
@@ -208,8 +136,8 @@
              >🛠️ Dev Updates</a>
         </li>
         <li>
-          <a href="/timeline/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 "
-             >🗓️ Dev Timeline</a>
+          <a href="/timeline/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 underline font-semibold"
+             aria-current="page">🗓️ Dev Timeline</a>
         </li>
         <li>
           <a href="/releases/" class="nav-item block py-2 text-purple-600 dark:text-purple-400 "
@@ -219,263 +147,82 @@
     </div>
   </nav>
 
+  
   <div class="container mx-auto px-4 py-6 max-w-4xl flex-1">
     <main>
       
 <h1 class="text-2xl font-bold mb-4">Development Timeline</h1>
-<p class="text-gray-600 dark:text-gray-400 mb-6">Take a look at our development and production timeline to see what goals we set for ourselves during pre-production.</p>
+<p class="text-gray-600 dark:text-gray-400 mb-6">Take a look at our development timeline during production.</p>
 
-<div class="bg-red-50 dark:bg-red-900/20 rounded-lg p-6 border border-red-200 dark:border-red-800 p-6 max-w-sm">
+<div class="bg-red-50 dark:bg-red-900/20 rounded-lg p-6 border border-red-200 dark:border-red-800 p-6 w-[50%]">
     <h2 class="font-semibold mb-2 text-red-800 dark:text-red-200">Sprint 1: Set Up</h2>
-    <p class="dark:text-gray-400">The goal of this week was to get all critical things set up and to onboard new contractors. </p>
-    <details class="text-gray-600 dark:text-gray-400">
-    <summary class="text-red-600 dark:text-red-300">More on Set Up Week</summary>
-    <p class="font-semibold">Systems Goals</p>
-    <ul>
-        <li>- Git repository</li>
-        <li>- Systems design</li>
-    </ul>
-    <p class="font-semibold">Asset Goals</p>
-    <ul>
-        <li>- Art: concepting</li>
-        <li>- Writing: 1st rough draft of beats & pacing + dialogue</li>
-        <li>- Design: greyboxing level</li>
-    </ul>
-    <p class="font-semibold">Documentation Goals</p>
-    <ul>
-        <li>- Decide on form of paper</li>
-        <li>- Game bibles (tech, art, narrative, audio, design)</li>
-        <li>- Game asset lists</li>
-    </ul>
-    <p class="font-semibold">Playtesting Goals</p>
-    <ul>
-        <li>- N/A</li>
-    </ul>
-    <a href="/updates/sprint1/" class="text-red-600 dark:text-red-300">Read Sprint 1 Dev Update</a>
-    </details>
+    <p class="dark:text-gray-400">The goal of Sprint 1 was to get settled in, set up Godot and our GitHub organization, and onboard our contractors.</p>
+    <a href="/updates/sprint1/" class="text-red-600 dark:text-red-300">Read our Sprint 1 Dev Update here!</a>
 </div>
 
 <div class="flex justify-end">
-    <div class="border bg-orange-50 dark:bg-orange-900/20 rounded-lg border-orange-200 dark:boarder-orange-800 p-6 max-w-sm">
+    <div class="border bg-orange-50 dark:bg-orange-900/20 rounded-lg border-orange-200 dark:boarder-orange-800 p-6 w-[50%]">
         <h2 class="font-semibold mb-2 text-orange-800 dark:text-orange-200">Sprint 2: Prototype</h2>
-        <p class="dark:text-gray-400">The goal of this week was to have something that could be run (even if it was rough). </p>
-        <details class="text-gray-600 dark:text-gray-400">
-        <summary class="text-orange-600 dark:text-orange-300">More on Prototype Week</summary>
-        <p class="font-semibold">Systems Goals</p>
-        <ul>
-            <li>- All systems exist (not necessarily glued together)</li>
-        </ul>
-        <p class="font-semibold">Asset Goals</p>
-        <ul>
-            <li>- Art: critical assets complete</li>
-            <li>- Writing: all dialogue 1st draft</li>
-            <li>- Audio: placeholder assets</li>
-            <li>- Design: all challenges designed, all level challenges grayboxed</li>
-            <li>- Marketing: playtesting advertisement</li>
-        </ul>
-        <p class="font-semibold">Documentation Goals</p>
-        <ul>
-            <li>- N/A</li>
-        </ul>
-        <p class="font-semibold">Playtesting Goals</p>
-        <ul>
-            <li>- Internal Playtesting: experience of navigating an area and talking to characters as Fenn</li>
-        </ul>
-        <a href="/updates/sprint2/" class="text-orange-600 dark:text-orange-300">Read Sprint 2 Dev Update</a>
-        </details>
+        <p class="dark:text-gray-400">The goal of Sprint 2 was to get a runnable build with all of our major systems functioning, even if it was rough.</p>
+        <a href="/updates/sprint2/" class="text-orange-600 dark:text-orange-300">Read our Sprint 2 Dev Update here!</a>
     </div>
 </div>
 
-<div class="border bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border-yellow-200 dark:boarder-yellow-800 p-6 max-w-sm">
+<div class="border bg-yellow-50 dark:bg-yellow-900/20 rounded-lg border-yellow-200 dark:boarder-yellow-800 p-6 w-[50%]">
     <h2 class="font-semibold mb-2 text-yellow-800 dark:text-yellow-200">Sprint 3: First Playable</h2>
-    <p class="dark:text-gray-400">The goal of this week was to have something that could be played in some way, shape, or form. </p>
-    <details class="text-gray-600 dark:text-gray-400">
-    <summary class="text-yellow-700 dark:text-yellow-300">More on First Playable Week</summary>
-    <p class="font-semibold">Systems Goals</p>
-    <ul>
-        <li>- All systems integrated</li>
-        <li>- 1st iteration of a fully complete game</li>
-        <li>- Enough assets implemented for cohesive story</li>
-    </ul>
-    <p class="font-semibold">Asset Goals</p>
-    <ul>
-        <li>- Art: all character art complete</li>
-        <li>- Writing: all dialogue 2nd draft</li>
-        <li>- Design: all challenges designed and locked</li>
-        <li>- Marketing: list of potential game names</li>
-    </ul>
-    <p class="font-semibold">Documentation Goals</p>
-    <ul>
-        <li>- N/A</li>
-    </ul>
-    <p class="font-semibold">Playtesting Goals</p>
-    <ul>
-        <li>- Internal Playtesting: does core game loop align with pillars of game</li>
-    </ul>
-    <a href="/updates/sprint3/" class="text-yellow-700 dark:text-yellow-300">Read Sprint 3 Dev Update</a>
-    </details>
+    <p class="dark:text-gray-400">The goal of Sprint 3 was to create a basic build that showed off the core gameplay loop of the project. </p>
+    <a href="/updates/sprint3/" class="text-yellow-700 dark:text-yellow-300">Read our Sprint 3 Dev Update here!</a>
 </div>
 
 <div class="flex justify-end">
-    <div class="border bg-green-50 dark:bg-green-900/20 rounded-lg border-green-200 dark:boarder-green-800 p-6 max-w-sm">
-        <h2 class="font-semibold mb-2 text-green-800 dark:text-green-200">Sprint 4: Minimum Viable</h2>
-        <p class="dark:text-gray-400">The goal of this week was to have something you can play and get the semblence of a story. You see all the disciplines in one continuous sequence. </p>
-        <details class="text-gray-600 dark:text-gray-400">
-        <summary class="text-green-600 dark:text-green-300">More on Minimum Viable Week</summary>
-        <p class="font-semibold">Systems Goals</p>
-        <ul>
-            <li>- All systems integrated</li>
-            <li>- Critical assets implemented</li>
-            <li>- Player locked in (only minor tweaks as necessary)</li>
-            <li>- Level design only tweaked to match player tweaks</li>
-        </ul>
-        <p class="font-semibold">Asset Goals</p>
-        <ul>
-            <li>- Art: Environment tiles done, architecture decor, environment backgrounds, post processing and lighting effects done, ice cube and claw animation done</li>
-            <li>- UI: all critical complete</li>
-            <li>- Writing: iterate on narrative & dialogue</li>
-            <li>- Audio: music 1st draft, find all sounds</li>
-            <li>- Design: 1st draft of cellar level</li>
-            <li>- Marketing: finalize name of game</li>
-        </ul>
-        <p class="font-semibold">Documentation Goals</p>
-        <ul>
-            <li>- website set up done</li>
-        </ul>
-        <p class="font-semibold">Playtesting Goals</p>
-        <ul>
-            <li>- External Playtesting: gameplay intitutive and immersive? narrative coherent?</li>
-        </ul>
-        <a href="/updates/sprint4/" class="text-green-600 dark:text-green-300">Read Sprint 4 Dev Update</a>
-        </details>
+    <div class="border bg-green-50 dark:bg-green-900/20 rounded-lg border-green-200 dark:boarder-green-800 p-6 w-[50%]">
+        <h2 class="font-semibold mb-2 text-green-800 dark:text-green-200">Sprint 4: Minimum Viable Product</h2>
+        <p class="dark:text-gray-400">The goal of Sprint 4 get a build together that represented a minimum version of the project, featuring simple versions of all of our systems, assets, features, and content from every discipline.</p>
+        <a href="/updates/sprint4/" class="text-green-600 dark:text-green-300">Read our Sprint 4 Dev Update here!</a>
     </div>
 </div>
 
-
-<div class="border bg-teal-50 dark:bg-teal-900/20 rounded-lg border-teal-200 dark:boarder-teal-800 p-6 max-w-sm">
+<div class="border bg-teal-50 dark:bg-teal-900/20 rounded-lg border-teal-200 dark:boarder-teal-800 p-6 w-[50%]">
     <h2 class="font-semibold mb-2 text-teal-800 dark:text-teal-200">Sprint 5: Feature Complete</h2>
-    <p class="dark:text-gray-400">The goal of this week was to have all systems and design complete and locked in.</p>
-    <details class="text-gray-600 dark:text-gray-400">
-    <summary class="text-teal-600 dark:text-teal-300">More on Feature Complete Week</summary>
-    <p class="font-semibold">Systems Goals</p>
-    <ul>
-        <li>- All systems integrated and refined</li>
-        <li>- All critical assets implemented and integrated</li>
-        <li>- Bug logging begins</li>
-    </ul>
-    <p class="font-semibold">Asset Goals</p>
-    <ul>
-        <li>- Art: character animations done, all props finished and in engine</li>
-        <li>- Writing: playtest and iterate narrative</li>
-        <li>- Audio: all music 2nd draft, all SFX edited and implemented</li>
-        <li>- Marketing: logo</li>
-    </ul>
-    <p class="font-semibold">Documentation Goals</p>
-    <ul>
-        <li>- website 1st draft (all content but not formatted)</li>
-    </ul>
-    <p class="font-semibold">Playtesting Goals</p>
-    <ul>
-        <li>- External Playtesting: does everything fit together to create the desired player experience?</li>
-    </ul>
-    <a href="/updates/sprint5/" class="text-teal-600 dark:text-teal-300">Read Sprint 5 Dev Update</a>
-    </details>
+    <p class="dark:text-gray-400">The goal of Sprint 5 was to have all of our systems and design completed and locked in for the build.</p>
+    <a href="/updates/sprint5/" class="text-teal-600 dark:text-teal-300">Read our Sprint 5 Dev Update here!</a>
 </div>
 
 <div class="flex justify-end">
-    <div class="border bg-blue-50 dark:bg-blue-900/20 rounded-lg border-blue-200 dark:boarder-blue-800 p-6 max-w-sm">
+    <div class="border bg-blue-50 dark:bg-blue-900/20 rounded-lg border-blue-200 dark:boarder-blue-800 p-6 w-[50%]">
         <h2 class="font-semibold mb-2 text-blue-800 dark:text-blue-200">Sprint 6: Content Complete</h2>
-        <p class="dark:text-gray-400">The goal of this week was to have a dev freeze meaning no more features added and only working on polish and bugs.</p>
-        <details class="text-gray-600 dark:text-gray-400">
-        <summary class="text-blue-600 dark:text-blue-300">More on Content Complete Week</summary>
-        <p class="font-semibold">Systems Goals</p>
-        <ul>
-            <li>- Asset integration</li>
-            <li>- Bug logging</li>
-        </ul>
-        <p class="font-semibold">Asset Goals</p>
-        <ul>
-            <li>- Writing: iterate on narrative & dialogue</li>
-            <li>- Audio: revisions on music, tweaking soundscape and mixing</li>
-            <li>- Design: iterate and playtest</li>
-        </ul>
-        <p class="font-semibold">Documentation Goals</p>
-        <ul>
-            <li>- website 2nd draft (content more refined and formatted)</li>
-        </ul>
-        <p class="font-semibold">Playtesting Goals</p>
-        <ul>
-            <li>- QA Testing: what major or minor bugs, issues, and tweaks remain?</li>
-        </ul>
-        <a href="/updates/sprint6/" class="text-blue-600 dark:text-blue-300">Read Sprint 6 Dev Update</a>
-        </details>
+        <p class="dark:text-gray-400">The goal of Sprint 6 was to get the build to a state where all of our disciplines were complete so we could pivot to polish and bugfixes.</p>
+        <a href="/updates/sprint6/" class="text-blue-600 dark:text-blue-300">Read our Sprint 6 Dev Update here!</a>
     </div>
 </div>
 
-
-<div class="border bg-purple-50 dark:bg-purple-900/20 rounded-lg border-purple-200 dark:boarder-purple-800 p-6 max-w-sm">
+<div class="border bg-purple-50 dark:bg-purple-900/20 rounded-lg border-purple-200 dark:boarder-purple-800 p-6 w-[50%]">
     <h2 class="font-semibold mb-2 text-purple-800 dark:text-purple-200">Sprint 7: Documentation Done</h2>
-    <p class="dark:text-gray-400">The goal of this week was to only address QA results and to finalize all documentation.</p>
-    <details class="text-gray-600 dark:text-gray-400">
-    <summary class="text-purple-600 dark:text-purple-300">More on Documentation Done Week</summary>
-    <p class="font-semibold">Systems Goals</p>
-    <ul>
-        <li>- Polish and debugging</li>
-    </ul>
-    <p class="font-semibold">Asset Goals</p>
-    <ul>
-        <li>- Tweaks/adjustments based on playtesting feedback</li>
-        <li>- Marketing: materials gathered/complete</li>
-    </ul>
-    <p class="font-semibold">Documentation Goals</p>
-    <ul>
-        <li>- website fully formatted</li>
-    </ul>
-    <p class="font-semibold">Playtesting Goals</p>
-    <ul>
-        <li>- QA Testing: what major or minor bugs, issues, and tweaks remain?</li>
-    </ul>
-    <a href="/updates/sprint7/" class="text-purple-600 dark:text-purple-300">Read Sprint 7 Dev Update</a>
-    </details>
+    <p class="dark:text-gray-400">The goal of Sprint 7 was to have a complete build that allowed us to just address QA issues and finalize documentation.</p>
+    <a href="/updates/sprint7/" class="text-purple-600 dark:text-purple-300">Read our Sprint 7 Dev Update here!</a>
 </div>
 
 <div class="flex justify-end">
-    <div class="border bg-pink-50 dark:bg-pink-900/20 rounded-lg border-pink-200 dark:boarder-pink-800 p-6 max-w-sm">
+    <div class="border bg-pink-50 dark:bg-pink-900/20 rounded-lg border-pink-200 dark:boarder-pink-800 p-6 w-[50%]">
         <h2 class="font-semibold mb-2 text-pink-800 dark:text-pink-200">Sprint 8: Project Done</h2>
-        <p class="dark:text-gray-400">The goal of this week was to finish everything.</p>
-        <details class="text-gray-600 dark:text-gray-400">
-        <summary class="text-pink-600 dark:text-pink-300">More on Project Done Week</summary>
-        <p class="font-semibold">Systems Goals</p>
-        <ul>
-            <li>- Polish and debugging</li>
-        </ul>
-        <p class="font-semibold">Asset Goals</p>
-        <ul>
-            <li>- Tweaks/adjustments based on playtesting feedback</li>
-            <li>- Marketing: finalize any last materials</li>
-        </ul>
-        <p class="font-semibold">Documentation Goals</p>
-        <ul>
-            <li>- website revised and proofread</li>
-        </ul>
-        <p class="font-semibold">Playtesting Goals</p>
-        <ul>
-            <li>- QA Testing: what major or minor bugs, issues, and tweaks remain?</li>
-        </ul>
-        <a href="/updates/sprint8/" class="text-pink-600 dark:text-pink-300">Read Sprint 8 Dev Update</a>
-        </details>
+        <p class="dark:text-gray-400">The goal of Sprint 8 was to get every remaining thing in before the deadline.</p>
+        <a href="/updates/sprint8/" class="text-pink-600 dark:text-pink-300">Read our Sprint 8 Dev Update here!</a>
     </div>
 </div>
 
     </main>
   </div>
 
+  
   <footer class="bg-[var(--surface)] border-t border-gray-200 dark:border-gray-700 mt-12">
     <div class="container mx-auto px-4 py-8 max-w-4xl">
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-sm">
+        
         <div>
           <img class="h-5/6" src="/assets/GameLogo-001.png" alt="Leaves of Fate Logo">
         </div>
+
+        
         <div>
           <h3 class="font-semibold mb-2">Navigation</h3>
           <ul class="space-y-1 text-gray-600 dark:text-gray-400">
@@ -485,6 +232,8 @@
             <li><a href="/tags/" class="hover:text-blue-600">Tags</a></li>
           </ul>
         </div>
+
+        
         <div>
           <h3 class="font-semibold mb-2">Connect</h3>
           <ul class="space-y-1 text-gray-600 dark:text-gray-400">
@@ -512,8 +261,6 @@
             </li>
             
             
-            
-            
             <li>
               <a href="https://instagram.com/project.misfits" target="_blank" rel="me noopener" class="inline-flex items-center gap-2 hover:text-blue-600">
                 
@@ -530,12 +277,16 @@
           </ul>
         </div>
       </div>
+
+      
       <div class="border-t border-gray-200 dark:border-gray-700 mt-4 pt-4 text-center text-gray-500">
         <p>
           2026 Leaves of Fate •
           Code: <a href="https://opensource.org/license/mit" target="_blank" rel="noopener" class="hover:text-blue-600">MIT</a> •
           Content: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener" class="hover:text-blue-600">CC BY-NC-SA 4.0</a>
         </p>
+
+        
         <div class="flex items-center text-xs border-t border-gray-200 dark:border-gray-700 mt-4 pt-4 text-left text-gray-500">
           <img class="h-10 pr-2" src="/assets/wpiLogo.png" alt="WPI Logo">
           <p>This report represents the work of one or more WPI undergraduate students submitted to the faculty as evidence of completion of a degree requirement. WPI routinely publishes these reports on its website without editorial or peer review.</p>
