@@ -6,9 +6,9 @@ description: Check out our final release!
 ---
 
 ### **Download a release for your operating system here:**
-[Windows (not available yet)]()  
-[Linux (not available yet)]()  
-[Mac (not available yet)]()  
+[Windows]()  
+[Linux]()  
+[Mac]()  
 
 #### **Major Changes:**
 - TBD
