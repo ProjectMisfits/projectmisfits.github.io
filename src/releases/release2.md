@@ -6,9 +6,9 @@ description: Check out our first prototype!
 ---
 
 ### **Download a release for your operating system here:**
-[Windows](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.1.0/project_misfits_v1.1.0.zip)  
-[Linux (not available yet)]()  
-[Mac (not available yet)]()  
+[Windows](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.1.0/leaves_of_fate_v1.1.0_windows.zip)  
+[Linux](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.1.0/leaves_of_fate_v1.1.0_linux.zip)  
+[Mac](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.1.0/leaves_of_fate_v1.1.0_mac.zip)  
 
 #### **Major Changes:**
 - Main menu & settings menu 
