@@ -1156,6 +1156,11 @@ a:hover:not(.nav-item) {
   border-color: rgb(254 205 211 / var(--tw-border-opacity, 1));
 }
 
+.border-slate-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(148 163 184 / var(--tw-border-opacity, 1));
+}
+
 .border-teal-200 {
   --tw-border-opacity: 1;
   border-color: rgb(153 246 228 / var(--tw-border-opacity, 1));
@@ -1169,16 +1174,6 @@ a:hover:not(.nav-item) {
 .border-yellow-400 {
   --tw-border-opacity: 1;
   border-color: rgb(250 204 21 / var(--tw-border-opacity, 1));
-}
-
-.border-slate-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(71 85 105 / var(--tw-border-opacity, 1));
-}
-
-.border-slate-400 {
-  --tw-border-opacity: 1;
-  border-color: rgb(148 163 184 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[var\(--bg\)\] {
@@ -1279,6 +1274,11 @@ a:hover:not(.nav-item) {
   background-color: rgb(255 241 242 / var(--tw-bg-opacity, 1));
 }
 
+.bg-slate-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
+}
+
 .bg-teal-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(204 251 241 / var(--tw-bg-opacity, 1));
@@ -1312,16 +1312,6 @@ a:hover:not(.nav-item) {
 .bg-yellow-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 179 8 / var(--tw-bg-opacity, 1));
-}
-
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity, 1));
-}
-
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
 }
 
 .object-contain {
@@ -2542,6 +2532,11 @@ body {
   background-color: rgb(136 19 55 / 0.2);
 }
 
+.dark\:bg-slate-900:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
+}
+
 .dark\:bg-teal-900\/20:is(.dark *) {
   background-color: rgb(19 78 74 / 0.2);
 }
@@ -2552,15 +2547,6 @@ body {
 
 .dark\:bg-yellow-900\/20:is(.dark *) {
   background-color: rgb(113 63 18 / 0.2);
-}
-
-.dark\:bg-slate-900\/20:is(.dark *) {
-  background-color: rgb(15 23 42 / 0.2);
-}
-
-.dark\:bg-slate-900:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
 }
 
 .dark\:text-blue-200:is(.dark *) {
