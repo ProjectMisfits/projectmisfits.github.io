@@ -10,15 +10,15 @@ permalink: "/releases/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageN
 ---
 
 <h1 class="text-2xl font-bold mb-2">🎮 Releases</h1>
-<p class="text-lg mb-4">Want to play the game? Download the game here!</p>
+<p class="text-lg mb-4">Want to play Leaves of Fate? Download a build here!</p>
 
 {% set items = items | default([]) %}
 {% if (items | length) == 0 %}
   <p class="text-gray-500 dark:text-gray-400 italic">No notes yet. Add files under <code>src/notes/</code>.</p>
 {% else %}
-<section class="space-y-6">
+<section>
   {% for item in items %}
-  <article class="border-b pb-4 h-entry">
+  <article class="border-t border-b py-4 hover:bg-green-100 dark:hover:bg-green-700/30 transition-colors">
     <h2 class="text-lg font-semibold"><a class="u-url" href="{{ item.url }}">{{ item.data.title or 'Untitled' }}</a></h2>
     {% if item.date %}
       <time class="text-xs text-gray-500 dt-published" datetime="{{ item.date | htmlDateString }}">{{ item.date | readableDate }}</time>
@@ -29,20 +29,4 @@ permalink: "/releases/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageN
   </article>
   {% endfor %}
 </section>
-
-<nav class="mt-8 flex items-center justify-between" aria-label="Pagination">
-  {% if pagination.href.previous %}
-    <a class="px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:bg-gray-200" href="{{ pagination.href.previous }}">← Newer</a>
-  {% else %}
-    <span class="px-4 py-2 text-gray-400">← Newer</span>
-  {% endif %}
-
-  <span class="text-sm text-gray-600 dark:text-gray-400">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages | length }}</span>
-
-  {% if pagination.href.next %}
-    <a class="px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:bg-gray-200" href="{{ pagination.href.next }}">Older →</a>
-  {% else %}
-    <span class="px-4 py-2 text-gray-400">Older →</span>
-  {% endif %}
-</nav>
 {% endif %}
