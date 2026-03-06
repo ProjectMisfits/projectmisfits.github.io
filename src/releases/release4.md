@@ -6,9 +6,9 @@ description: Check out our minimum viable product!
 ---
 
 ### **Download a release for your operating system here:**
-[Windows](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.3.0/project_misfits_v1.3.0.zip)  
-[Linux](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.3.0/project_misfits_v1.3.0_linux.zip)  
-[Mac (not available yet)]()  
+[Windows](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.3.0/leaves_of_fate_v1.3.0_windows.zip)  
+[Linux](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.3.0/leaves_of_fate_v1.3.0_linux.zip)  
+[Mac](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.3.0/leaves_of_fate_v1.3.0_mac.zip)  
 
 #### **Major Changes:**
 - Added Ice Scream sprites
