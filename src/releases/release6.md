@@ -6,9 +6,9 @@ description: Check out our content complete release!
 ---
 
 ### **Download a release for your operating system here:**
-[Windows](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.5.0/leaves_of_fate_v1.5.0_win.zip)  
-[Linux](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.5.0/leaves_of_fate_v1.5.0_linux.zip)  
-[Mac](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.5.0/leaves_of_fate_v1.5.0_mac.zip)  
+[Windows](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.5.0/leaves_of_fate_v1.5.0_windows.zip)  
+[Linux](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.5.0/leaves_of_fate_v1.5.0_linux.zip)  
+[Mac](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.5.0/leaves_of_fate_v1.5.0_mac.zip)  
 
 #### **Major Changes:**
 - Dialogue draft 3
