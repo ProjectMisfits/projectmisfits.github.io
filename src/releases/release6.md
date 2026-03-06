@@ -51,4 +51,4 @@ description: Check out our content complete release!
 - Cutscene refinements 
 
 
-See the full list of changes on the Github release here: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.5.0" target="_blank">v1.5.0</a>
+See the full list of changes on the Github release here: <a href="https://github.com/ProjectMisfits/leaves-of-fate/releases/tag/v1.5.0" target="_blank">v1.5.0</a>

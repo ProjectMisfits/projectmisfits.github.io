@@ -27,4 +27,4 @@ description: Check out our first prototype!
 - Great hall & cellar room prototypes 
 
 
-See the full list of changes on the Github release here: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.1.0" target="_blank">v1.1.0</a>
+See the full list of changes on the Github release here: <a href="https://github.com/ProjectMisfits/leaves-of-fate/releases/tag/v1.1.0" target="_blank">v1.1.0</a>
