@@ -6,9 +6,9 @@ description: Check out our feature complete release!
 ---
 
 ### **Download a release for your operating system here:**
-[Windows (not available yet)]()  
-[Linux (not available yet)]()  
-[Mac](https://github.com/ProjectMisfits/mqp-project/releases/download/v1.4.0/leaves_of_fate_v1.4.0_mac.zip)  
+[Windows](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.4.0/leaves_of_fate_v1.4.0_windows.zip)  
+[Linux](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.4.0/leaves_of_fate_v1.4.0_linux.zip)  
+[Mac](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.4.0/leaves_of_fate_v1.4.0_mac.zip)  
 
 #### **Major Changes:**
 - Az laugh character profile
