@@ -46,7 +46,7 @@ title: Site Directory
         <li><a href="/resources/" class="flex items-center gap-2 hover:text-orange-600 dark:hover:text-orange-400">🛠️ Dev Resources</a></li>
         <li><a href="/documents/" class="flex items-center gap-2 hover:text-orange-600 dark:hover:text-orange-400">📁 Documents</a></li>
         <li><a href="/tags/" class="flex items-center gap-2 hover:text-orange-600 dark:hover:text-orange-400">🔖 Tags</a></li>
-        <li><a href="/sitemap/" class="flex items-center gap-2 hover:text-orange-600 dark:hover:text-orange-400 font-semibold">🗺️ This Page</a></li>
+        <li><a href="/sitemap/" class="flex items-center gap-2 hover:text-orange-600 dark:hover:text-orange-400 font-semibold">🗺️ Site Directory</a></li>
       </ul>
     </div>
 
@@ -84,67 +84,27 @@ title: Site Directory
       </ul>
     </div>
 
-    <!-- Releases -->
+    <!-- Latest Releases -->
     <div class="bg-[var(--surface)] rounded-lg p-6 border border-red-200 dark:border-red-800">
-      <h2 class="text-lg font-semibold mb-4 text-red-700 dark:text-red-300">🎮 Releases</h2>
+      <h2 class="text-lg font-semibold mb-4 text-red-700 dark:text-red-300">🎮 Latest Releases</h2>
       <ul class="space-y-2">
-        <li><a href="/releases/release1/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">Release 1</a></li>
-        <li><a href="/releases/release2/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">Release 2</a></li>
-        <li><a href="/releases/release3/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">Release 3</a></li>
-        <li><a href="/releases/release4/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">Release 4</a></li>
-        <li><a href="/releases/release5/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">Release 5</a></li>
-        <li><a href="/releases/release6/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">Release 6</a></li>
         <li><a href="/releases/release7/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">Release 7 (coming soon)</a></li>
+        <li><a href="/releases/release6/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">Release 6</a></li>
+        <li><a href="/releases/release5/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">Release 5</a></li>
+        <li><a href="/releases/release4/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">Release 4</a></li>
+        <li><a href="/releases/release3/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">Release 3</a></li>
+        <li><a href="/releases/release2/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">Release 2</a></li>
+        <li><a href="/releases/release1/" class="flex items-center gap-2 hover:text-red-600 dark:hover:text-red-400">Release 1</a></li>
       </ul>
-    </div>
-
-     <!-- Recent Posts -->
-    <div class="bg-[var(--surface)] rounded-lg p-6 border border-pink-200 dark:border-pink-800 md:col-span-2">
-      <h2 class="text-lg font-semibold mb-4 text-pink-700 dark:text-pink-300">📝 Recent Updates</h2>
-
-      {# Fallback to searchIndex like homepage if posts collection is empty #}
-      {% set recent = collections.updates | default([]) %}
-      {% if (recent | length) == 0 %}
-        {% set recent = collections.searchIndex | default([]) %}
-      {% endif %}
-
-      {% if recent | length > 0 %}
-      <ul class="space-y-2">
-        {% for post in recent | head(5) %}
-        {% set url = post.url or post.id %}
-        {% set title = (post.data and post.data.title) or post.title %}
-        <li>
-          <a href="{{ url }}" class="block hover:text-pink-600 dark:hover:text-pink-400">
-            <span class="font-medium">{{ title }}</span>
-            {% if post.date %}
-            <span class="text-sm text-gray-500 dark:text-gray-400 block">{{ post.date | readableDate }}</span>
-            {% endif %}
-          </a>
-        </li>
-        {% endfor %}
-      </ul>
-      {% else %}
-      <p class="text-gray-500 dark:text-gray-400 italic">No posts yet. Start writing!</p>
-      {% endif %}
     </div>
 
     <!-- Fun Stuff -->
-    <div class="bg-[var(--surface)] rounded-lg p-6 border border-indigo-200 dark:border-indigo-800">
+    <div class="bg-[var(--surface)] rounded-lg p-6 border border-indigo-200 dark:border-indigo-800 md:col-span-3">
       <h2 class="text-lg font-semibold mb-4 text-indigo-700 dark:text-indigo-300">🎪 Fun Stuff</h2>
-      <ul class="space-y-2 text-sm">
-        <li class="text-gray-600 dark:text-gray-400">🎮 Try the Konami code</li>
-        <li class="text-gray-600 dark:text-gray-400">⌨️ Type "fenn" anywhere</li>
-        <li class="text-gray-600 dark:text-gray-400">🌙 Toggle dark mode</li>
+      <ul class="flex flex-col md:flex-row text-base md:space-y-0 justify-around">
+        <li class="text-gray-600 dark:text-gray-400 font-semibold">🎮 Try the Konami code</li>
+        <li class="text-gray-600 dark:text-gray-400 font-semibold">⌨️ Type "fenn" anywhere</li>
+        <li class="text-gray-600 dark:text-gray-400 font-semibold">🌙 Toggle dark mode</li>
       </ul>
     </div>
   </div>
-
-  <div class="mt-12 p-6 bg-gradient-to-r from-purple-100 to-pink-100 dark:from-purple-900/20 dark:to-pink-900/20 rounded-lg">
-    <h2 class="text-xl font-semibold mb-2">🧭 Lost?</h2>
-    <p class="text-gray-700 dark:text-gray-300">
-      This site is built with <a href="https://11ty.dev" class="text-purple-600 dark:text-purple-400 hover:underline">Eleventy</a> 
-      and follows <a href="https://indieweb.org" class="text-purple-600 dark:text-purple-400 hover:underline">IndieWeb</a> principles. 
-      It's designed to be a calm, thoughtful space for writing and connecting.
-    </p>
-  </div>
-</div>

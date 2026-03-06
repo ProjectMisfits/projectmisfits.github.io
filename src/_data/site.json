@@ -25,45 +25,9 @@
     "title": "Join the Newsletter",
     "description": "Get thoughtful updates delivered to your inbox. No spam, just meaningful content."
   },
-  "donate": {
-    "enabled": true,
-    "kofi": "yourusername",
-    "buymeacoffee": "yourusername",
-    "github": "yourusername",
-    "message": "If you find value in my writing, consider supporting my work. Every contribution helps me continue creating thoughtful content."
-  },
-  "analytics": {
-    "enabled": false,
-    "provider": "plausible",
-    "domain": "",
-    "siteId": ""
-  },
-  "webmentions": {
-    "enabled": true,
-    "domain": ""
-  },
-  "webring": {
-    "enabled": false,
-    "url": "https://indieweb.org/webring"
-  },
-  "lighthouse": {
-    "enabled": false,
-    "url": "https://pagespeed.web.dev/"
-  },
   "indieweb": {
     "h_card": true,
     "rel_me": true,
     "microformats": true
-  },
-  "sections": {
-    "notes": { "enabled": true, "title": "Notes", "path": "/notes/" },
-    "journal": { "enabled": true, "title": "Journal", "path": "/journal/" },
-    "poetry": { "enabled": true, "title": "Poetry", "path": "/poetry/" },
-    "portfolio": { "enabled": true, "title": "Portfolio", "path": "/portfolio/" },
-    "projects": { "enabled": true, "title": "Projects", "path": "/projects/" },
-    "resume": { "enabled": true, "title": "Résumé", "path": "/resume/" },
-    "type": { "enabled": true, "title": "Type", "path": "/type/" },
-    "links": { "enabled": true, "title": "Links", "path": "/links/" },
-    "bookshelf": { "enabled": true, "title": "Bookshelf", "path": "/bookshelf/" }
   }
 }

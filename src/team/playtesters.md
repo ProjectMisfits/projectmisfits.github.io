@@ -2,10 +2,10 @@
 layout: layouts/contractor.njk
 title: Our Playtesters
 date: 2026-11-01
-description: All the people who gave us the feedback to make the game great!
+description: All of the people that helped us shape Leaves of Fate!
 ---
 
-We are forever thankful for all of the people who volunteered to playtest our game and give us feedback. This feedback really helped make the game what it is today!
+We are extremely grateful to all of the people who volunteered to playtest our game and give us feedback. This feedback really helped make the game what it is today!
 
 Our Playtesters:
 - Jacob Almo
@@ -14,6 +14,7 @@ Our Playtesters:
 - Rose Briggs 'Strawberry' 
 - Carter Cermak
 - Anthony Curcio
+- Jacob Curtis
 - Joaquin Donahue
 - Charles Engler
 - Dennis Field
@@ -21,6 +22,7 @@ Our Playtesters:
 - E Hanford
 - Freddie Hatch
 - Nick Kurtz
+- Eric Maher
 - Noah Memel
 - Michael Monda
 - Carter Moore

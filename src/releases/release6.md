@@ -2,13 +2,15 @@
 layout: layouts/release.njk
 title: Release 6 (v1.5.0)
 date: 2026-02-25
-description: Download Release 6 Here!
+description: Check out our content complete release!
 ---
 
-## **Download the Release Off of GitHub Here**: 
-GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.5.0" target="_blank">Dowload Here</a>
+### **Download a release for your operating system here:**
+[Windows](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.5.0/leaves_of_fate_v1.5.0_windows.zip)  
+[Linux](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.5.0/leaves_of_fate_v1.5.0_linux.zip)  
+[Mac](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.5.0/leaves_of_fate_v1.5.0_mac.zip)  
 
-### **Major Aditions**
+#### **Major Changes:**
 - Dialogue draft 3
 - New Rooms 
     - Workshop
@@ -49,4 +51,4 @@ GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/
 - Cutscene refinements 
 
 
-View Full Changelog Here: <a href="https://github.com/ProjectMisfits/mqp-project/compare/v1.4.0...v1.5.0" target="_blank">v1.4.0...v1.5.0</a> 
+See the full list of changes on the Github release here: <a href="https://github.com/ProjectMisfits/leaves-of-fate/releases/tag/v1.5.0" target="_blank">v1.5.0</a>

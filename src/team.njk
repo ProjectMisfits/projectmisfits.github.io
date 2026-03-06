@@ -11,12 +11,11 @@ permalink: "/team/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumbe
 <div class="h-card">
   <img class="u-photo w-24 h-24 rounded-full" src="/assets/newProfile.PNG" alt="{{ site.author }}" />
   <h1 class="p-name text-2xl font-bold mt-2">{{ site.author }}</h1>
-  <p class="p-note mt-2 mb-4">Project Misfits is a team of students from Worcester Polytechnic Institute (WPI) who are working to make a 2D puzzle platformer in just 8 weeks. 
-                         Our core team consists of four Computer Science (CS) BS and Interactive Media & Game Development (IMGD) BS double majors and one IMGD BA with a narrative focus. 
-                         We also have nine contractors who helped us out tremedously with a variety of tasks. 
-                         Additionally, there are two IMGD/CS WPI advisors who provided us with valuable feedback throughout the process.
-                         We are so excited for you to check out our game and read all about our development process!</p>
-  
+  <p class="p-note mt-2 mb-4">Project Misfits is the team of students from Worcester Polytechnic Institute (WPI) behind Leaves of Fate.
+                          The core team consists of four Computer Science (CS) BS and Interactive Media & Game Development (IMGD) BS double majors and one IMGD BA with a narrative focus. 
+                          Ten contractors contributed tremendously to the project across many disciplines, especially art, audio, and tech art. 
+                          Two CS/IMGD WPI advisors provided us with valuable feedback throughout the process.
+                          We could not have done it without any of them and we are so excited for you to check out Leaves of Fate!</p>
   <p class="p-locality mt-2">Worcester, MA</p>
   <p class="p-country-name">United States of America</p>
   
@@ -31,11 +30,6 @@ permalink: "/team/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumbe
     {% if site.social.github %}
     <a class="u-url inline-flex items-center gap-1" rel="me" href="https://github.com/{{ site.social.github }}">
       {{ icon('github','w-4 h-4') }} <span>GitHub</span>
-    </a>
-    {% endif %}
-    {% if site.social.twitter %}
-    <a class="u-url inline-flex items-center gap-1" rel="me" href="https://twitter.com/{{ site.social.twitter | replace('@','') }}">
-      {{ icon('x','w-4 h-4') }} <span>Twitter</span>
     </a>
     {% endif %}
     {% if site.social.instagram %}
@@ -92,30 +86,14 @@ permalink: "/team/{% if pagination.pageNumber > 0 %}page-{{ pagination.pageNumbe
 {% if items | length == 0 %}
   <p class="text-gray-500 dark:text-gray-400 italic">No contractor entries yet. Add files under <code>src/team/</code>.</p>
 {% else %}
-<section class="space-y-6">
+<section>
   {% for item in items %}
-  <article class="border-b pb-4 h-entry">
+  <article class="border-t border-b py-4 hover:bg-blue-100 dark:hover:bg-blue-700/30 transition-colors">
     <h2 class="text-lg font-semibold"><a class="u-url" href="{{ item.url }}">{{ item.data.title or 'Untitled' }}</a></h2>
     {% if item.data.description %}
-      <p class="mt-1 p-summary">{{ item.data.description }}</p>
+      <p class="p-summary">{{ item.data.description }}</p>
     {% endif %}
   </article>
   {% endfor %}
 </section>
-
-<nav class="mt-8 flex items-center justify-between" aria-label="Pagination">
-  {% if pagination.href.previous %}
-    <a class="px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:bg-gray-200" href="{{ pagination.href.previous }}">← Back</a>
-  {% else %}
-    <span class="px-4 py-2 text-gray-400">← Back</span>
-  {% endif %}
-
-  <span class="text-sm text-gray-600 dark:text-gray-400">Page {{ pagination.pageNumber + 1 }} of {{ pagination.pages | length }}</span>
-
-  {% if pagination.href.next %}
-    <a class="px-4 py-2 rounded bg-gray-100 dark:bg-gray-800 hover:bg-gray-200" href="{{ pagination.href.next }}">Next →</a>
-  {% else %}
-    <span class="px-4 py-2 text-gray-400">Next →</span>
-  {% endif %}
-</nav>
 {% endif %}

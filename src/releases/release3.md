@@ -2,13 +2,15 @@
 layout: layouts/release.njk
 title: Release 3 (v1.2.0)
 date: 2026-02-04
-description: Download Release 3 Here!
+description: Check out our first playable!
 ---
 
-## **Download the Release Off of GitHub Here**: 
-GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/tag/v1.2.0" target="_blank">Dowload Here</a>
+### **Download a release for your operating system here:**
+[Windows](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.2.0/leaves_of_fate_v1.2.0_windows.zip)  
+[Linux](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.2.0/leaves_of_fate_v1.2.0_linux.zip)  
+[Mac](https://github.com/ProjectMisfits/leaves-of-fate/releases/download/v1.2.0/leaves_of_fate_v1.2.0_mac.zip)  
 
-### **Major Aditions**
+#### **Major Changes:**
 - Audio manager implementation 
 - Fixed pause menu
 - Introductory letter sequence 
@@ -27,4 +29,5 @@ GitHub Release: <a href="https://github.com/ProjectMisfits/mqp-project/releases/
 - Room prototypes 
 - And more! 
 
-View Full Changelog Here: <a href="https://github.com/ProjectMisfits/mqp-project/compare/v1.1.0...v1.2.0" target="_blank">v1.1.0...v1.2.0</a> 
+
+See the full list of changes on the Github release here: <a href="https://github.com/ProjectMisfits/leaves-of-fate/releases/tag/v1.2.0" target="_blank">v1.2.0</a>
