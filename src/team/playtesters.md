@@ -10,14 +10,19 @@ We are extremely grateful to all of the people who volunteered to playtest our g
 Our Playtesters:
 - Jacob Almo
 - Emma Alpert
-- Rose 'Strawberry' Briggs
+- Kylie Beaudry
+- Rose Briggs 'Strawberry' 
 - Carter Cermak
+- Anthony Curcio
+- Jacob Curtis
+- Joaquin Donahue
 - Charles Engler
 - Dennis Field
 - Brody Graham
 - E Hanford
 - Freddie Hatch
 - Nick Kurtz
+- Eric Maher
 - Noah Memel
 - Michael Monda
 - Carter Moore
@@ -28,6 +33,7 @@ Our Playtesters:
 - Matt Nickerson
 - Olivia Olsen
 - Zephyr Paxton
+- Walton Pelkey
 - Keenan Porter
 - James Prendergast
 - Daisha Ramos Ortiz
