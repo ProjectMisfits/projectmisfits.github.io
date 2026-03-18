@@ -1,8 +1,8 @@
 ---
 layout: layouts/release.njk
-title: Release 7 (v1.6.0)
+title: Release v1.6.0
 date: 2026-03-05
-description: Check out our final release!
+description: Check out our final production release!
 ---
 
 ### **Download a release for your operating system here:**

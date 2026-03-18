@@ -1,6 +1,6 @@
 ---
 layout: layouts/release.njk
-title: Release 6 (v1.5.0)
+title: Release v1.5.0
 date: 2026-02-25
 description: Check out our content complete release!
 ---

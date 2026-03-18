@@ -1,6 +1,6 @@
 ---
 layout: layouts/release.njk
-title: Release 3 (v1.2.0)
+title: Release v1.2.0
 date: 2026-02-04
 description: Check out our first playable!
 ---

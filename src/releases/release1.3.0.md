@@ -1,6 +1,6 @@
 ---
 layout: layouts/release.njk
-title: Release 4 (v1.3.0)
+title: Release v1.3.0
 date: 2026-02-11
 description: Check out our minimum viable product!
 ---

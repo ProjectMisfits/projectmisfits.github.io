@@ -1,6 +1,6 @@
 ---
 layout: layouts/release.njk
-title: Release 2 (v1.1.0)
+title: Release v1.1.0
 date: 2026-01-29
 description: Check out our first prototype!
 ---
