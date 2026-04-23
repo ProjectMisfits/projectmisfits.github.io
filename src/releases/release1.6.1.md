@@ -3,7 +3,7 @@ layout: layouts/release.njk
 title: Release v1.6.1
 release: 1.6.1
 date: 2026-03-18
-description: Hotfix 1 for 1.6
+description: Hotfix 1 for v1.6
 ---
 
 ### **Download a release for your operating system here:**
